@@ -1,0 +1,85 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.h1 {
+    font-size: 1.0rem;
+}
+
+@media (min-width: 576px) {
+    .h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .h1 {
+        font-size: 2.0rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .h1 {
+        font-size: 2.5rem;
+    }
+}
+
+.mywallpaper{
+    height: 40vh;
+    padding: 0;
+    object-fit:cover;
+    object-position: 50% 30%;
+}
+
+.profile{
+    width: 20vh;
+    height: 20vh;
+    margin-top: 10vh;
+}
+
+.titleProfile{
+    margin-top: 13vh;
+    margin-left: 25vh;
+}
+
+.bannerNetwork{
+    height: 10vh;
+}
+
+.socialNetworkLogo{
+    width: 6vh;
+    height: 6vh;
+    /*margin: 2vh;*/
+    /*margin-left: 5vh;*/
+}
+
+.socialNetworkText{
+    visibility: hidden;
+    /*padding-left: 5vh;*/
+}
+
+@media (min-width: 768px) {
+    .socialNetworkText {
+        font-size: 1.2rem;
+        visibility:visible;
+    }
+}
+
+.myCard {
+    width: 18rem; 
+    height: 30rem;
+    /*border: 0.1px solid;*/
+    box-shadow: 0 0 1em black;
+    
+}
+
+.card img{
+    transition: transform .7s ease-in-out;
+}
+
+.card img:over {
+    transform: rotate(90deg);
+}
