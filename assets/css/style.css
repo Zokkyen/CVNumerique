@@ -139,3 +139,19 @@ li {
     content:'\00b7';
     font-size: 2vh; 
 }
+
+.myCompCard {
+    width: 18rem; 
+    height: 30rem;
+    box-shadow: 0 0 1em black;
+    position: relative;
+}
+
+.myprogbar {
+    border: 1px solid;
+}
+
+.iconeCompt{
+    width: 4vh;
+    height: 4vh;
+}
