@@ -80,13 +80,7 @@ body{
 }
 .myLgCard {
     width: auto;
-    height: 110vh;
-    box-shadow: 0 0 1em black;
-}
-
-.myLgCard2 {
-    width: auto;
-    height: 110vh;
+    height: 120vh;
     box-shadow: 0 0 1em black;
 }
 
