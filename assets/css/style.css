@@ -152,6 +152,16 @@ li {
 }
 
 .iconeCompt{
-    width: 4vh;
-    height: 4vh;
+    width: 5vh;
+    height: 5vh;
+}
+
+.card-title {
+    margin-bottom: 1rem !important;
+}
+
+.card-img-top {
+    height: 25vh !important;
+    width: 100%;
+    object-fit: cover !important;
 }
