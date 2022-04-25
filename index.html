@@ -24,23 +24,23 @@
     <header>
 
         <!-- En tête du site avec titre et photo -->
-        <div class="container-fluid justify-content-evenly">
-            <div class="row justify-content-center">
-                <img class="mywallpaper" src="assets/img/wallpaper.jpg" alt="Wallpaper de mise en page">
-                <div class="col-6 position-absolute">
+        <div class="container-fluid">
+            <div class="row align-items-center">  <!-- align-items-center text-center justify-content-center-->
+                <img class="mywallpaper img-fluid position-relative" src="assets/img/wallpaper.jpg" alt="Wallpaper de mise en page">
+                <div class="col-12 col-md-6 position-absolute colPictProfileResp">
                     <img class="profile rounded-circle" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
                 </div>
-                <div class="col-6 position-absolute">
-                    <h1 class="titleProfile text-white">Stéphane Swaenepoel<br />Mon CV Numérique</h1>
+                <div class="col-12 col-md-6 position-absolute colTextProfileResp">
+                    <h1 class="titleProfile text-white">Stéphane Swaenepoel<br/>Mon CV Numérique</h1>
                 </div>
             </div>
         </div>
 
         <!-- Bannière descriptive -->
-        <div class="container-fluid bg-dark text-center" style="height: 15vh">
-            <div class="row-2">
-                <div class="col pt-4">
-                    <span class="text-white fs-5">Futur Développeur Web et Web Mobile, j'aime pour autant avoir du style !<br />
+        <div class="container-fluid bg-dark p-4">
+            <div class="row align-items-center text-center">
+                <div class="col">
+                    <span class="text-white textBanner">Futur Développeur Web et Web Mobile, j'aime pour autant avoir du style !<br />
                         La curiosité, de découvrir toujours de nouvelles choses, est mon leitmotiv.
                     </span>
                 </div>
@@ -53,91 +53,74 @@
     <main>
 
         <!-- Partie des cartes avec mes diverses informations -->
-        <div class="container-fluid d-block">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row justify-content-center m-1">
 
                 <!-- Mes informations personnelles -->
-                <div class="col-md-6 col-xl-3 my-5">
-                    <div class="card myCard">
-                        <div class="flip-card-front">
-                            <img class="cardBack" src="assets/img/information.jpg" alt="Mes informations personnelles">
-                        </div>
-                        <div class="flip-card-back">
-                            <img class="card-img-top" src="assets/img/information.jpg"
-                                alt="Mes informations personnelles">
-                            <div class="card-body">
-                                <h5 class="card-title text-center"><strong>Mes informations personnelles</strong></h5>
-                                <ul>
-                                    <li class="mb-2">30 ans</li>
-                                    <li class="mb-2">48 Boulevard de Dury 80000 Amiens</li>
-                                    <li class="mb-2">0610501592</li>
-                                    <li>Permis B</li>
-                                </ul>
-                            </div>
+                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                    <div class="card MyCard">
+                        <img class="card-img-top" src="assets/img/information.jpg" alt="Mes informations personnelles">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><strong>Mes informations personnelles</strong></h5>
+                            <ul>
+                                <li class="mb-2">30 ans</li>
+                                <li class="mb-2">48 Boulevard de Dury 80000 Amiens</li>
+                                <li class="mb-2">+33 6 10 50 15 92</li>
+                                <li>Permis B</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
+
 
                 <!-- Mon profil -->
-                <div class="col-md-6 col-xl-3 my-5">
-                    <div class="card myCard">
-                        <div class="flip-card-front">
-                            <img class="cardBack" src="assets/img/profile.jpg" alt="Mon Profil">
-                        </div>
-                        <div class="flip-card-back">
-                            <img class="card-img-top" src="assets/img/profile.jpg" alt="Mon profil">
-                            <div class="card-body">
-                                <h5 class="card-title text-center"><strong>Mon profil</strong></h5>
-                                <ul>
-                                    <li class="mb-2">Travailleur, équipe ou solo</li>
-                                    <li class="mb-2">Autonome</li>
-                                    <li class="mb-2">Créatif</li>
-                                    <li class="mb-2">Organisé</li>
-                                    <li>Joviale</li>
-                                </ul>
-                            </div>
+                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                    <div class="card MyCard">
+                        <img class="card-img-top" src="assets/img/profile.jpg" alt="Mon Profil">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><strong>Mon profil</strong></h5>
+                            <ul>
+                                <li class="mb-2">Travailleur, équipe ou solo</li>
+                                <li class="mb-2">Autonome</li>
+                                <li class="mb-2">Créatif</li>
+                                <li class="mb-2">Organisé</li>
+                                <li>Joviale</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
+
 
                 <!-- Langues parlées -->
-                <div class="col-md-6 col-xl-3 my-5">
-                    <div class="card myCard">
-                        <div class="flip-card-front">
-                            <img class="cardBack" src="assets/img/langue.jpg" alt="Langues parlées">
-                        </div>
-                        <div class="flip-card-back">
-                            <img class="card-img-top" src="assets/img/langue.jpg" alt="Langues parlées">
-                            <div class="card-body">
-                                <h5 class="card-title text-center"><strong>Langues parlées</strong></h5>
-                                <ul>
-                                    <li class="mb-2">Français : Maternel</li>
-                                    <li>Anglais : CEF B1</li>
-                                </ul>
-                            </div>
+                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                    <div class="card MyCard">
+                        <img class="card-img-top" src="assets/img/langue.jpg" alt="Langues parlées">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><strong>Langues parlées</strong></h5>
+                            <ul>
+                                <li class="mb-2">Français : Maternel</li>
+                                <li>Anglais : CEF B1</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
 
+
                 <!-- Mes loisirs -->
-                <div class="col-md-6 col-xl-3 my-5">
-                    <div class="card myCard">
-                        <div class="flip-card-front">
-                            <img class="cardBack" src="assets/img/hobbys.jpg" alt="Mes loisirs">
-                        </div>
-                        <div class="flip-card-back">
-                            <img class="card-img-top" src="assets/img/hobbys.jpg" alt="Mes loisirs">
-                            <div class="card-body">
-                                <h5 class="card-title text-center"><strong>Mes loisirs</strong></h5>
-                                <ul>
-                                    <li class="mb-1">Guitare électrique (Metal)</li>
-                                    <li class="mb-1">Bricolage, rénovation</li>
-                                    <li class="mb-1">Jeux vidéos (MMORPG, Solo Aventure...)</li>
-                                    <li class="mb-1">Impression 3D (Ender 3 Pro)</li>
-                                    <li class="mb-1">Cuisine, Patisserie</li>
-                                    <li>Découvertes de bières</li>
-                                </ul>
-                            </div>
+                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                    <div class="card MyCard">
+                        <img class="card-img-top" src="assets/img/hobbys.jpg" alt="Mes loisirs">
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><strong>Mes loisirs</strong></h5>
+                            <ul>
+                                <li class="mb-1">Guitare électrique (Metal)</li>
+                                <li class="mb-1">Bricolage, rénovation</li>
+                                <li class="mb-1">Jeux vidéos (MMORPG, Solo Aventure...)</li>
+                                <li class="mb-1">Impression 3D (Ender 3 Pro)</li>
+                                <li class="mb-1">Cuisine, Patisserie</li>
+                                <li>Découvertes de bières</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -145,11 +128,11 @@
         </div>
 
         <!-- Partie des cartes avec mes études et mon parcours professionnel -->
-        <div class="container-fluid d-block">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row justify-content-center m-1">
         
                 <!-- Historique de formation -->
-                <div class="col-12 col-xl-4 my-5">
+                <div class="col-10 col-xl-4 my-5">
                     <div class="card myLgCard">
                         <img class="card-img-top" src="assets/img/formations.png" alt="Historique de formation">
                         <div class="card-body">
@@ -169,7 +152,7 @@
                 </div>
 
                 <!-- Parcours professionnel -->
-                <div class="col-12 col-xl-8 my-5">
+                <div class="col-10 col-xl-8 my-5">
                     <div class="card myLgCard">
                         <img class="card-img-top" src="assets/img/carriere.jpg" alt="Parcours professionnel">
                         <div class="card-body">
@@ -221,12 +204,12 @@
         </div>
 
         <!-- Partie avec mes compétences dans tous les domaines-->
-        <div class="container-fluid d-block">
-            <div class="row">
+        <div class="container-fluid">
+            <div class="row justify-content-center m-1">
 
                 <!-- Mes compétences WEB -->
-                <div class="col-md-6 col-xl-3 my-5">
-                    <div class="card myCompCard">
+                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                    <div class="card MyCard">
                         <img class="card-img-top" src="assets/img/compweb.jpg" alt="Mes compétences WEB">
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Mes compétences WEB</strong></h5>
@@ -311,8 +294,8 @@
                 </div>
 
                 <!-- Logiciels de suivi/gestion -->
-                <div class="col-md-6 col-xl-3 my-5">
-                    <div class="card myCompCard">
+                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                    <div class="card MyCard">
                         <img class="card-img-top" src="assets/img/compgestion.jpg" alt="Logiciels de Suivi/Gestion">
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Logiciels de suivi/Gestion</strong></h5>
@@ -372,8 +355,8 @@
                 </div>
 
                 <!-- Compétences électrique/électronique -->
-                <div class="col-md-6 col-xl-3 my-5">
-                    <div class="card myCompCard">
+                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                    <div class="card MyCard">
                         <img class="card-img-top" src="assets/img/compelect.jpg"
                             alt="Compétences électrique/électronique">
                         <div class="card-body">
@@ -439,8 +422,8 @@
                 </div>
 
                 <!-- Compétences électrique/électronique -->
-                <div class="col-md-6 col-xl-3 my-5">
-                    <div class="card myCompCard">
+                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                    <div class="card MyCard">
                         <img class="card-img-top" src="assets/img/compother.jpg" alt="Autres compétences">
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Autres compétences</strong></h5>
@@ -566,20 +549,22 @@
     <footer>
 
         <!-- Bannière avec les réseaux sociaux et signature-->
-        <div class="bannerNetwork bg-dark">
+        <div class="container-fluid bg-dark">
 
             <!-- Réseaux sociaux -->
-            <div class="row pb-2 pt-2 justify-content-center border-bottom border-white">
+            <div class="row justify-content-center border-bottom border-white p-3">
 
                 <!-- Instagram -->
                 <div class="col-2">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col ">
+                    <div class="row align-items-center">
+                        <div class="col-4">
                             <a href="https://www.instagram.com/zokkyen/?hl=fr" target="_blank">
                                 <img class="socialNetworkLogo" src="assets/img/ico/instagram.png" alt="Instagram"
                                     title="Mon Instagram">
                             </a>
-                            <span class="text-white socialNetworkText ps-3">Instagram</span>
+                        </div>
+                        <div class="col-8">                            
+                            <span class="text-white socialNetworkText">Instagram</span>
                         </div>
                     </div>
                 </div>
@@ -587,26 +572,30 @@
 
                 <!-- Github -->
                 <div class="col-2">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col ">
+                    <div class="row align-items-center">
+                        <div class="col-4">
                             <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
                                 <img class="socialNetworkLogo" src="assets/img/ico/linkedin.png" alt="LinkedIn"
                                     title="Mon LinkedIn">
                             </a>
-                            <span class="text-white socialNetworkText ps-3">LinkedIn</span>
+                        </div>
+                        <div class="col-8">                            
+                            <span class="text-white socialNetworkText">LinkedIn</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Github -->
                 <div class="col-2">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col ">
+                    <div class="row align-items-center">
+                        <div class="col-4">
                             <a href="https://github.com/Zokkyen" target="_blank">
                                 <img class="socialNetworkLogo" src="assets/img/ico/github.png" alt="Github"
                                     title="Mon Github">
                             </a>
-                            <span class="text-white socialNetworkText ps-3">Github</span>
+                        </div>
+                        <div class="col-8">                            
+                            <span class="text-white socialNetworkText">Github</span>
                         </div>
                     </div>
                 </div>
@@ -614,13 +603,15 @@
 
                 <!-- Mail Google -->
                 <div class="col-2">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col ">
+                    <div class="row align-items-center">
+                        <div class="col-4">
                             <a href="mailto:stephane.swaenepoel@gmail.com">
                                 <img class="socialNetworkLogo" src="assets/img/ico/google.png" alt="Mail"
                                     title="Mon Mail Google">
                             </a>
-                            <span class="text-white socialNetworkText ps-3">Mail</span>
+                        </div>
+                        <div class="col-8">                            
+                            <span class="text-white socialNetworkText">Mail</span>
                         </div>
                     </div>
                 </div>
@@ -628,30 +619,48 @@
 
                 <!-- Imprimer le CV -->
                 <div class="col-2">
-                    <div class="row align-items-center justify-content-center">
-                        <div class="col ">
+                    <div class="row align-items-center">
+                        <div class="col-4">
                             <i onclick="window.open('assets/files/cv.pdf')">
                                 <img class="socialNetworkLogo" src="assets/img/ico/printer.png" alt="Mon CV"
                                     title="Télécharger mon CV">
                             </i>
-                            <span class="text-white socialNetworkText ps-3">Mon CV</span>
+                        </div>
+                        <div class="col-8">                            
+                            <span class="text-white socialNetworkText">Mon CV</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <!-- Ma signature -->
-            <div class="row pt-2 align-items-center justify-content-center">
+            <!-- <div class="row justify-content-center align-items-center">
                 <div class="col-1">
                     <a href="#MyTop">
                         <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
                     </a>
                 </div>
-                <div class="col-2">
-                    <span class="text-white myAlias">Stéphane Swaenepoel</span><br />
+                <div class="col-1">                            
+                    <span class="text-white myAlias">Stéphane Swaenepoel<br/></span>
                     <span class="text-white myAlias">alias Zokkyen &copy;</span>
                 </div>
+            </div> -->
+
+            <div class="row justify-content-center">
+                <div class="col-1">
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                            <a href="#MyTop">
+                                <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
+                            </a>
+                        </div>
+                        <div class="col-6">
+                            <span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span>                        
+                        </div>                       
+                    </div>
+                </div>
             </div>
+
         </div>
 
     </footer>
