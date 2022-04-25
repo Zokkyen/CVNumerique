@@ -119,6 +119,19 @@ body{
     overflow: auto;
 }
 
+.myXlCard {
+    width: auto;
+    height: calc(200vh - 50vw);
+    box-shadow: 0 0 1em black;
+    overflow: auto;
+}
+
+@media (min-width: 992px) {
+    .myXlCard {
+        height: 100vh;
+    }    
+}
+
 a {
     text-decoration: none;
 }
