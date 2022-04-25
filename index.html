@@ -12,8 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>Le CV Numérique de Stéphane Swaenepoel</title>
-
+    <title>Développeur Web Stéphane Swaenepoel</title>
+    <meta name="description" content="Développeur Web et Web mobile à Amiens (Somme)" />
 </head>
 
 <body>
@@ -23,25 +23,41 @@
     <!-- HEADER -->
     <header>
 
+        <!-- Barre de navigation -->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark text-white p-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#MyTop">
+                    <img class="NavLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="#MyInfo">Toutes mes informations</a>
+                        <a class="nav-link" href="#SchoolJobs">Etudes et parcours Pro</a>
+                        <a class="nav-link" href="#MySkills">Mes compétences</a>
+                        <a class="nav-link" href="#MyPortfolio">Mon portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <!-- En tête du site avec titre et photo -->
         <div class="container-fluid">
             <div class="row align-items-center">  <!-- align-items-center text-center justify-content-center-->
-                <img class="mywallpaper img-fluid position-relative" src="assets/img/wallpaper.jpg" alt="Wallpaper de mise en page">
+                <span class="mywallpaper position-relative"></span>
                 <div class="col-12 col-md-6 position-absolute colPictProfileResp">
                     <img class="profile rounded-circle" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
                 </div>
                 <div class="col-12 col-md-6 position-absolute colTextProfileResp">
-                    <h1 class="titleProfile text-white"> <!--Stéphane Swaenepoel<br/>Mon CV Numérique-->
-                        <span>Stéphane Swaenepoel<br/></span>
-                        <span>Mon CV Numérique</span>
-                    </h1>
-
+                    <h1 class="titleProfile">Stéphane Swaenepoel</h1>
                 </div>
             </div>
         </div>
 
         <!-- Bannière descriptive -->
-        <div class="container-fluid bg-dark p-4">
+        <div class="container-fluid bg-dark p-3">
             <div class="row align-items-center text-center">
                 <div class="col">
                     <span class="text-white textBanner">Futur Développeur Web et Web Mobile, j'aime pour autant avoir du style !<br />
@@ -57,13 +73,13 @@
     <main>
 
         <!-- Partie des cartes avec mes diverses informations -->
-        <div class="container-fluid">
+        <div class="container" id="MyInfo">
             <div class="row justify-content-center m-1">
 
                 <!-- Mes informations personnelles -->
                 <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <img class="card-img-top" src="assets/img/information.jpg" alt="Mes informations personnelles">
+                        <span class="card-img-top OtherCards"></span>
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Mes informations personnelles</strong></h5>
                             <ul>
@@ -76,12 +92,10 @@
                     </div>
                 </div>
 
-
-
                 <!-- Mon profil -->
                 <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <img class="card-img-top" src="assets/img/profile.jpg" alt="Mon Profil">
+                        <span class="card-img-top OtherCards"></span>
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Mon profil</strong></h5>
                             <ul>
@@ -95,11 +109,10 @@
                     </div>
                 </div>
 
-
                 <!-- Langues parlées -->
                 <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <img class="card-img-top" src="assets/img/langue.jpg" alt="Langues parlées">
+                        <span class="card-img-top OtherCards"></span>
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Langues parlées</strong></h5>
                             <ul>
@@ -110,11 +123,10 @@
                     </div>
                 </div>
 
-
                 <!-- Mes loisirs -->
                 <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <img class="card-img-top" src="assets/img/hobbys.jpg" alt="Mes loisirs">
+                        <span class="card-img-top OtherCards"></span>
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Mes loisirs</strong></h5>
                             <ul>
@@ -132,13 +144,13 @@
         </div>
 
         <!-- Partie des cartes avec mes études et mon parcours professionnel -->
-        <div class="container-fluid">
+        <div class="container" id="SchoolJobs">
             <div class="row justify-content-center m-1">
         
                 <!-- Historique de formation -->
                 <div class="col-10 col-xl-4 my-5">
                     <div class="card myLgCard">
-                        <img class="card-img-top" src="assets/img/formations.png" alt="Historique de formation">
+                        <span class="card-img-top MiddleCard"></span>
                         <div class="card-body">
                             <h4 class="card-title text-center"><strong>Historique de formation</strong></h4>
                             <ul>
@@ -158,7 +170,7 @@
                 <!-- Parcours professionnel -->
                 <div class="col-10 col-xl-8 my-5">
                     <div class="card myLgCard">
-                        <img class="card-img-top" src="assets/img/carriere.jpg" alt="Parcours professionnel">
+                        <span class="card-img-top MiddleCard"></span>
                         <div class="card-body">
                             <h4 class="card-title text-center"><strong>Parcours professionnel</strong></h4>
                             <ul>
@@ -208,13 +220,13 @@
         </div>
 
         <!-- Partie avec mes compétences dans tous les domaines-->
-        <div class="container-fluid">
+        <div class="container" id="MySkills">
             <div class="row justify-content-center m-1">
 
                 <!-- Mes compétences WEB -->
                 <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <img class="card-img-top" src="assets/img/compweb.jpg" alt="Mes compétences WEB">
+                        <span class="card-img-top OtherCards"></span>
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Mes compétences WEB</strong></h5>
                             <div class="row my-2">
@@ -300,7 +312,7 @@
                 <!-- Logiciels de suivi/gestion -->
                 <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <img class="card-img-top" src="assets/img/compgestion.jpg" alt="Logiciels de Suivi/Gestion">
+                        <span class="card-img-top OtherCards"></span>
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Logiciels de suivi/Gestion</strong></h5>
                             <div class="row my-2">
@@ -361,8 +373,7 @@
                 <!-- Compétences électrique/électronique -->
                 <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <img class="card-img-top" src="assets/img/compelect.jpg"
-                            alt="Compétences électrique/électronique">
+                        <span class="card-img-top OtherCards"></span>
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Compétences électrique/électronique</strong></h5>
                             <div class="row my-2">
@@ -428,7 +439,7 @@
                 <!-- Compétences électrique/électronique -->
                 <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <img class="card-img-top" src="assets/img/compother.jpg" alt="Autres compétences">
+                        <span class="card-img-top OtherCards"></span>
                         <div class="card-body">
                             <h5 class="card-title text-center"><strong>Autres compétences</strong></h5>
                             <div class="row my-2">
@@ -501,51 +512,24 @@
             </div>
         </div>
 
-        <!-- Contactez-moi ! -->
-        <div class="container-fluid p-0">
-            <div class="row align-items-center justify-content-center">
-                <img class="BackofForm" src="assets/img/contact.jpg" alt="Background du formulaire">
-                <div class="col MyForm position-absolute">
-                    <h4 class="text-primary">Besoin d'information ?<br />N'hésitez pas à me contacter.</h4>
-                    <form action="/action_page.php">
-                        <label for="fname">Nom & prénom</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+        <!-- Portfolio -->
+        <div class="container" id="MyPortfolio">
+            <div class="row align-items-center justify-content-center ">
+                <span class="BackofForm"></span>
 
-                        <label for="sujet">Sujet</label>
-                        <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
 
-                        <label for="emailAddress">Email</label>
-                        <input id="emailAddress" type="email" name="email" placeholder="Votre email">
 
-                        <label for="subject">Message</label>
-                        <textarea id="subject" name="subject" placeholder="Votre message"
-                            style="height:150px"></textarea>
 
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">Envoyer</button>
-                    </form>
-                </div>
+
+
+
+
+
+
             </div>
         </div>
 
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title text-primary" id="exampleModalLabel">Merci pour votre message.</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">Une réponse vous sera apportée par mes soins dès que possible.<br />À très
-                        bientôt !
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary bg-primary"
-                            data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
 
     </main>
 
@@ -553,7 +537,7 @@
     <footer>
 
         <!-- Bannière avec les réseaux sociaux et signature-->
-        <div class="container-fluid bg-dark">
+        <div class="container bg-dark">
 
             <!-- Réseaux sociaux -->
             <div class="row justify-content-center border-bottom border-white p-3">
@@ -650,20 +634,33 @@
                 </div>
             </div> -->
 
-            <div class="row justify-content-center">
+            <div class="row justify-content-center align-items-center">
+                <!-- <div class="col-1">
+                    <div class="row">
+                        <div class="col"> -->
+
+                <div class="col-1"> 
+                    <a href="#MyTop">
+                        <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
+                    </a>  
+                </div> 
                 <div class="col-1">
-                    <div class="row align-items-center">
-                        <div class="col-6">
-                            <a href="#MyTop">
-                                <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
-                            </a>
-                        </div>
-                        <div class="col-6 text-white myAlias">
+                    <span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span>    
+                </div>                    
+
+                        <!-- </div> -->
+
+
+                        <!-- <div class="col">
+
+                        </div> -->
+
+                        <!-- <div class="col-6 text-white myAlias">
                             <span>Stéphane Swaenepoel<br/></span>                        
-                            <span>alias Zokkyen &copy;</span>                                 
-                        </div>                       
+                            <span>alias Zokkyen &copy;</span>  -->                                
+                        <!-- </div>                       
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
