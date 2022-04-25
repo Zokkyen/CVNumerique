@@ -99,7 +99,7 @@ body{
 
 .MyCard {
     width: auto;
-    height: 70vh;
+    height: auto;
     box-shadow: 0 0 1em black;
 }
 
@@ -114,19 +114,22 @@ body{
 
 .myLgCard {
     width: auto;
-    height: 100vh;
+    height: auto;
     box-shadow: 0 0 1em black;
     overflow: auto;
 }
 
-a {
-    text-decoration: none;
+@media (min-width: 1200px) {
+    .MyCard {
+        height: 65vh;
+    }
+    .myLgCard {
+        height: 100vh;
+    }    
 }
 
-@media (min-width: 1400px) {
-    .myLgCard {
-        overflow: hidden;
-    }
+a {
+    text-decoration: none;
 }
 
 .myprogbar {
