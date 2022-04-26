@@ -96,7 +96,7 @@
 .MyCard {
     width: auto;
     height: auto;
-    box-shadow: 0 0 1px black;
+    box-shadow: 0 0 10px black;
 }
 
 .card-img-top {
@@ -111,7 +111,7 @@
 .myLgCard {
     width: auto;
     height: auto;
-    box-shadow: 0 0 1px black;
+    box-shadow: 0 0 10px black;
     /*overflow: auto;*/
 }
 
@@ -122,8 +122,8 @@
 }*/
 
 .BgCards {
-    background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%); 
-    background-blend-mode: normal, multiply;
+    background-image: linear-gradient(to left, #BDBBBE 0%, #9D9EA3 100%), radial-gradient(88% 271%, rgba(255, 255, 255, 0.25) 0%, rgba(254, 254, 254, 0.25) 1%, rgba(0, 0, 0, 0.25) 100%), radial-gradient(50% 100%, rgba(255, 255, 255, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%);
+    background-blend-mode: normal, lighten, soft-light;
 }
 
 
