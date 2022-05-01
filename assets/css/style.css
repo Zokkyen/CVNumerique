@@ -1,4 +1,6 @@
 *{
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif !important;
 }
 
@@ -13,14 +15,16 @@
     font-size: 1.0rem;
 }
 
-.mywallpaper{
-    height: 40vh;
+.myWallpaper{
+    height: 25vh;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 60px;
+    padding: 0;
 }
 
 .profilePict{
@@ -32,34 +36,24 @@
     font-size: 1.5rem;
 }
 
-.colPictProfileResp {
-    text-align: center;
-}
-.colTextProfileResp {
-    margin-top: 15rem;
-    text-align: center;
+.containerBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
 }
 
 .textBanner {
     font-size: 0.8rem;
-    height: 20vh;
 }
 
 @media (min-width: 576px) {
-    .mywallpaper{
+    .myWallpaper{
         flex-direction: row;
     }
 }
 
 @media (min-width: 768px) {
-    .colPictProfileResp {
-        margin-top: 4rem;
-        margin-left: 5%;    
-    }
-    .colTextProfileResp {
-        margin-top: 5rem;
-        margin-left: 35%;
-    }
     .titleProfile {
         font-size: 2.0rem;
     }
@@ -69,38 +63,21 @@
 }
 
 @media (min-width: 992px) {
-    .colPictProfileResp {
-        margin-bottom: 0%;
-        margin-left: 5%;      
-    }
-    .colTextProfileResp {
-        margin-left: 40%;
-        text-align: start;
-    }
     .titleProfile {
         font-size: 2.5rem;
     }
     .textBanner {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }    
 }
 
 @media (min-width: 1200px) {
-    .colPictProfileResp {
-        margin-left: 30%;        
-        text-align: start;
-    }
-    .colTextProfileResp {
-        margin-top: 5rem;
-        margin-left: 45%;
-        text-align: start;
-    }
     .titleProfile {
         font-size: 3.0rem;
     }
     .profilePict{
-        width: 20vh;
-        height: 20vh;
+        width: 18vh;
+        height: 18vh;
     }  
 }
 
@@ -116,6 +93,7 @@
     background-clip: border-box;
     border-radius: 0.25rem;
     box-shadow: 0 0 5px black;
+    height: auto;
 }
 
 .card-img-top {
@@ -126,33 +104,6 @@
 
 .card-title {
     margin-bottom: 0rem !important;
-}
-
-@media (min-width: 768px) {
-    .myPersoCards {
-        height: 35vh;
-    }
-    .myCompCards {
-        height: 38vh;
-    }   
-}
-
-@media (min-width: 1200px) {
-    .myPersoCards {
-        height: 35vh;
-    }  
-    .myLgCards {
-        height: 77vh;
-    }    
-}
-
-@media (min-width: 1400px) {
-    .myPersoCards {
-        height: 35vh;
-    }
-    .myLgCards {
-        height: 72vh;
-    }    
 }
 
 a {
@@ -328,7 +279,6 @@ li#securedNumber:hover span#trueNumber {
     .socialNetworkText {
         font-size: 1.2rem;
         display: contents;
-
     }
     .containSocial {
         flex-direction: row;

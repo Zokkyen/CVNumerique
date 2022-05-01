@@ -26,45 +26,37 @@
 
         <!-- Barre de navigation -->
         <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark text-white p-0">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#MyTop">
-                    <img class="NavLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#MyInfo">Toutes mes informations</a>
-                        <a class="nav-link" href="#SchoolJobs">Etudes et parcours Pro</a>
-                        <a class="nav-link" href="#MySkills">Mes compétences</a>
-                        <a class="nav-link" href="#MyPortfolio">Mon portfolio</a>
-                    </div>
+            <a class="navbar-brand" href="#MyTop">
+                <img class="NavLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="#MyInfo">Toutes mes informations</a>
+                    <a class="nav-link" href="#SchoolJobs">Etudes et parcours Pro</a>
+                    <a class="nav-link" href="#MySkills">Mes compétences</a>
+                    <a class="nav-link" href="#MyPortfolio">Mon portfolio</a>
                 </div>
             </div>
         </nav>
 
         <!-- Presentation Photo + Nom -->
-        <div class="container-fluid p-0">
-            <div class="mywallpaper">
-                <div>
-                    <img class="profilePict rounded-circle p-2" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
-                </div>
-                <div>
-                    <h1 class="titleProfile p-2"><strong>Stéphane Swaenepoel</strong></h1>
-                </div>
+        <div class="myWallpaper">
+            <div>
+                <img class="profilePict rounded-circle p-2" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
+            </div>
+            <div>
+                <h1 class="titleProfile p-2"><strong>Stéphane Swaenepoel</strong></h1>
             </div>
         </div>
 
         <!-- Bannière descriptive -->
-        <div class="container-fluid bg-dark p-3">
-            <div class="row align-items-center text-center">
-                <div class="col">
-                    <span class="text-white textBanner">Futur Développeur Web et Web Mobile, j'aime pour autant avoir du style !<br />
-                        La curiosité, de découvrir toujours de nouvelles choses, est mon leitmotiv.
-                    </span>
-                </div>
-            </div>
+        <div class="containerBanner bg-dark">
+            <article class="text-white textBanner">Futur Développeur Web et Web Mobile, j'aime pour autant avoir du style !<br />
+                La curiosité, de découvrir toujours de nouvelles choses, est mon leitmotiv.
+            </article>
         </div>
 
     </header>
@@ -78,7 +70,7 @@
 
                 <!-- Mes informations personnelles -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">               
-                    <div class="MyCard myPersoCards">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                                 <h3 class="card-title text-dark fs-5"><strong>Mes informations</strong></h3>
                         </div>    
@@ -98,7 +90,7 @@
 
                 <!-- Mon profil -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="MyCard myPersoCards">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Mon profil</strong></h3>
                         </div> 
@@ -116,7 +108,7 @@
 
                 <!-- Langues parlées -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="MyCard myPersoCards">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Langues parlées</strong></h3>
                         </div> 
@@ -131,7 +123,7 @@
 
                 <!-- Mes loisirs -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="MyCard myPersoCards">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Mes loisirs</strong></h3>
                         </div> 
@@ -156,7 +148,7 @@
         
                 <!-- Historique de formation -->
                 <div class="col-10 col-sm-10 col-md-10 col-xl-4 my-5">
-                    <div class="MyCard myLgCard">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Historique de formation</strong></h3>
                         </div> 
@@ -177,7 +169,7 @@
 
                 <!-- Parcours professionnel -->
                 <div class="col-10 col-sm-10 col-md-10 col-xl-8 my-5">
-                    <div class="MyCard myLgCard">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Parcours professionnel</strong></h3>
                         </div> 
@@ -234,7 +226,7 @@
 
                 <!-- Mes compétences WEB -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="MyCard myCompCard">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Mes compétences WEB</strong></h3>
                         </div> 
@@ -321,7 +313,7 @@
 
                 <!-- Logiciels de suivi/gestion -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="MyCard myCompCard">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Logiciels de suivi/Gestion</strong></h3>
                         </div> 
@@ -383,7 +375,7 @@
 
                 <!-- Compétences électrique/électronique -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card myCompCard">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Compétences électronique</strong></h3>
                         </div> 
@@ -450,7 +442,7 @@
 
                 <!-- Compétences électrique/électronique -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card myCompCard">
+                    <div class="MyCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Autres compétences</strong></h3>
                         </div> 
