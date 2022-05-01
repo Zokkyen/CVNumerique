@@ -135,25 +135,55 @@ li#securedNumber:hover span#trueNumber {
     display: inline;
 }
 
-/* Partie Portfolio */
+/* Partie Carousel */
 
-.BackofForm {
+.carouselContent {
+    height: 50vh;
+}
+
+.carousel-item {
+   /* display: none;
+    float: none !important;
+    width: 100%;
+    margin-right: -100%;*/
+}
+
+.carouselCard {
+    /*position: relative;*/
+    display: flex;
+    flex-direction: column;
+    /*word-wrap: break-word;
+    background-clip: border-box;*/
+    /*height: 40vh;
+    width: 60vw;*/
+    height: 50vh;
+    width: auto;
+}
+
+.PortFolioPicture {
+    width: 100%;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+/*.BackofForm {
     width: 100%;
     height: auto;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
     z-index: auto;
-}  
+}  */
 
-.MyPortFolioContener {
+/*.MyPortFolioContener {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+}*/
 
-.MyPortfolioCard {
+/*.MyPortfolioCard {
     width: 70vw;
     height: auto;
     display: flex;
@@ -161,17 +191,10 @@ li#securedNumber:hover span#trueNumber {
     flex-wrap: wrap;
     text-align: center;
     border-radius: 5px 5px 5px 5px;
-}
-
-.PortFolioPicture {
-    width: 100%;
-    height: 45vw;
-    object-fit: cover;
-    border-radius: 5px 5px 0px 0px;
-}
+}*/
 
 @media (min-width: 576px) {
-    .MyPortfolioCard {
+    /*.MyPortfolioCard {
         flex-direction: row; 
         flex-wrap: nowrap;
         width: 60vw;
@@ -182,22 +205,25 @@ li#securedNumber:hover span#trueNumber {
         width: 30vw;
         height: 40vh;
         border-radius: 5px 0px 0px 5px;
-    }
+    }*/
 }
 
 @media (min-width: 768px) {
-    .MyPortfolioCard {
+    .carouselCard {
+        flex-direction: row;
+    }
+    /*.MyPortfolioCard {
         width: 70vw;
         height: 35vh;
     }
     .PortFolioPicture {
         width: 35vw;
         height: 35vh;
-    }
+    }*/
 }
 
 @media (min-width: 992px) {
-    .MyPortFolioContener {
+    /*.MyPortFolioContener {
         flex-direction: row;
     }
     .MyPortfolioCard {
@@ -207,22 +233,22 @@ li#securedNumber:hover span#trueNumber {
     .PortFolioPicture {
         width: 40vh;
         height: 40vh;
-    }
+    }*/
 }
 
 @media (min-width: 1200px) {
-    .MyPortfolioCard {
+    /*.MyPortfolioCard {
         width: 50vh;
         height: 35vh;
     }
     .PortFolioPicture {
         width: 25vh;
         height: 35vh;
-    }
+    }*/
 }
 
 @media (min-width: 1400px) {
-    .MyPortfolioCard {
+    /*.MyPortfolioCard {
         width: 26vw;
         height: 40vh;
     }
@@ -233,7 +259,7 @@ li#securedNumber:hover span#trueNumber {
     .FolioPadding {
         padding: 0%;
         margin: 0%;
-    }
+    }*/
 } 
 
 /* Partie Footer */
