@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/include.js"></script>
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Electrolize:300,400,600,700&amp;lang=en" /> -->
+    <link rel="shortcut icon" href="assets/img/logoBourse32px.ico" type="image/x-icon">
+    <meta name="description" content="Le site de la bourse technologique de la mairie d'Amiens vous accueil afin d'organiser la première édition de cette bourse. 
+    L'ensemble des informations sur le déroulement y sont indiquées et vous pourrez vous inscrire pour y participer.">
+    <title>Bourse Tech de l'école LaManu</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <!--  -->
+
+    <header>
+        <div class="header" w3-include-html="header.html">
+            <script>
+                includeHTML();
+            </script>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- <div>
+            <p><strong>Consignes :</strong></p>
+            <p>
+                les emplacements sont limités à 5 mètres maximum
+                <br>
+                Les exposants doivent prendre possession de leur emplacement avant 8h45
+                <br>
+                Pas de vente de pr
+            </p>
+            <p>
+
+            </p>
+        </div> -->
+        <div class="blockZoning">
+            <div class="blockZoningImg">
+                <img src="assets/img/zoning.jpg">
+            </div>
+            <div class="blockZoningTxt">
+                <fieldset class="zoningFieldset">
+                    <legend class="blockZoningTitle ">Options de l'emplacement</legend>
+                    <div class="zoningSelect txtAlignCenter">
+                        <label for="typeSeller">Vous êtes : </label>
+                        <input type="radio" name="typeSeller" id="pro">Professionnel
+                        <input type="radio" name="typeSeller" id="amateur">Particulier
+                    </div>
+                    <div class="blockRow">
+                        <div class="blockColumn2">
+                            <label class="height60px txtAlignRight" for="meter">Nombre de mètres souhaités : </label>
+                            <label class="height30px txtAlignRight" for="situation">Localisation souhaitée : </label>
+                        </div>
+                        <div class="blockColumn">
+                            <div class="height60px">
+                                <select class="select100px" name="meter" id="meter">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                            <div class="height30px">
+                                <select class="select100px" name="zoning" id="zoning">
+                                    <option>Nord</option>
+                                    <option>Ouest</option>
+                                    <option>Centre</option>
+                                    <option>Est</option>
+                                    <option>Sud</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="zoningValid">
+                        <button class="buttonValid" onclick="document.location.href='connect.html';">Enregistrer ma
+                            demande</button>
+                    </div>
+                </fieldset>
+                <p>
+                    Pensez à consulter les <a href="cgu.html" target="_blank">CGU</a>
+                </p>
+            </div>
+        </div>
+    </main>
+    <!-- </div> -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="copyright">&#169;LOTHISTE</div>
+        <div class="contact"><a href="contact.html">Nous contacter</a></div>
+        <div class="cgu"><a href="cgu.html">CGU</a></div>
+        <div class="help"><a href="help.html">Aide</a></div>
+    </footer>
+</body>
+
+</html>

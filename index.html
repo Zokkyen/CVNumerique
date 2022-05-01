@@ -13,7 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <title>Développeur Web Stéphane Swaenepoel</title>
-    <meta name="description" content="Développeur Web et Web mobile à Amiens (Somme)" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png"/>
+    <meta name="description" content="Développeur Web et Web mobile à Amiens (Somme)"/>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
     <header>
 
         <!-- Barre de navigation -->
-        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark text-white p-0">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark text-white p-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#MyTop">
                     <img class="NavLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
@@ -45,7 +46,7 @@
 
         <!-- En tête du site avec titre et photo -->
         <div class="container-fluid">
-            <div class="row align-items-center">  <!-- align-items-center text-center justify-content-center-->
+            <div class="row align-items-center">
                 <span class="mywallpaper position-relative"></span>
                 <div class="col-12 col-md-6 position-absolute colPictProfileResp">
                     <img class="profile rounded-circle" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
@@ -77,11 +78,12 @@
             <div class="row justify-content-center">
 
                 <!-- Mes informations personnelles -->
-                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">               
                     <div class="card MyCard">
-                        <span class="card-img-top BgCards"></span>
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                                <h3 class="card-title text-dark fs-5"><strong>Mes informations</strong></h3>
+                        </div>    
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Mes informations personnelles</strong></h5>
                             <ul>
                                 <li class="mb-2">30 ans</li>
                                 <li class="mb-2">80000 Amiens</li>
@@ -93,11 +95,12 @@
                 </div>
 
                 <!-- Mon profil -->
-                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <span class="card-img-top BgCards"></span>
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Mon profil</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Mon profil</strong></h5>
                             <ul>
                                 <li class="mb-2">Travailleur, équipe ou solo</li>
                                 <li class="mb-2">Autonome</li>
@@ -110,11 +113,12 @@
                 </div>
 
                 <!-- Langues parlées -->
-                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <span class="card-img-top BgCards"></span>
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Langues parlées</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Langues parlées</strong></h5>
                             <ul>
                                 <li class="mb-2">Français : Maternel</li>
                                 <li>Anglais : CEF B1</li>
@@ -124,11 +128,12 @@
                 </div>
 
                 <!-- Mes loisirs -->
-                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
+                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
                     <div class="card MyCard">
-                        <span class="card-img-top BgCards"></span>
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Mes loisirs</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Mes loisirs</strong></h5>
                             <ul>
                                 <li class="mb-1">Guitare électrique (Metal)</li>
                                 <li class="mb-1">Bricolage, rénovation</li>
@@ -145,14 +150,15 @@
 
         <!-- Partie des cartes avec mes études et mon parcours professionnel -->
         <div class="container" id="SchoolJobs">
-            <div class="row justify-content-center ">
+            <div class="row justify-content-center">
         
                 <!-- Historique de formation -->
-                <div class="col-10 col-xl-4 my-5">
+                <div class="col-10 col-sm-10 col-md-10 col-xl-4 my-5">
                     <div class="card myLgCard">
-                        <span class="card-img-top BgCards"></span>
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Historique de formation</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h4 class="card-title text-center"><strong>Historique de formation</strong></h4>
                             <ul>
                                 <li class="m-3">Formation Développeur Web et Web Mobile (RNCP Niveau III) à partir de
                                     Mars 2022 à La MANU (AMIENS)</li>
@@ -168,11 +174,12 @@
                 </div>
 
                 <!-- Parcours professionnel -->
-                <div class="col-10 col-xl-8 my-5">
+                <div class="col-10 col-sm-10 col-md-10 col-xl-8 my-5">
                     <div class="card myLgCard">
-                        <span class="card-img-top BgCards"></span>
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Parcours professionnel</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h4 class="card-title text-center"><strong>Parcours professionnel</strong></h4>
                             <ul>
                                 <li class="m-3">
                                     <h5>Chargés d'études chez Innovateam (92) de Novembre à Décembre 2020</h5>
@@ -224,11 +231,12 @@
             <div class="row justify-content-center">
 
                 <!-- Mes compétences WEB -->
-                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
-                        <span class="card-img-top BgCards"></span>
+                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
+                    <div class="card myCompCard">
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Mes compétences WEB</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Mes compétences WEB</strong></h5>
                             <div class="row my-2">
                                 <div class="col-2">
                                     <img class="iconeCompt" src="assets/img/ico/html-5.png" alt="HTML 5" title="HTML 5">
@@ -310,11 +318,12 @@
                 </div>
 
                 <!-- Logiciels de suivi/gestion -->
-                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
-                        <span class="card-img-top BgCards"></span>
+                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
+                    <div class="card myCompCard">
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Logiciels de suivi/Gestion</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Logiciels de suivi/Gestion</strong></h5>
                             <div class="row my-2">
                                 <div class="col-2">
                                     <img class="iconeCompt" src="assets/img/ico/github.png" alt="Github" title="Github">
@@ -371,11 +380,12 @@
                 </div>
 
                 <!-- Compétences électrique/électronique -->
-                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
-                        <span class="card-img-top BgCards"></span>
+                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
+                    <div class="card myCompCard">
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Compétences électronique</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Compétences électrique/électronique</strong></h5>
                             <div class="row my-2">
                                 <div class="col-2">
                                     <img class="iconeCompt" src="assets/img/ico/langagec.png" alt="Langage C"
@@ -437,11 +447,12 @@
                 </div>
 
                 <!-- Compétences électrique/électronique -->
-                <div class="col-10 col-sm-8 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
-                        <span class="card-img-top BgCards"></span>
+                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
+                    <div class="card myCompCard">
+                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
+                            <h3 class="card-title text-dark fs-5"><strong>Autres compétences</strong></h3>
+                        </div> 
                         <div class="card-body">
-                            <h5 class="card-title text-center"><strong>Autres compétences</strong></h5>
                             <div class="row my-2">
                                 <div class="col-2">
                                     <img class="iconeCompt" src="assets/img/ico/photoshop.png" alt="Adobe Photoshop"
@@ -513,27 +524,61 @@
         </div>
 
         <!-- Portfolio -->
-        <div class="container-fluid" id="MyPortfolio">
-            <div class="row">
-                <div class="BackofForm text-white text-center">
-                    <h2 class="mt-4 fs-1" >Portfolio</h2>
+        <div class="container-fluid p-0" id="MyPortfolio">
+            <div class="d-flex flex-column BackofForm text-black justify-content-center align-items-center">
+                <div class="p-3">
+                    <h2 class="fs-1"><strong>PORTFOLIO</strong></h2>       
                 </div>
+                <div class="MyPortFolioContener">
+                    
+                    <!-- Projet des cards -->
+                    <div class="p-5">
+                        <div class="card MyPortfolioCard bg-dark align-items-center">
+                            <div class="">
+                                <a href="assets/projects/cards/index.html" target="_blank">
+                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectCards.jpg" alt="Les cards">
+                                </a>
+                            </div>
+                            <div class="card-body text-white">
+                                <h4 class="fs-5 border border-white">Projet des CARDS</h4>
+                                <p> Dans ce projet, on a du utiliser simplement les cards en CSS avec des flexbox.</p>
+                            </div>
+                        </div>
+                    </div>
 
-                <div class="col-4 mt-4 position-absolute">
-                    <div class="card MyCard">
+                    <!-- Projet de la bourse HighTech -->
+                    <div class="p-5">
+                        <div class="card MyPortfolioCard bg-dark align-items-center">
+                            <div class="">
+                                <a href="assets/projects/site/index.html" target="_blank">
+                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Création d'un site">
+                                </a>
+                            </div>
+                            <div class="card-body text-white">
+                                <h4 class="fs-5 border border-white">Projet d'un site de Bourse High Tech</h4>
+                                <p> Dans ce projet de trois personnes, on a conceptualisé un site permettant d'avoir les renseignements d'une bourse fictive sur Amiens avec un espace exposant.</p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Projet de la responsivité d'un site -->
+                    <div class="p-5">
+                        <div class="card MyPortfolioCard bg-dark align-items-center">
+                            <div class="">
+                                <a href="assets/projects/respons/index.html" target="_blank">
+                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Projet Responsivité">
+                                </a>
+                            </div>
+                            <div class="card-body text-white">
+                                <h4 class="fs-5 border border-white">Projet sur la responsivité</h4>
+                                <p> Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="col-4 position-absolute">
-                    <div class="card MyCard">
-
-                    </div>  
-                </div>
             </div>
         </div>
-
-
 
     </main>
 
@@ -541,7 +586,7 @@
     <footer>
 
         <!-- Bannière avec les réseaux sociaux et signature-->
-        <div class="container-fluid bg-dark">  <!--fixed-bottom-->
+        <div class="container-fluid bg-dark">
 
             <!-- Réseaux sociaux -->
             <div class="row justify-content-center border-bottom border-white p-3">
@@ -624,51 +669,19 @@
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Ma signature -->
-
-            
-            <!-- <div class="row justify-content-center align-items-center">
-                <div class="col-1">
-                    <a href="#MyTop">
-                        <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
-                    </a>
-                </div>
-                <div class="col-1">                            
-                    <span class="text-white myAlias">Stéphane Swaenepoel<br/></span>
-                    <span class="text-white myAlias">alias Zokkyen &copy;</span>
-                </div>
-            </div> -->
-
-            <div class="row justify-content-center align-items-center">
-                <!-- <div class="col-1">
-                    <div class="row">
-                        <div class="col"> -->
-
-                <div class="col-1"> 
+        <div class="container-fluid bg-dark">
+            <div class="d-flex flex-row justify-content-center align-items-center">
+                <div class=""> 
                     <a href="#MyTop">
                         <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
                     </a>  
                 </div> 
-                <div class="col-1">
+                <div class="">
                     <span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span>    
                 </div>                    
-
-                        <!-- </div> -->
-
-
-                        <!-- <div class="col">
-
-                        </div> -->
-
-                        <!-- <div class="col-6 text-white myAlias">
-                            <span>Stéphane Swaenepoel<br/></span>                        
-                            <span>alias Zokkyen &copy;</span>  -->                                
-                        <!-- </div>                       
-                    </div>
-                </div> -->
             </div>
-
         </div>
 
     </footer>

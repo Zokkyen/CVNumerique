@@ -1,0 +1,411 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.titlePage {
+    height: 90vh;
+    background-image: url(/assests/img/Image_manu/Manu_campus.jpg);
+    background-size: 100%;
+    background-position-y: center;
+
+}
+
+.navbtn {
+    display: flex;
+    gap: 2rem;
+    flex: 2;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.navimg {
+    flex: 0.5;
+    padding:10px;
+}
+
+.navexpo {
+    flex: 0.5;
+    margin-right: 2rem;
+    text-align: end;
+}
+
+.butonexpo {
+    color: #E2001A;
+    border: none;
+    border-radius: 10px;
+    height: 36px;
+    padding: 10px;
+    font-size: 14px;
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.466);
+}
+
+.navimg img {
+    height: 70px;
+    width: 80px;
+}
+
+h5 {
+    color: white;
+    font-size: 24px;
+    margin-left: 44px;
+    margin-right: 117px;
+}
+
+#subtitle {
+    font-size: 14px;
+    color: white;
+    margin-left: 44px;
+    margin-right: 117px;
+    margin-top: -30px;
+}
+
+.mainInscription {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.mainBox {
+    display: flex;
+    height: 620px;
+}
+
+.redBox {
+    display: flex;
+    background-color: #E2001A;
+    width: 500px;
+    border-radius: 10px;
+    padding-left: 30px;
+    flex-direction: column;
+}
+
+.redBox img {
+    filter: brightness(0) invert(1)
+}
+
+.whiteBox {
+    width: 620px;
+    background-color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.434);
+    border-radius: 16px;
+}
+
+
+.iconListInscription img {
+    height: 20px;
+    width: 20px;
+    border-radius: 16px;
+}
+
+.coordonnees {
+    display: flex;
+    flex-direction: column;
+    margin-top: 79px;
+    color: white;
+}
+
+.coordonnees p {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.first {
+    display: flex;
+    position: relative;
+    left: 44px;
+}
+
+.second {
+    display: flex;
+    position: relative;
+    left: 44px;
+}
+
+.third {
+    display: flex;
+    position: relative;
+    left: 44px;
+}
+
+.icon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-top: 20%;
+}
+
+.icon img {
+    height: 24px;
+    width: 24px;
+}
+
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    height: 20vh;
+}
+
+.zoneform {
+
+    flex: 40%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin: 20px;
+
+}
+
+.files {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+
+}
+
+.buttonfiles {
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.466);
+    max-width: 30%;
+}
+.sendBtn {
+    padding: 8px;
+    width: 140px;
+    border-radius: 10px;
+    border: none;
+    background-color: #E2001A;
+    color: white;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.466);
+    align-self: flex-end;
+    margin-right: 1.5vw;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidedOnDesktop {
+    display: none;
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .contactZone {
+        font-size: 1.8rem;
+    }
+
+    .iconListInscription img {
+        width: 40px;
+        height: 40px;
+        margin-right: 1vh;
+    }
+
+    .zoneform {
+        font-size: 1.8rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        height: unset;
+        width: unset;
+    }
+
+    body {
+        width: 100%;
+        height: unset;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: none;
+    }
+
+    .mainInscription {
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+    }
+
+    .mainBox {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .redBox {
+        z-index: 2;
+        height: 10vh;
+        width: 90%;
+        padding: 0;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.466);
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .redbox p {
+        display: none;
+    }
+
+    .whiteBox {
+        position: relative;
+        top: -2vh;
+        z-index: 1;
+        height: 110vh;
+        width: 90%;
+        border-radius: 10px;
+    }
+
+    h5 {
+        margin: 0;
+        font-size: 5vw;
+    }
+
+    #subtitle {
+        margin: 0;
+    }
+
+    .coordonnees {
+        margin: 0;
+        display: none;
+    }
+
+    .icon {
+        top: unset;
+        display: none;
+    }
+
+    form {
+        padding-top: 2vh;
+        width: 90%;
+        height: 120vh;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .zoneform {
+        margin: 0.8vh;
+    }
+
+    .files {
+        text-align: center;
+        margin: 0;
+        align-items: center;
+    }
+    .files > p {
+        padding-bottom: 3vh;
+    }
+    .hidedOnDesktop {
+        display: unset;
+    }
+
+    .sendBtn {
+        position: relative;
+        padding: 8px;
+        border-radius: 10px;
+        border: none;
+        background-color: #E2001A;
+        color: white;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.466);
+        width: 16vh;
+        height: 4vh;
+        font-size: 1rem;
+    }
+    .buttonfiles {
+        align-self: flex-start;
+        max-width: unset;
+        width: 18vh;
+        height: 4vh;
+        font-size: 1.0rem;
+    }
+    .commonBtn {
+        margin: 0vh;
+    }
+
+    .contactZone {
+        position: relative;
+        top: -35vh;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        background-color: #E2001A;
+        border-radius: 10px;
+        height: 70%;
+        align-items: center;
+        justify-content: space-evenly;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.466);      
+    }
+
+    .contactZone > p {
+        margin-top: 10vh;
+    }
+
+    .first, .second, .third {
+        left: unset;
+        width: 90%;
+        display: flex;
+        gap: 2vw;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    .first p, .second p, .third p {
+        font-size: 3.5vw;
+    }
+
+    .iconListInscription img {
+        width: 30px;
+        filter: brightness(0) invert(1);
+    } 
+
+    .iconSocial {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .iconSocial img {
+        width: 8vw;
+        filter: brightness(0) invert(1);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px){
+    #subtitle {
+        font-size: 1.2rem;
+    }
+
+    .information{
+        font-size: 1.2rem;
+    }
+
+    .buttonfiles {
+        font-size: 1.2rem;
+    }
+}

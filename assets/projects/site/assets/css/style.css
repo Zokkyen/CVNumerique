@@ -1,0 +1,666 @@
+@import url('//fonts.googleapis.com/css?family=Electrolize:300,400,600,700&amp;lang=en');
+
+
+html {
+    font: 1.2em "Fira Sans", Electrolize;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    background-color: #B5DCC9;
+}
+
+
+/* HEADER */
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100px;
+    flex: 1;
+    align-items: center;
+    border: 2px solid #6D90C6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100px;
+    flex: 1;
+    align-items: center;
+    border: 2px solid #6D90C6;
+    border-radius: 10px;
+    margin-bottom: 20px;
+} */
+
+.logo {
+    width: 10%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.logoSite {
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.titleSite {
+    width: 80%;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.eventDate {
+    width: 30%;
+}
+
+.connexion {
+    width: 10%;
+}
+
+.button {
+    height: 40px;
+    width: 120px;
+    border-radius: 10px;
+    background-color: #6D90C6;
+}
+
+.buttonValid {
+    font-size: large;
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #6D90C6;
+}
+
+/* MAIN */
+/*.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 12;
+}*/
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 12;
+    /* background-color:blueviolet; */
+}
+
+.infoFirst {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    /* background-color:pink; */
+    text-align: center;
+    align-items: center;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.infoGeneral {
+    width: 40%;
+    /* text-align: center; */
+}
+
+.blockImgBrocante {
+    width: 20%;
+    /* text-align: center; */
+}
+
+.txtAlignCenter {
+    text-align: center;
+}
+
+.blockZoning {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    /* background-color:pink; */
+    text-align: center;
+    align-items: center;
+}
+
+.blockZoningImg {
+    margin: 10px;
+    flex: 3;
+}
+
+.blockZoningTxt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 3;
+    /* background-color:pink; */
+    text-align: center;
+    align-items: center;
+    /* margin:10px; */
+}
+
+.blockZoningTitle {
+    font-size: xx-large;
+    margin: 20px;
+    /* width:100%; */
+}
+
+.zoningFieldset {
+    width: 80%;
+    margin: 20px;
+    /* width:100%; */
+}
+
+.zoningSelect {
+    width: 80%;
+    height: 30%;
+    margin: 20px;
+    text-align: left;
+    /* background-color: blue; */
+}
+
+.zoningValid {
+    height: 30%;
+    margin: 20px;
+    text-align: center;
+    /* background-color: blue; */
+}
+
+select {
+    height: 30px;
+}
+
+.imgBrocante {
+    width: 60%;
+    border-radius: 10px;
+}
+
+.imgBrocanteBig {
+    width: 80%;
+    border-radius: 10px;
+}
+
+.infoFirstBottom {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.infoFirstBottomPhoto {
+    flex: 2;
+    text-align: center;
+}
+
+.infoFirstBottomTxt {
+    flex: 3;
+    text-align: left;
+    margin-right: 40px;
+}
+
+/* BANNER */
+.bannerBoard {
+    max-width: 95%;
+    margin: 20px;
+}
+
+/* SECURITY */
+.securityLeft {
+    flex: 1;
+    text-align: left;
+}
+
+.securityRight {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+}
+
+.securityBlock {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 40px 0px 40px;
+}
+
+.securityImg {
+    flex: 1;
+}
+
+.imgSecurity {
+    max-width: 50%;
+}
+
+.securityTxt {
+    flex: 3;
+    text-align: center;
+}
+
+.securityTxtFull {
+    width: 90%;
+    margin-left: 40px;
+}
+
+fieldset {
+    border-radius: 10px;
+    border-color: #6D90C6;
+}
+
+.pBig {
+    font-size: x-large;
+}
+
+.blockPhotoTxt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.help {
+    width: 20%
+}
+
+/* modification des formulaires à revoir:  */
+
+.reservation {
+    padding: 20px;
+}
+
+input {
+    margin: 5px;
+}
+
+/* modification des fomulaires à revoir */
+
+.photoColumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    margin: 10px 10px 10px 10px;
+    /* background-color:antiquewhite; */
+}
+
+.blockReservation {
+    align-items: center;
+    text-align: left;
+    align-items: center;
+}
+
+li {
+    margin: 5px;
+}
+
+p {
+    font-size: large;
+}
+
+.txtColumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-items: center;
+    flex: 3;
+    /*align-items: center;*/
+}
+
+.txtColumnCovid {
+    margin: 20px;
+}
+
+.infoTxtTitle {
+    font-size: xx-large;
+    text-align: center;
+}
+
+.imgPhotoColumn {
+    max-width: 110px;
+    max-height: 110px;
+}
+
+.imgCovid {
+    max-width: 26%;
+    border-radius: 10px;
+}
+
+.imgCovidBig {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.fieldsetInformation {
+    margin-left: 10px;
+}
+
+
+/* CONNECT - NEW */
+.LFconnect {
+    width: 45%;
+    margin: 2%;
+    align-items: flex-start;
+}
+
+.LFnew {
+    width: 45%;
+    margin: 2%;
+}
+
+input {
+    max-width: 100%;
+}
+
+.infoFirstConnect {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-start;
+}
+
+legend {
+    font-size: x-large;
+}
+
+
+
+/* PROFILE */
+.profileBanner {
+    font-size: xx-large;
+    margin: 10px;
+}
+
+.profileAsk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 20%;
+    margin: 10px;
+}
+
+.profileAskInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex: 2;
+}
+
+.profileAsk {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 95%;
+    margin: 10px;
+}
+
+.profileInfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+}
+
+.profileInfoTxt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: right;
+    font-style: italic;
+    flex: 2;
+}
+
+.profileInfoTxtUser {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 5;
+}
+
+.profileTxt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px;
+}
+
+.profileTxtInfo {
+    width: 100%;
+    height: 30px;
+    margin: 10px;
+}
+
+
+
+/* FOOTER */
+/*.footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #6D90C6;
+    border-radius: 10px;
+}*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 1;
+    /* background-color:coral; */
+    align-items: center;
+    text-align: center;
+    border: 2px solid #6D90C6;
+    border-radius: 10px;
+}
+
+.copyright {
+    font-size: small;
+    width: 20%;
+    /* background-color:blue; */
+}
+
+.contact {
+    width: 40%
+}
+
+.cgu {
+    width: 20%
+}
+
+.help {
+    width: 20%
+}
+
+/* CGU */
+.informLegal {
+    font-size: 30px;
+    color: #6D90C6;
+}
+
+.cguFont {
+    font-size: 15px;
+}
+
+/* Nous contacter */
+.SStxtColumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.txtAlignLeft {
+    text-align: left;
+}
+
+.txtAlignCenter {
+    text-align: center;
+}
+
+.txtAlignRight {
+    text-align: right;
+}
+
+.blockContact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    align-content: center;
+    flex: 2;
+}
+
+.SScontact {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+textarea {
+    width: 99%;
+    height: 100px;
+}
+
+.bpEnvoiContact {
+    align-self: center;
+    font-size: large;
+    height: 30px;
+    border-radius: 10px;
+    width: 100px;
+}
+
+.fullreseauSociaux {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+
+.reseauSociaux {
+    display: flex;
+}
+
+.imgReseauSociaux {
+    width: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.imgReseauSociauxThierry {
+    width: 10%;
+    margin-top: auto;
+    border-radius: 5px;
+    margin-bottom: auto;
+}
+
+.txtReseauSociaux {
+    margin-left: 10px;
+}
+
+.tatoo {
+    font-size: 15px;
+}
+
+/* Inscription succès */
+.profilInscription {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* CLASS STANDARD */
+
+.blockColumn {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px;
+    flex: 1;
+}
+
+.blockColumn2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px;
+    flex: 2;
+}
+.blockColumn3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 5px;
+    flex: 3;
+}
+
+.blockRow {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.blockRow2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex: 2;
+}
+.justifyContent{
+    justify-content: center;
+    align-items: center;
+}
+
+.select100px {
+    width: 100px;
+}
+
+.height20px {
+    height: 20px;
+}
+
+.height30px {
+    height: 30px;
+}
+
+.height40px {
+    height: 40px;
+}
+
+.height60px {
+    height: 60px;
+}
+
+.width100 {
+    width: 100%;
+}

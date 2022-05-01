@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/js/include.js"></script>
+    <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Electrolize:300,400,600,700&amp;lang=en" /> -->
+    <link rel="shortcut icon" href="assets/img/logoBourse32px.ico" type="image/x-icon">
+    <meta name="description" content="Le site de la bourse technologique de la mairie d'Amiens vous accueil afin d'organiser la première édition de cette bourse. 
+    L'ensemble des informations sur le déroulement y sont indiquées et vous pourrez vous inscrire pour y participer.">
+    <title>Bourse Tech de l'école LaManu</title>
+</head>
+
+<main>
+    <!-- HEADER -->
+    <header>
+        <div class="header" w3-include-html="header.html">
+            <script>
+                includeHTML();
+            </script>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- CONNECT -->
+
+        <div class="infoFirstConnect">
+            <div class="LFconnect">
+                <!-- <form method="post" action="#"> -->
+                <fieldset>
+                    <legend>CONNEXION</legend>
+                    <div class="fieldsetInformation">
+                        <div class="blockRow">
+                            <div class="blockColumn">
+                                <label class="height30px txtAlignRight" for="email">Adresse mail</label>
+                                <label class="height30px txtAlignRight" for="password">Mot de passe</label>
+                            </div>
+                            <div class="blockColumn2">
+                                <input type="text" name="email" id="email" placeholder="Adresse mail"
+                                    value="lothiste@gmail.com">
+                                <input type="password" name="password" id="password" placeholder="Mot de passe"
+                                    value="Crevette">
+                            </div>
+                        </div>
+                        <button class="buttonValid" onclick="document.location.href='profile.html';">Je me
+                            connecte</button>
+                    </div>
+                </fieldset>
+                <!-- </form> -->
+            </div>
+            <div class="LFnew">
+                <!-- <form method="post" action="#"> -->
+                <fieldset>
+                    <legend>INSCRIPTION</legend>
+                    <div class="blockColumn justifyContent">
+                        <div class="blockColumn txtAlignCenter">
+                            <div class="blockRow">
+                                <div class="blockcolumn">
+                                    <label class="height30px" for="typeSeller">Vous êtes un vendeur : </label>
+                                </div>
+                                <div class="blockcolumn">
+                                    <div class="txtAlignLeft">
+                                        <input type="radio" name="typeSeller" id="pro">Professionnel
+                                    </div>
+                                    <div class="txtAlignLeft">
+                                        <input type="radio" name="typeSeller" id="amateur">Particulier
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blockRow">
+                            <div class="blockColumn3 txtAlignRight">
+                                <div class="height40px">
+                                    <label for="fName">Nom</label>
+                                </div>
+                                <div class="height40px">
+                                    <label for="lName">Prénom</label>
+                                </div>
+                                <div class="height40px">
+                                    <label for="email">Adresse mail</label>
+                                </div>
+                                <div class="height40px">
+                                    <label for="phoneNumber">Numéro de téléphone</label></div>
+                                <div class="height40px">
+                                    <label for="age">Date de naissance</label>
+                                </div>
+                                <div class="height40px">
+                                    <label for="aditionalAdress">Complement d'adresse </label>
+                                </div>
+                                <div class="height40px">
+                                    <label for="adress">Adresse postale</label>
+                                </div>
+                                <div class="height40px">
+                                    <label for="zipCode">Code postal</label>
+                                </div>
+                                <div class="height40px">
+                                    <label for="city">Ville</label>
+                                </div>
+                                <div class="height40px">
+                                    <label for="password">Mot de passe</label>
+                                </div>
+                            </div>
+                            <div class="blockColumn2 txtAlignleft">
+                                <div class="height40px ">
+                                    <input class="width100" type="text" id="fName" name="fName" placeholder="Nom">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="text" name="lName" id="lName" placeholder="Prénom">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="email" name="email" id="email"
+                                        placeholder="Adresse mail">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="tel" name="phoneNumber" id="phoneNumber"
+                                        placeholder="Numéro de téléphone">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="date" name="age" id="age" placeholder="Âge">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="text" id="adress" name="adress"
+                                        placeholder="Adresse postale">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="text" id="aditionalAdress" name="aditionalAdress"
+                                        placeholder="n° rue, étages, lieu-dit ....">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="text" name="zipCode" id="zipCode"
+                                        placeholder="Code postal">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="text" name="city" id="city" placeholder="Ville">
+                                </div>
+                                <div class="height40px">
+                                    <input class="width100" type="password" name="password" id="password"
+                                        placeholder="Mot de passe">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="buttonValid" onclick="document.location.href='newUser.html';">Je valide mon inscription</button>
+                    </div>
+                </fieldset>
+                <!-- </form> -->
+            </div>
+
+        </div>
+    </main>
+    <!-- </div> -->
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="copyright">&#169;LOTHISTE</div>
+        <div class="contact"><a href="contact.html">Nous contacter</a></div>
+        <div class="cgu"><a href="cgu.html">CGU</a></div>
+        <div class="help"><a href="help.html">Aide</a></div>
+    </footer>
+    </body>
+
+</html>
