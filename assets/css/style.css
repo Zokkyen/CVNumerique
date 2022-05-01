@@ -17,15 +17,19 @@
     height: 40vh;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.profile{
-    width: 20vh;
-    height: 20vh;
+.profilePict{
+    width: 15vh;
+    height: 15vh;
 }
 
 .titleProfile {
-    font-size: 1.rem;
+    font-size: 1.5rem;
 }
 
 .colPictProfileResp {
@@ -39,6 +43,12 @@
 .textBanner {
     font-size: 0.8rem;
     height: 20vh;
+}
+
+@media (min-width: 576px) {
+    .mywallpaper{
+        flex-direction: row;
+    }
 }
 
 @media (min-width: 768px) {
@@ -88,24 +98,28 @@
     .titleProfile {
         font-size: 3.0rem;
     }
+    .profilePict{
+        width: 20vh;
+        height: 20vh;
+    }  
 }
 
 /* Partie Main */
 
 .MyCard {
-    box-shadow: 0 0 5px black;
-}
-
-.myLgCard {
-    box-shadow: 0 0 5px black;
-}
-
-.myCompCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
     box-shadow: 0 0 5px black;
 }
 
 .card-img-top {
-    height: 5vh;
+    height: 35px;
     background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
     background-blend-mode: multiply,multiply;
 }
@@ -115,25 +129,28 @@
 }
 
 @media (min-width: 768px) {
-    .MyCard {
+    .myPersoCards {
         height: 35vh;
     }
-    .myCompCard {
+    .myCompCards {
         height: 38vh;
     }   
 }
 
 @media (min-width: 1200px) {
-    .myLgCard {
+    .myPersoCards {
+        height: 35vh;
+    }  
+    .myLgCards {
         height: 77vh;
     }    
 }
 
 @media (min-width: 1400px) {
-    .MyCard {
-        height: 32vh;
+    .myPersoCards {
+        height: 35vh;
     }
-    .myLgCard {
+    .myLgCards {
         height: 72vh;
     }    
 }
@@ -149,6 +166,22 @@ a {
 .iconeCompt{
     width: 4vh;
     height: 4vh;
+}
+
+li#securedNumber span#falseNumber {
+    display: inline;
+}
+
+li#securedNumber:hover span#falseNumber {
+    display: none;
+}
+
+li#securedNumber span#trueNumber {
+    display: none;
+}
+
+li#securedNumber:hover span#trueNumber {
+    display: inline;
 }
 
 /* Partie Portfolio */
@@ -254,10 +287,23 @@ a {
 
 /* Partie Footer */
 
+.containerFullSocial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+.containSocial {
+    display: flex;
+    flex-direction: column;
+}
+
 .socialNetworkLogo{
     width: 5vh;
     height: 5vh;
-    margin-left: 30%;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 
 .socialNetworkText{
@@ -265,30 +311,44 @@ a {
     white-space: nowrap;
 }
 
+
+@media (min-width: 576px) {
+    .socialNetworkText {
+        font-size: 1.0rem;
+    }
+}
+
 @media (min-width: 768px) {
     .socialNetworkText {
         font-size: 1.0rem;
-        display: contents;
-    }
-    .socialNetworkLogo {
-        width: 4vh;
-        height: 4vh;
     }
 }
 
 @media (min-width: 992px) {
     .socialNetworkText {
         font-size: 1.2rem;
+        display: contents;
+
     }
-    .socialNetworkLogo {
-        width: 5vh;
-        height: 5vh;
+    .containSocial {
+        flex-direction: row;
+        margin-left: 5vh;
+        margin-right: 5vh;
     }
 }
 
+/* Partie de la signature */
+
+.containerSign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .myLogo {
-    height: 8vh;
-    width: 8vh;
+    height: 6vh;
+    width: 6vh;
 }
 
 .myAlias {

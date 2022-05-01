@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>Développeur Web Stéphane Swaenepoel</title>
+    <title>CV Développeur Web Stéphane Swaenepoel</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png"/>
     <meta name="description" content="Développeur Web et Web mobile à Amiens (Somme)"/>
 </head>
@@ -44,15 +44,14 @@
             </div>
         </nav>
 
-        <!-- En tête du site avec titre et photo -->
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <span class="mywallpaper position-relative"></span>
-                <div class="col-12 col-md-6 position-absolute colPictProfileResp">
-                    <img class="profile rounded-circle" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
+        <!-- Presentation Photo + Nom -->
+        <div class="container-fluid p-0">
+            <div class="mywallpaper">
+                <div>
+                    <img class="profilePict rounded-circle p-2" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
                 </div>
-                <div class="col-12 col-md-6 position-absolute colTextProfileResp">
-                    <h1 class="titleProfile">Stéphane Swaenepoel</h1>
+                <div>
+                    <h1 class="titleProfile p-2"><strong>Stéphane Swaenepoel</strong></h1>
                 </div>
             </div>
         </div>
@@ -79,7 +78,7 @@
 
                 <!-- Mes informations personnelles -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">               
-                    <div class="card MyCard">
+                    <div class="MyCard myPersoCards">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                                 <h3 class="card-title text-dark fs-5"><strong>Mes informations</strong></h3>
                         </div>    
@@ -87,7 +86,10 @@
                             <ul>
                                 <li class="mb-2">30 ans</li>
                                 <li class="mb-2">80000 Amiens</li>
-                                <li class="mb-2">+33 6 10 50 15 92</li>
+                                <li class="mb-2" id="securedNumber">
+                                    <span id="falseNumber">+33 X XX XX XX XX</span>
+                                    <span id="trueNumber">+33 6 10 50 15 92</span>
+                                </li>
                                 <li>Permis B</li>
                             </ul>
                         </div>
@@ -96,7 +98,7 @@
 
                 <!-- Mon profil -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
+                    <div class="MyCard myPersoCards">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Mon profil</strong></h3>
                         </div> 
@@ -114,7 +116,7 @@
 
                 <!-- Langues parlées -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
+                    <div class="MyCard myPersoCards">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Langues parlées</strong></h3>
                         </div> 
@@ -129,7 +131,7 @@
 
                 <!-- Mes loisirs -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
+                    <div class="MyCard myPersoCards">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Mes loisirs</strong></h3>
                         </div> 
@@ -154,7 +156,7 @@
         
                 <!-- Historique de formation -->
                 <div class="col-10 col-sm-10 col-md-10 col-xl-4 my-5">
-                    <div class="card myLgCard">
+                    <div class="MyCard myLgCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Historique de formation</strong></h3>
                         </div> 
@@ -175,7 +177,7 @@
 
                 <!-- Parcours professionnel -->
                 <div class="col-10 col-sm-10 col-md-10 col-xl-8 my-5">
-                    <div class="card myLgCard">
+                    <div class="MyCard myLgCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Parcours professionnel</strong></h3>
                         </div> 
@@ -232,7 +234,7 @@
 
                 <!-- Mes compétences WEB -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card myCompCard">
+                    <div class="MyCard myCompCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Mes compétences WEB</strong></h3>
                         </div> 
@@ -319,7 +321,7 @@
 
                 <!-- Logiciels de suivi/gestion -->
                 <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card myCompCard">
+                    <div class="MyCard myCompCard">
                         <div class="d-flex card-img-top text-center justify-content-center align-items-center">
                             <h3 class="card-title text-dark fs-5"><strong>Logiciels de suivi/Gestion</strong></h3>
                         </div> 
@@ -540,7 +542,7 @@
                                 </a>
                             </div>
                             <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet des CARDS</h4>
+                                <h4 class="fs-5 border border-white">Projet 1 : Les CARDS</h4>
                                 <p> Dans ce projet, on a du utiliser simplement les cards en CSS avec des flexbox.</p>
                             </div>
                         </div>
@@ -555,7 +557,7 @@
                                 </a>
                             </div>
                             <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet d'un site de Bourse High Tech</h4>
+                                <h4 class="fs-5 border border-white">Projet 2 : Site de Bourse High Tech</h4>
                                 <p> Dans ce projet de trois personnes, on a conceptualisé un site permettant d'avoir les renseignements d'une bourse fictive sur Amiens avec un espace exposant.</p>
                             </div>
                         </div>
@@ -570,7 +572,7 @@
                                 </a>
                             </div>
                             <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet sur la responsivité</h4>
+                                <h4 class="fs-5 border border-white">Projet 3 : La responsivité</h4>
                                 <p> Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
                             </div>
                         </div>
@@ -586,102 +588,53 @@
     <footer>
 
         <!-- Bannière avec les réseaux sociaux et signature-->
-        <div class="container-fluid bg-dark">
+        <div class="container-fluid containerFullSocial bg-dark border-bottom border-white p-2">
 
             <!-- Réseaux sociaux -->
-            <div class="row justify-content-center border-bottom border-white p-3">
-
-                <!-- Instagram -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <a href="https://www.instagram.com/zokkyen/?hl=fr" target="_blank">
-                                <img class="socialNetworkLogo" src="assets/img/ico/instagram.png" alt="Instagram"
-                                    title="Mon Instagram">
-                            </a>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">Instagram</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Github -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
-                                <img class="socialNetworkLogo" src="assets/img/ico/linkedin.png" alt="LinkedIn"
-                                    title="Mon LinkedIn">
-                            </a>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">LinkedIn</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Github -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <a href="https://github.com/Zokkyen" target="_blank">
-                                <img class="socialNetworkLogo" src="assets/img/ico/github.png" alt="Github"
-                                    title="Mon Github">
-                            </a>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">Github</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Mail Google -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <a href="mailto:stephane.swaenepoel@gmail.com">
-                                <img class="socialNetworkLogo" src="assets/img/ico/google.png" alt="Mail"
-                                    title="Mon Mail Google">
-                            </a>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">Mail</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Imprimer le CV -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <i onclick="window.open('assets/files/cv.pdf')">
-                                <img class="socialNetworkLogo" src="assets/img/ico/printer.png" alt="Mon CV"
-                                    title="Télécharger mon CV">
-                            </i>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">Mon CV</span>
-                        </div>
-                    </div>
-                </div>
+            <!-- LinkedIn -->
+            <div class="containSocial align-items-center">
+                <div><a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
+                        <img class="socialNetworkLogo p-1" src="assets/img/ico/linkedin.png" alt="LinkedIn"
+                            title="Mon LinkedIn">
+                    </a></div>
+                <div><span class="text-white socialNetworkText">LinkedIn</span></div>
             </div>
+
+            <!-- Github -->
+            <div class="containSocial align-items-center">
+                <div><a href="https://github.com/Zokkyen" target="_blank">
+                        <img class="socialNetworkLogo p-1" src="assets/img/ico/github.png" alt="Github"
+                            title="Mon Github">
+                    </a></div>
+                <div><span class="text-white socialNetworkText">Github</span></div>
+            </div>
+
+            <!-- Mail Google -->
+            <div class="containSocial align-items-center">
+                <div><a href="mailto:stephane.swaenepoel@gmail.com">
+                        <img class="socialNetworkLogo p-1" src="assets/img/ico/google.png" alt="Mail"
+                            title="Mon Mail Google">
+                    </a></div>
+                <div><span class="text-white socialNetworkText">Mail</span></div>
+            </div>
+
+            <!-- Imprimer le CV -->
+            <div class="containSocial align-items-center">
+                <div><i onclick="window.open('assets/files/cv.pdf')">
+                        <img class="socialNetworkLogo p-1" src="assets/img/ico/printer.png" alt="Mon CV"
+                            title="Télécharger mon CV">
+                    </i></div>
+                <div><span class="text-white socialNetworkText">Mon CV</span></div>
+            </div>
+            
         </div>
 
-        <div class="container-fluid bg-dark">
-            <div class="d-flex flex-row justify-content-center align-items-center">
-                <div class=""> 
-                    <a href="#MyTop">
-                        <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
-                    </a>  
-                </div> 
-                <div class="">
-                    <span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span>    
-                </div>                    
-            </div>
+        <!-- Signature Footer -->
+        <div class="container-fluid containerSign bg-dark">
+            <div><a href="#MyTop">
+                    <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
+                </a></div> 
+            <div><span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span></div>                    
         </div>
 
     </footer>
