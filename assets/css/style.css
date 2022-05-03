@@ -15,32 +15,19 @@
     font-size: 1.0rem;
 }
 
-.myWallpaper{
-    height: 20vh;
-    background-image: url("../img/wallpaper/37.jpg"); 
-    background-size: 100% 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-    padding: 0;
-}
-
 .profilePict{
-    width: 15vh;
-    height: 15vh;
-}
-
-.titleProfile {
-    font-size: 1.5rem;
+    width: 35%;
 }
 
 .containerBanner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(15vh*2.0vw);
+    margin-top: auto;
+    padding-top: 65px;
+    /*height: calc(20vh*5.0vw);*/
+    justify-content: left;
+}
+
+.titleProfile {
+    font-size: 1.2rem;
 }
 
 .textBanner {
@@ -48,9 +35,7 @@
 }
 
 @media (min-width: 576px) {
-    .myWallpaper{
-        flex-direction: row;
-    }
+
 }
 
 @media (min-width: 768px) {
@@ -79,16 +64,17 @@
         width: 18vh;
         height: 18vh;
     } 
-    .myWallpaper{
-        height: 30vh;
-    } 
 }
 
 /* Partie Main */
 
 main {
-    background-image: url("../img/wallpaper/372.jpg"); 
-    background-size: cover;   
+    background-image: url("../img/wallpaper/mywalpaper.jpg"); 
+    /*background-size: cover;*/ 
+    background-size: 100% 100%; 
+    /*width: 100%;  
+    padding: 0;
+    margin: 0;*/
 }
 
 .MyCard {
