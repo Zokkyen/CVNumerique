@@ -16,9 +16,9 @@
 }
 
 .myWallpaper{
-    height: 25vh;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
+    height: 20vh;
+    background-image: url("../img/wallpaper/37.jpg"); 
+    background-size: 100% 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,7 +40,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: calc(15vh*2.0vw);
 }
 
 .textBanner {
@@ -78,10 +78,18 @@
     .profilePict{
         width: 18vh;
         height: 18vh;
-    }  
+    } 
+    .myWallpaper{
+        height: 30vh;
+    } 
 }
 
 /* Partie Main */
+
+main {
+    background-image: url("../img/wallpaper/372.jpg"); 
+    background-size: cover;   
+}
 
 .MyCard {
     position: relative;
@@ -98,8 +106,6 @@
 
 .card-img-top {
     height: 35px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
 }
 
 .card-title {
@@ -110,8 +116,19 @@ a {
     text-decoration: none;
 }
 
-.myprogbar {
-    border: 1px solid;
+.fontsizeProgressBar {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 1.0rem;
+    color: white;
+}
+
+.progress {
+    background-color: rgb(131, 131, 131);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 25px;
 }
 
 .iconeCompt{
@@ -141,125 +158,55 @@ li#securedNumber:hover span#trueNumber {
     height: 50vh;
 }
 
-.carousel-item {
-   /* display: none;
-    float: none !important;
-    width: 100%;
-    margin-right: -100%;*/
-}
-
 .carouselCard {
-    /*position: relative;*/
     display: flex;
     flex-direction: column;
-    /*word-wrap: break-word;
-    background-clip: border-box;*/
-    /*height: 40vh;
-    width: 60vw;*/
     height: 50vh;
     width: auto;
 }
 
 .PortFolioPicture {
     width: 100%;
-    height: 20vh;
+    height: 25vh;
     object-fit: cover;
     border-radius: 5px 5px 0px 0px;
 }
 
-/*.BackofForm {
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
-    z-index: auto;
-}  */
-
-/*.MyPortFolioContener {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}*/
-
-/*.MyPortfolioCard {
-    width: 70vw;
-    height: auto;
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    text-align: center;
-    border-radius: 5px 5px 5px 5px;
-}*/
-
 @media (min-width: 576px) {
-    /*.MyPortfolioCard {
-        flex-direction: row; 
-        flex-wrap: nowrap;
-        width: 60vw;
-        height: 40vh;
-        padding: 0;
-    }
-    .PortFolioPicture {
-        width: 30vw;
-        height: 40vh;
-        border-radius: 5px 0px 0px 5px;
-    }*/
+
 }
 
 @media (min-width: 768px) {
     .carouselCard {
         flex-direction: row;
-    }
-    /*.MyPortfolioCard {
-        width: 70vw;
-        height: 35vh;
+        height: 50vh;
+        width: auto;
     }
     .PortFolioPicture {
-        width: 35vw;
-        height: 35vh;
-    }*/
+        height: 50vh;
+        width: 40vw;
+        object-fit: cover;
+        border-radius: 5px 5px 0px 0px;
+    }
 }
 
 @media (min-width: 992px) {
-    /*.MyPortFolioContener {
-        flex-direction: row;
-    }
-    .MyPortfolioCard {
-        width: 80vh;
-        height: 40vh;
-    } 
-    .PortFolioPicture {
-        width: 40vh;
-        height: 40vh;
-    }*/
+
 }
 
 @media (min-width: 1200px) {
-    /*.MyPortfolioCard {
-        width: 50vh;
-        height: 35vh;
+    .carouselCard {
+        height: 50vh;
+        width: auto;
     }
     .PortFolioPicture {
-        width: 25vh;
-        height: 35vh;
-    }*/
+        height: 50vh;
+        width: 40vw;
+    }
 }
 
 @media (min-width: 1400px) {
-    /*.MyPortfolioCard {
-        width: 26vw;
-        height: 40vh;
-    }
-    .PortFolioPicture {
-        width: 13vw;
-        height: 40vh;
-    }
-    .FolioPadding {
-        padding: 0%;
-        margin: 0%;
-    }*/
+
 } 
 
 /* Partie Footer */
