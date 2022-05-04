@@ -49,18 +49,23 @@
             <div class="container-fluid containerBanner bg-dark">
                 <div class="row align-items-center">
 
-                    <div class="col-12 col-md-6 text-center p-2">
+                    <div class="col-12 col-md-6 pictAlignement p-2">
                         <img class="profilePict rounded-circle" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
                     </div>
 
-                    <div class="col-12 col-md-6 text-center">
-                        <h1 class="titleProfile text-white"><strong>Stéphane Swaenepoel</strong></h1>
+                    <div class="col-12 col-md-6 text-white">
+                        <h1 class="row titleProfile twoColTitle">            
+                            <div class="col"><strong>Stéphane</strong></div>
+                            <div class="col"><strong>Swaenepoel</strong></div>
+                        </h1>
+                        <h1 class="row titleProfile oneColTitle text-center">            
+                            <span><strong>Stéphane Swaenepoel</strong></span>
+                        </h1>
                     </div>
                     
-                    <div class="col-12 text-white textBanner text-center pb-3">Futur Développeur Web et Web Mobile, j'aime avoir du style !<br />
-                        Apprendre de nouvelles choses est mon leitmotiv.
+                    <div class="col-12 text-white textBanner text-center p-3">
+                        Futur Développeur Web et Web Mobile, j'aime avoir du style ! Apprendre de nouvelles choses est mon leitmotiv.
                     </div>
-
                 </div>
             </div>    
         </section>
@@ -69,7 +74,6 @@
     <!-- MAIN -->
     <main>
         <section>
-
             <div class="container-fluid">
                 <!-- Partie des cartes avec mes diverses informations -->
                 <article>
@@ -512,87 +516,88 @@
                         </div>
                     </div>                
                 </article>
+            </div>   
+        </section>
 
-
-                <!-- Portfolio version Carousel -->
-                <article>
-                    <div class="p-2 bg-dark border-bottom border-white" id="MyPortfolio">
-                        <div class="row">
-                            <div class="col-12 pb-2">
-                                <h3 class="text-white text-center p-1">Mon Portfolio</h3>
-                                <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
-                                    <div class="carousel-inner carouselContent text-center">
-                    
-                                        <!-- Projet des cards -->
-                                        <div class="carousel-item active">
-                                            <div class="row d-flex justify-content-center">
-                                                <div class="col-9">
-                                                    <div class="carouselCard border border-dark rounded">
-                                                        <div>
-                                                            <a href="assets/projects/cards/index.html" target="_blank">
-                                                                <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectCards.jpg" alt="Les cards">
-                                                            </a>
-                                                        </div>
-                                                        <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
-                                                            <h4 class="card-title pb-4 fw-bold">Projet 1 : Les CARDS</h4>
-                                                            <p class="card-text">Dans ce projet, on a du utiliser simplement les cards en CSS avec des flexbox.</p>
-                                                        </div>
-                                                    </div>
+        <!-- Portfolio version Carousel -->
+        <section>
+            <div class="container-fluid bg-dark border-bottom border-white" id="MyPortfolio">
+                <div class="row">
+                    <div class="col-12 pb-2">
+                        <h3 class="text-white text-center pt-2">Mon Portfolio</h3>
+                        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                            <div class="carousel-inner carouselContent text-center">
+            
+                                <!-- Projet des cards -->
+                                <div class="carousel-item active">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-9">
+                                            <div class="carouselCard border border-dark rounded">
+                                                <div>
+                                                    <a href="assets/projects/cards/index.html" target="_blank">
+                                                        <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectCards.jpg" alt="Les cards">
+                                                    </a>
                                                 </div>
-                                            </div>
-                                        </div>
-                    
-                                        <!-- Projet du site Web -->
-                                        <div class="carousel-item">
-                                            <div class="row d-flex justify-content-center">
-                                                <div class="col-9">
-                                                    <div class="carouselCard border border-white rounded">
-                                                        <a href="assets/projects/site/index.html" target="_blank">
-                                                            <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Création d'un site">
-                                                        </a>
-                                                        <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
-                                                            <h4 class="card-title pb-4 fw-bold">Projet 2 : Site de Bourse High Tech</h4>
-                                                            <p class="card-text">Dans ce projet de trois personnes, on a conceptualisé un site d'une bourse fictive avec un espace exposant.</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>    
-                                        </div>
-                    
-                                        <!-- Projet du site Web responsible -->
-                                        <div class="carousel-item">
-                                            <div class="row d-flex justify-content-center">
-                                                <div class="col-9">
-                                                    <div class="carouselCard border border-white rounded">
-                                                        <a href="assets/projects/respons/index.html" target="_blank">
-                                                            <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Projet Responsivité">
-                                                        </a>
-                                                        <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
-                                                            <h4 class="card-title pb-4 fw-bold">Projet 3 : La responsivité</h4>
-                                                            <p class="card-text">Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
-                                                        </div>
-                                                    </div>
+                                                <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
+                                                    <h4 class="card-title pb-4 fw-bold">Projet 1 : Les CARDS</h4>
+                                                    <p class="card-text">Dans ce projet, on a du utiliser simplement les cards en CSS avec des flexbox.</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                    
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
+                                </div>
+            
+                                <!-- Projet du site Web -->
+                                <div class="carousel-item">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-9">
+                                            <div class="carouselCard border border-white rounded">
+                                                <a href="assets/projects/site/index.html" target="_blank">
+                                                    <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Création d'un site">
+                                                </a>
+                                                <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
+                                                    <h4 class="card-title pb-4 fw-bold">Projet 2 : Site de Bourse High Tech</h4>
+                                                    <p class="card-text">Dans ce projet de trois personnes, on a conceptualisé un site d'une bourse fictive avec un espace exposant.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+            
+                                <!-- Projet du site Web responsible -->
+                                <div class="carousel-item">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-9">
+                                            <div class="carouselCard border border-white rounded">
+                                                <a href="assets/projects/respons/index.html" target="_blank">
+                                                    <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Projet Responsivité">
+                                                </a>
+                                                <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
+                                                    <h4 class="card-title pb-4 fw-bold">Projet 3 : La responsivité</h4>
+                                                    <p class="card-text">Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
+        
+            
         <!-- <div id="carouselExampleControlsNoTouching" class="carousel slide bg-dark" data-bs-touch="false" data-bs-interval="false">
             <div class="carousel-inner">
 
@@ -701,70 +706,72 @@
 
     <!-- FOOTER -->
     <footer>
-        <section>
-            <!-- Bannière avec les réseaux sociaux et signature-->
-            <!-- LinkedIn -->
-            <article>
-                <div class="container-fluid containerFullSocial bg-dark border-bottom border-white p-2">
-                    <div class="containSocial align-items-center">
-                        <div><a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
-                                <img class="socialNetworkLogo p-1" src="assets/img/ico/linkedin.png" alt="LinkedIn"
-                                    title="Mon LinkedIn">
-                            </a></div>
-                        <div><span class="text-white socialNetworkText">LinkedIn</span></div>
-                    </div>
-                </div>
-            </article>
 
+        <!-- Bannière avec les réseaux sociaux et signature-->
+        <div class="container-fluid containerFullSocial bg-dark border-bottom border-white p-2">
+
+            <!-- LinkedIn -->
+            <div>
+                <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
+                    <img class="socialNetworkLogo p-1" src="assets/img/ico/linkedin.png" alt="LinkedIn"
+                        title="Mon LinkedIn">
+                </a>
+            </div>
+            <div>
+                <span class="text-white socialNetworkText">LinkedIn</span>
+            </div>
+
+        
 
             <!-- Github -->
-            <article>
-                <div class="containSocial align-items-center">
-                    <div><a href="https://github.com/Zokkyen" target="_blank">
-                            <img class="socialNetworkLogo p-1" src="assets/img/ico/github.png" alt="Github"
-                                title="Mon Github">
-                        </a>
-                    </div>
-                    <div><span class="text-white socialNetworkText">Github</span></div>
-                </div>
-            </article>
+            <div>
+                <a href="https://github.com/Zokkyen" target="_blank">
+                    <img class="socialNetworkLogo p-1" src="assets/img/ico/github.png" alt="Github"
+                        title="Mon Github">
+                </a>
+            </div>
+            <div>
+                <span class="text-white socialNetworkText">Github</span>
+            </div>
 
 
             <!-- Mail Google -->
-            <article>
-                <div class="containSocial align-items-center">
-                    <div><a href="mailto:stephane.swaenepoel@gmail.com">
-                            <img class="socialNetworkLogo p-1" src="assets/img/ico/google.png" alt="Mail"
-                                title="Mon Mail Google">
-                        </a></div>
-                    <div><span class="text-white socialNetworkText">Mail</span></div>
-                </div>
-            </article>
+            <div>
+                <a href="mailto:stephane.swaenepoel@gmail.com">
+                    <img class="socialNetworkLogo p-1" src="assets/img/ico/google.png" alt="Mail"
+                        title="Mon Mail Google">
+                </a>
+            </div>
+            <div>
+                <span class="text-white socialNetworkText">Mail</span>
+            </div>
 
 
             <!-- Imprimer le CV -->
-            <article>
-                <div class="containSocial align-items-center">
-                    <div><i onclick="window.open('assets/files/cv.pdf')">
-                            <img class="socialNetworkLogo p-1" src="assets/img/ico/printer.png" alt="Mon CV"
-                                title="Télécharger mon CV">
-                        </i></div>
-                    <div><span class="text-white socialNetworkText">Mon CV</span></div>
-                </div>
-            </article>
+            <div>
+                <i onclick="window.open('assets/files/cv.pdf')">
+                    <img class="socialNetworkLogo p-1" src="assets/img/ico/printer.png" alt="Mon CV"
+                        title="Télécharger mon CV">
+                </i>
+            </div>
+            <div>
+                <span class="text-white socialNetworkText">Mon CV</span>
+            </div>
 
-        
-            <!-- Signature Footer -->
-            <article>
-                <div class="container-fluid containerSign bg-dark">
-                    <div><a href="#MyTop">
-                            <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
-                        </a></div> 
-                    <div><span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span></div>                    
-                </div>                    
-            </article>
-        
-        </section>
+        </div>
+
+        <!-- Signature Footer -->
+        <div class="container-fluid containerSign bg-dark">
+            <div>
+                <a href="#MyTop">
+                    <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
+                </a>
+            </div> 
+            <div>
+                <span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span>
+            </div>                    
+        </div>                    
+
     </footer>
 
 </body>

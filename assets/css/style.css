@@ -15,19 +15,30 @@
     font-size: 1.0rem;
 }
 
+.pictAlignement {
+    text-align: center;
+}
+
 .profilePict{
     width: 35%;
+}
+
+.titleProfile {
+    font-size: 1.2rem;
 }
 
 .containerBanner {
     margin-top: auto;
     padding-top: 65px;
-    /*height: calc(20vh*5.0vw);*/
     justify-content: left;
 }
 
-.titleProfile {
-    font-size: 1.2rem;
+.twoColTitle {
+    display: none;
+}
+
+.oneColTitle {
+    display: block;
 }
 
 .textBanner {
@@ -42,9 +53,18 @@
     .titleProfile {
         font-size: 2.0rem;
     }
+    .pictAlignement {
+        text-align: right;
+    }
     .textBanner {
         font-size: 1.2rem;
-    }    
+    } 
+    .twoColTitle {
+        display: block;
+    }
+    .oneColTitle {
+        display: none;
+    }
 }
 
 @media (min-width: 992px) {
