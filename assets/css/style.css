@@ -20,7 +20,7 @@
 }
 
 .profilePict{
-    width: 35%;
+    width: 30%;
 }
 
 .titleProfile {
@@ -45,9 +45,8 @@
     font-size: 0.8rem;
 }
 
-@media (min-width: 576px) {
-
-}
+/*@media (min-width: 576px) {
+}*/
 
 @media (min-width: 768px) {
     .titleProfile {
@@ -90,12 +89,34 @@
 
 main {
     background-image: url("../img/wallpaper/mywalpaper.jpg"); 
-    /*background-size: cover;*/ 
     background-size: 100% 100%; 
-    /*width: 100%;  
-    padding: 0;
-    margin: 0;*/
 }
+
+ul {
+    list-style-type: none; 
+    /*padding-right: 20px;*/
+    /*padding: 0;*/ 
+}
+/*li {
+    margin-right: 20px;
+}*/
+/*content: '\1F4BB'; computer*/
+
+ul#personnalInfo li:nth-child(1):before{ 
+    content: '\1F382';
+} 
+
+ul#personnalInfo li:nth-child(2):before{ 
+    content: '\1F3E0';
+} 
+
+ul#personnalInfo li:nth-child(3):before{ 
+    content: '\1F4F1';
+} 
+
+ul#personnalInfo li:nth-child(4):before{ 
+    content: '\1F697';
+} 
 
 .MyCard {
     position: relative;
@@ -178,9 +199,8 @@ li#securedNumber:hover span#trueNumber {
     border-radius: 5px 5px 0px 0px;
 }
 
-@media (min-width: 576px) {
-
-}
+/*@media (min-width: 576px) {
+}*/
 
 @media (min-width: 768px) {
     .carouselCard {
@@ -196,9 +216,8 @@ li#securedNumber:hover span#trueNumber {
     }
 }
 
-@media (min-width: 992px) {
-
-}
+/*@media (min-width: 992px) {
+}*/
 
 @media (min-width: 1200px) {
     .carouselCard {
@@ -211,9 +230,8 @@ li#securedNumber:hover span#trueNumber {
     }
 }
 
-@media (min-width: 1400px) {
-
-} 
+/*@media (min-width: 1400px) {
+} */
 
 /* Partie Footer */
 
