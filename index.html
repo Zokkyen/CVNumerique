@@ -1,4 +1,4 @@
-<!doctype html>
+li<!doctype html>
 <html lang="fr-FR">
 
 <head>
@@ -34,12 +34,23 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#MyInfo">Toutes mes informations</a>
-                        <a class="nav-link" href="#SchoolJobs">Etudes et parcours Pro</a>
-                        <a class="nav-link" href="#MySkills">Mes compétences</a>
-                        <a class="nav-link" href="#MyPortfolio">Mon portfolio</a>
-                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#MyInfo">Toutes mes informations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#SchoolJobs">Etudes et parcours Pro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#MySkills">Mes compétences</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#MyPortfolio">Mon portfolio</a>
+                        </li>
+                    </ul>
                 </div>                    
             </div>
         </nav> 
@@ -163,7 +174,7 @@
                     
                             <!-- Historique de formation -->
                             <div class="col-10 col-sm-10 col-md-10 col-xl-4 my-5">
-                                <div class="MyCard">
+                                <div class="MyLgCard">
                                     <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
                                         <h3 class="card-title text-white fs-5"><strong>Historique de formation</strong></h3>
                                     </div> 
@@ -184,7 +195,7 @@
 
                             <!-- Parcours professionnel -->
                             <div class="col-10 col-sm-10 col-md-10 col-xl-8 my-5">
-                                <div class="MyCard">
+                                <div class="MyLgCard">
                                     <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
                                         <h3 class="card-title text-white fs-5"><strong>Parcours professionnel</strong></h3>
                                     </div> 
@@ -236,7 +247,6 @@
                     </div>                
                 </article>
 
-
                 <!-- Partie avec mes compétences dans tous les domaines-->
                 <article>
                     <div id="MySkills">
@@ -244,7 +254,7 @@
 
                             <!-- Mes compétences WEB -->
                             <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                                <div class="MyCard">
+                                <div class="MyCompCard">
                                     <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
                                         <h3 class="card-title text-white fs-5"><strong>Compétences WEB</strong></h3>
                                     </div> 
@@ -325,7 +335,7 @@
 
                             <!-- Logiciels de suivi/gestion -->
                             <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                                <div class="MyCard">
+                                <div class="MyCompCard">
                                     <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
                                         <h3 class="card-title text-white fs-5"><strong>Logiciels de suivi/Gestion</strong></h3>
                                     </div> 
@@ -352,7 +362,12 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <h5 class="card-title text-center my-3"><strong>Logiciels de modélisations</strong></h5>
+                                    </div>
+
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Logiciels de modélisations</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
                                         <div class="row my-2">
                                             <div class="col-2">
                                                 <img class="iconeCompt" src="assets/img/ico/solidworks.png" alt="Solidworks"
@@ -376,14 +391,14 @@
                                                     <small class="fontsizeProgressBar w-100">40%</small>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </div>                                        
                                     </div>
                                 </div>
                             </div>
 
                             <!-- Compétences électrique/électronique -->
                             <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                                <div class="MyCard">
+                                <div class="MyCompCard">
                                     <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
                                         <h3 class="card-title text-white fs-5"><strong>Compétences en électronique</strong></h3>
                                     </div> 
@@ -428,8 +443,7 @@
                                             <div class="col-2">
                                                 <img class="iconeCompt" src="assets/img/ico/isis.jpg" alt="Proteus ISIS"
                                                     title="Proteus ISIS">
-                                            </div>
-                                            <div class="col-2">
+
                                                 <img class="iconeCompt" src="assets/img/ico/ares.jpg" alt="Proteus ARES"
                                                     title="Proteus ARES">
                                             </div>
@@ -446,7 +460,7 @@
 
                             <!-- Compétences électrique/électronique -->
                             <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                                <div class="MyCard">
+                                <div class="MyCompCard">
                                     <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
                                         <h3 class="card-title text-white fs-5"><strong>Autres compétences</strong></h3>
                                     </div> 
@@ -600,113 +614,6 @@
                 </div>
             </div>
         </section>
-
-        
-            
-        <!-- <div id="carouselExampleControlsNoTouching" class="carousel slide bg-dark" data-bs-touch="false" data-bs-interval="false">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active">
-                    <div class="carouselCard">
-                        <div class="">
-                            <a href="assets/projects/cards/index.html" target="_blank">
-                                <img class="PortFolioPicture" src="assets/img/portfolio/ProjectCards.jpg" alt="Les cards">
-                            </a>
-                        </div>
-                        <div class="text-white">
-                            <h4 class="fs-5 border border-white">Projet 1 : Les CARDS</h4>
-                            <p> Dans ce projet, on a simplement les cards en CSS avec des flexbox.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carouselCard">
-                        <div class="">
-                            <a href="assets/projects/site/index.html" target="_blank">
-                                <img class="PortFolioPicture" src="assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Création d'un site">
-                            </a>
-                        </div>
-                        <div class="text-white">
-                            <h4 class="fs-5 border border-white">Projet 2 : Site de Bourse High Tech</h4>
-                            <p>A trois, nous avons conceptualisé un site permettant d'accèder aux renseignements pour une bourse fictive sur Amiens avec un espace exposant.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carouselCard">
-                        <div class="">
-                            <a href="assets/projects/respons/index.html" target="_blank">
-                                <img class="PortFolioPicture" src="assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Projet Responsivité">
-                            </a>
-                        </div>
-                        <div class="card-body text-white">
-                            <h4 class="fs-5 border border-white">Projet 3 : La responsivité</h4>
-                            <p> Il s'agissait dans ce projet à 3 de reprendre un site version Desktop pour le rendre responsible.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
-
-        <!-- <div class="container-fluid p-0" id="MyPortfolio">
-            <div class="d-flex flex-column BackofForm text-black justify-content-center align-items-center">
-                <div class="p-3">
-                    <h2 class="fs-1"><strong>PORTFOLIO</strong></h2>       
-                </div>
-                <div class="MyPortFolioContener">
-                    <div class="p-5">
-                        <div class="MyCard MyPortfolioCard bg-dark align-items-center">
-                            <div class="">
-                                <a href="assets/projects/cards/index.html" target="_blank">
-                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectCards.jpg" alt="Les cards">
-                                </a>
-                            </div>
-                            <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet 1 : Les CARDS</h4>
-                                <p> Dans ce projet, on a du utiliser simplement les cards en CSS avec des flexbox.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <div class="MyCard MyPortfolioCard bg-dark align-items-center">
-                            <div class="">
-                                <a href="assets/projects/site/index.html" target="_blank">
-                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Création d'un site">
-                                </a>
-                            </div>
-                            <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet 2 : Site de Bourse High Tech</h4>
-                                <p> Dans ce projet de trois personnes, on a conceptualisé un site permettant d'avoir les renseignements d'une bourse fictive sur Amiens avec un espace exposant.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="p-5">
-                        <div class="MyCard MyPortfolioCard bg-dark align-items-center">
-                            <div class="">
-                                <a href="assets/projects/respons/index.html" target="_blank">
-                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Projet Responsivité">
-                                </a>
-                            </div>
-                            <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet 3 : La responsivité</h4>
-                                <p> Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </main>
 
     <!-- FOOTER -->
@@ -779,6 +686,7 @@
 
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
