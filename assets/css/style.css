@@ -1,4 +1,6 @@
 *{
+    padding: 0;
+    margin: 0;
     font-family: 'Roboto', sans-serif !important;
 }
 
@@ -13,43 +15,55 @@
     font-size: 1.0rem;
 }
 
-.mywallpaper{
-    height: 40vh;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
+.pictAlignement {
+    text-align: center;
 }
 
-.profile{
-    width: 20vh;
-    height: 20vh;
+.profilePict{
+    width: 30%;
 }
 
 .titleProfile {
-    font-size: 1.rem;
+    font-size: 1.2rem;
 }
 
-.colPictProfileResp {
-    text-align: center;
+.containerBanner {
+    margin-top: auto;
+    padding-top: 65px;
+    justify-content: left;
 }
-.colTextProfileResp {
-    margin-top: 15rem;
-    text-align: center;
+
+.twoColTitle {
+    display: none;
+}
+
+.oneColTitle {
+    display: block;
 }
 
 .textBanner {
     font-size: 0.8rem;
-    height: 20vh;
 }
 
 @media (min-width: 768px) {
-    .colPictProfileResp {
-        margin-top: 4rem;
-        margin-left: 5%;    
+    .titleProfile {
+        font-size: 1.5rem;
     }
-    .colTextProfileResp {
-        margin-top: 5rem;
-        margin-left: 35%;
+    .pictAlignement {
+        text-align: right;
     }
+    .textBanner {
+        font-size: 1.2rem;
+    } 
+    .twoColTitle {
+        display: block;
+    }
+    .oneColTitle {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
     .titleProfile {
         font-size: 2.0rem;
     }
@@ -58,56 +72,42 @@
     }    
 }
 
-@media (min-width: 992px) {
-    .colPictProfileResp {
-        margin-bottom: 0%;
-        margin-left: 5%;      
-    }
-    .colTextProfileResp {
-        margin-left: 40%;
-        text-align: start;
-    }
+@media (min-width: 1200px) {
     .titleProfile {
         font-size: 2.5rem;
     }
-    .textBanner {
-        font-size: 1.4rem;
-    }    
-}
-
-@media (min-width: 1200px) {
-    .colPictProfileResp {
-        margin-left: 30%;        
-        text-align: start;
-    }
-    .colTextProfileResp {
-        margin-top: 5rem;
-        margin-left: 45%;
-        text-align: start;
-    }
-    .titleProfile {
-        font-size: 3.0rem;
-    }
+    .profilePict{
+        width: 18vh;
+        height: 18vh;
+    } 
 }
 
 /* Partie Main */
 
-.MyCard {
-    box-shadow: 0 0 5px black;
+main {
+    background-image: url("../img/wallpaper/mywalpaper.jpg"); 
+    background-size: cover;
 }
 
-.myLgCard {
-    box-shadow: 0 0 5px black;
+ul {
+    list-style-type: square; 
 }
 
-.myCompCard {
+.MyCard, .MyLgCard, .MyCompCard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border-radius: 0.25rem;
     box-shadow: 0 0 5px black;
+    height: auto;
 }
 
 .card-img-top {
-    height: 5vh;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
+    height: 35px;
 }
 
 .card-title {
@@ -155,8 +155,19 @@ a {
     text-decoration: none;
 }
 
-.myprogbar {
-    border: 1px solid;
+.fontsizeProgressBar {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    font-size: 1.0rem;
+    color: white;
+}
+
+.progress {
+    background-color: rgb(131, 131, 131);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 25px;
 }
 
 .iconeCompt{
@@ -164,113 +175,154 @@ a {
     height: 4vh;
 }
 
-/* Partie Portfolio */
-
-.BackofForm {
-    width: 100%;
-    height: auto;
-    background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898;
-    background-blend-mode: multiply,multiply;
-    z-index: auto;
-}  
-
-.MyPortFolioContener {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+li#securedNumber span#falseNumber {
+    display: inline;
 }
 
-.MyPortfolioCard {
-    width: 70vw;
-    height: auto;
-    display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;
-    text-align: center;
-    border-radius: 5px 5px 5px 5px;
+li#securedNumber:hover span#falseNumber {
+    display: none;
 }
 
-.PortFolioPicture {
-    width: 100%;
-    height: 45vw;
-    object-fit: cover;
-    border-radius: 5px 5px 0px 0px;
+li#securedNumber span#trueNumber {
+    display: none;
 }
 
-@media (min-width: 576px) {
-    .MyPortfolioCard {
-        flex-direction: row; 
-        flex-wrap: nowrap;
-        width: 60vw;
-        height: 40vh;
-        padding: 0;
-    }
-    .PortFolioPicture {
-        width: 30vw;
-        height: 40vh;
-        border-radius: 5px 0px 0px 5px;
-    }
+li#securedNumber:hover span#trueNumber {
+    display: inline;
 }
 
 @media (min-width: 768px) {
-    .MyPortfolioCard {
-        width: 70vw;
-        height: 35vh;
+    .MyCard {
+        height: calc(20vh + 10vw);
     }
-    .PortFolioPicture {
-        width: 35vw;
-        height: 35vh;
+    .MyLgCard {
+        height: calc(40vh + 20vw);
     }
-}
-
-@media (min-width: 992px) {
-    .MyPortFolioContener {
-        flex-direction: row;
-    }
-    .MyPortfolioCard {
-        width: 80vh;
-        height: 40vh;
-    } 
-    .PortFolioPicture {
-        width: 40vh;
-        height: 40vh;
+    .MyCompCard {
+        height: calc(30vh + 5vw);
     }
 }
 
 @media (min-width: 1200px) {
-    .MyPortfolioCard {
-        width: 50vh;
-        height: 35vh;
-    }
-    .PortFolioPicture {
-        width: 25vh;
-        height: 35vh;
+    main {
+        background-size: 100% 100%;
     }
 }
 
 @media (min-width: 1400px) {
-    .MyPortfolioCard {
-        width: 26vw;
-        height: 40vh;
+    main {
+        background-size: 100% 100%;
     }
-    .PortFolioPicture {
-        width: 13vw;
-        height: 40vh;
+    .MyCard {
+        height: calc(15vh + 5vw);
     }
-    .FolioPadding {
-        padding: 0%;
-        margin: 0%;
+    .MyLgCard {
+        height: calc(35vh + 10vw);
     }
 } 
 
+/* Partie Carousel */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+div.carousel-indicators button {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(1);
+}
+
+.carousel-indicators {
+    margin-bottom: 0rem;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 30px;
+    height: 3px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.carouselContent {
+    height: 50vh;
+}
+
+.carouselCard {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: auto;
+}
+
+.PortFolioPicture {
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
+}
+
+/*@media (min-width: 576px) {
+}*/
+
+@media (min-width: 768px) {
+    .carouselCard {
+        flex-direction: row;
+        height: 50vh;
+        width: auto;
+    }
+    .PortFolioPicture {
+        height: 50vh;
+        width: 40vw;
+        object-fit: cover;
+        border-radius: 5px 5px 0px 0px;
+    }
+}
+
+/*@media (min-width: 992px) {
+}*/
+
+@media (min-width: 1200px) {
+    .carouselCard {
+        height: 50vh;
+        width: auto;
+    }
+    .PortFolioPicture {
+        height: 50vh;
+        width: 40vw;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon,
+    div.carousel-indicators button {
+        width: 4rem;
+        height: 4rem;
+    }
+    .carousel-indicators [data-bs-target] {
+        width: 50px;
+        height: 5px;
+    }
+}
+
+/*@media (min-width: 1400px) {
+} */
+
 /* Partie Footer */
+
+.containerFullSocial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;    
+}
+
+.containSocial {
+    display: flex;
+    flex-direction: column;
+}
 
 .socialNetworkLogo{
     width: 5vh;
     height: 5vh;
-    margin-left: 30%;
+    margin-left: 1vh;
+    margin-right: 1vh;
 }
 
 .socialNetworkText{
@@ -278,30 +330,43 @@ a {
     white-space: nowrap;
 }
 
+
+@media (min-width: 576px) {
+    .socialNetworkText {
+        font-size: 1.0rem;
+    }
+}
+
 @media (min-width: 768px) {
     .socialNetworkText {
         font-size: 1.0rem;
-        display: contents;
-    }
-    .socialNetworkLogo {
-        width: 4vh;
-        height: 4vh;
     }
 }
 
 @media (min-width: 992px) {
     .socialNetworkText {
         font-size: 1.2rem;
+        display: contents;
     }
-    .socialNetworkLogo {
-        width: 5vh;
-        height: 5vh;
+    .containSocial {
+        flex-direction: row;
+        margin-left: 5vh;
+        margin-right: 5vh;
     }
 }
 
+/* Partie de la signature */
+
+.containerSign {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .myLogo {
-    height: 8vh;
-    width: 8vh;
+    height: 6vh;
+    width: 6vh;
 }
 
 .myAlias {

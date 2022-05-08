@@ -1,4 +1,4 @@
-<!doctype html>
+li<!doctype html>
 <html lang="fr-FR">
 
 <head>
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>Développeur Web Stéphane Swaenepoel</title>
+    <title>CV Développeur Web Stéphane Swaenepoel</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png"/>
     <meta name="description" content="Développeur Web et Web mobile à Amiens (Somme)"/>
 </head>
@@ -25,7 +25,7 @@
     <header>
 
         <!-- Barre de navigation -->
-        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark text-white p-0">
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark text-white bg-dark p-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#MyTop">
                     <img class="NavLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
@@ -34,661 +34,658 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#MyInfo">Toutes mes informations</a>
-                        <a class="nav-link" href="#SchoolJobs">Etudes et parcours Pro</a>
-                        <a class="nav-link" href="#MySkills">Mes compétences</a>
-                        <a class="nav-link" href="#MyPortfolio">Mon portfolio</a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#MyInfo">Toutes mes informations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#SchoolJobs">Etudes et parcours Pro</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#MySkills">Mes compétences</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#MyPortfolio">Mon portfolio</a>
+                        </li>
+                    </ul>
+                </div>                    
+            </div>
+        </nav> 
+
+        <section>
+            <!-- Presentation -->
+            <div class="container-fluid containerBanner bg-dark">
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-md-6 pictAlignement p-2">
+                        <img class="profilePict rounded-circle" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
+                    </div>
+
+                    <div class="col-12 col-md-6 text-white">
+                        <h1 class="row titleProfile twoColTitle">            
+                            <div class="col"><strong>Stéphane</strong></div>
+                            <div class="col"><strong>Swaenepoel</strong></div>
+                        </h1>
+                        <h1 class="row titleProfile oneColTitle text-center">            
+                            <span><strong>Stéphane Swaenepoel</strong></span>
+                        </h1>
+                    </div>
+                    
+                    <div class="col-12 text-white textBanner text-center p-3">
+                        Futur Développeur Web et Web Mobile, j'aime avoir du style ! Apprendre de nouvelles choses est mon leitmotiv.
                     </div>
                 </div>
-            </div>
-        </nav>
-
-        <!-- En tête du site avec titre et photo -->
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <span class="mywallpaper position-relative"></span>
-                <div class="col-12 col-md-6 position-absolute colPictProfileResp">
-                    <img class="profile rounded-circle" src="assets/img/photo_cv.jpg" alt="Ma photo de profil">
-                </div>
-                <div class="col-12 col-md-6 position-absolute colTextProfileResp">
-                    <h1 class="titleProfile">Stéphane Swaenepoel</h1>
-                </div>
-            </div>
-        </div>
-
-        <!-- Bannière descriptive -->
-        <div class="container-fluid bg-dark p-3">
-            <div class="row align-items-center text-center">
-                <div class="col">
-                    <span class="text-white textBanner">Futur Développeur Web et Web Mobile, j'aime pour autant avoir du style !<br />
-                        La curiosité, de découvrir toujours de nouvelles choses, est mon leitmotiv.
-                    </span>
-                </div>
-            </div>
-        </div>
-
+            </div>    
+        </section>
     </header>
 
     <!-- MAIN -->
     <main>
+        <section>
+            <div class="container-fluid">
+                <!-- Partie des cartes avec mes diverses informations -->
+                <article>
+                    <div id="MyInfo">
+                        <div class="row justify-content-center">
 
-        <!-- Partie des cartes avec mes diverses informations -->
-        <div class="container" id="MyInfo">
-            <div class="row justify-content-center">
-
-                <!-- Mes informations personnelles -->
-                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">               
-                    <div class="card MyCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                                <h3 class="card-title text-dark fs-5"><strong>Mes informations</strong></h3>
-                        </div>    
-                        <div class="card-body">
-                            <ul>
-                                <li class="mb-2">30 ans</li>
-                                <li class="mb-2">80000 Amiens</li>
-                                <li class="mb-2" id="numbMobile">
-                                    <span class="securMobile1 text-dark" id="FalseNumb">+33 X XX XX XX XX</span>
-                                    <span class="securMobile2 text-dark" id="TrueNumb">+33 6 10 50 15 92</span>
-                                </li>
-                                <li>Permis B</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mon profil -->
-                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Mon profil</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <ul>
-                                <li class="mb-2">Travailleur, équipe ou solo</li>
-                                <li class="mb-2">Autonome</li>
-                                <li class="mb-2">Créatif</li>
-                                <li class="mb-2">Organisé</li>
-                                <li>Joviale</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Langues parlées -->
-                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Langues parlées</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <ul>
-                                <li class="mb-2">Français : Maternel</li>
-                                <li>Anglais : CEF B1</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Mes loisirs -->
-                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card MyCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Mes loisirs</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <ul>
-                                <li class="mb-1">Guitare électrique (Metal)</li>
-                                <li class="mb-1">Bricolage, rénovation</li>
-                                <li class="mb-1">Jeux vidéos (MMORPG, Solo Aventure...)</li>
-                                <li class="mb-1">Impression 3D (Ender 3 Pro)</li>
-                                <li class="mb-1">Cuisine, Patisserie</li>
-                                <li>Découvertes de bières</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Partie des cartes avec mes études et mon parcours professionnel -->
-        <div class="container" id="SchoolJobs">
-            <div class="row justify-content-center">
-        
-                <!-- Historique de formation -->
-                <div class="col-10 col-sm-10 col-md-10 col-xl-4 my-5">
-                    <div class="card myLgCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Historique de formation</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <ul>
-                                <li class="m-3">Formation Développeur Web et Web Mobile (RNCP Niveau III) à partir de
-                                    Mars 2022 à La MANU (AMIENS)</li>
-                                <li class="m-3">Master Electronique Electrotechnique Automatique Informatique
-                                    Industrielle, parcours Vision Robotique en 2016 à l'Université de Picardie Jules
-                                    Verne (AMIENS)</li>
-                                <li class="m-3">Licence Electronique Electrotechnique Automatique en 2014 à l'Université
-                                    de Picardie Jules Verne</li>
-                                <li class="m-3">BTS Systèmes Electroniques en 2013 au Lycée Edouard Branly (AMIENS)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Parcours professionnel -->
-                <div class="col-10 col-sm-10 col-md-10 col-xl-8 my-5">
-                    <div class="card myLgCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Parcours professionnel</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <ul>
-                                <li class="m-3">
-                                    <h5>Chargés d'études chez Innovateam (92) de Novembre à Décembre 2020</h5>
-                                    <span>Client Massey Fergusson (60)</span>
-                                    <ul>
-                                        <li><span>Etude électrique/électronique pour l'ajout d'une nouvelle
-                                                fonctionnalité sur une nouvelle gamme de tracteur</span></li>
-                                        <li><span>Vérification de schémas électrique</span></li>
-                                    </ul>
-                                </li>
-                                <li class="m-3">
-                                    <h5>Technicien d'étude électrique chez CCAMY SYSTEMES (76) de Décembre 2016 à
-                                        Juillet 2021</h5>
-                                    <span>Bureau d'études (76) - 5 mois</span>
-                                    <ul>
-                                        <li><span>Etude de schéma électrique de type SPP</span></li>
-                                    </ul>
-                                    <span>Client Alstom (59) - 3 mois</span>
-                                    <ul>
-                                        <li><span>Etude de schéma électrique de type Synoptique</span></li>
-                                    </ul>
-                                    <span>Client Massey Fergusson (60)</span>
-                                    <ul>
-                                        <li><span>Architecture électrique avec des schémas de type SPC</span></li>
-                                        <li><span>Modélisation 3D des faisceaux + intégration épure</span></li>
-                                        <li><span>Création/Mise à jour de scripts VBS</span></li>
-                                    </ul>
-                                </li>
-                                <li class="m-3">
-                                    <h5>Stage de fin d'étude Master 2 chez Ineris (60) de 6 mois en 2016</h5>
-                                    <ul>
-                                        <li><span>Prise en main d'un ensemble d'acquisition (centrale, capteurs) pour
-                                                l'hydrométrie</span></li>
-                                        <li><span>Evaluation des performances énergétiques et des volumes de données
-                                                (Routeur 3G,modem GPRS/3G, ADSL et WIFI)</span></li>
-                                        <li><span>Programmation (type GRAFCET) d'une centrale pour une mise en fonction
-                                                à la Réunion</span></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Partie avec mes compétences dans tous les domaines-->
-        <div class="container" id="MySkills">
-            <div class="row justify-content-center">
-
-                <!-- Mes compétences WEB -->
-                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card myCompCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Mes compétences WEB</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/html-5.png" alt="HTML 5" title="HTML 5">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                            50%</div>
+                            <!-- Mes informations personnelles -->
+                            <div class="col-10 col-md-6 col-xl-3 my-5">               
+                                <div class="MyCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Mes informations</strong></h3>
+                                    </div>    
+                                    <div class="card-body">
+                                        <ul id="personnalInfo">
+                                            <li class="mb-2">30 ans</li>
+                                            <li class="mb-2">Habitant dans la Somme</li>
+                                            <li class="mb-2" id="securedNumber">
+                                                <span id="falseNumber">+33 X XX XX XX XX</span>
+                                                <span id="trueNumber">+33 6 10 50 15 92</span>
+                                            </li>
+                                            <li>Permis B</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/css-3.png" alt="CSS 3" title="CSS 3">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                            50%</div>
+
+                            <!-- Mon profil -->
+                            <div class="col-10 col-md-6 col-xl-3 my-5">
+                                <div class="MyCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Mon profil</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <ul id="profileInfo">
+                                            <li class="mb-2">Capacité d'adaptation</li>
+                                            <li class="mb-2">Autonome</li>
+                                            <li class="mb-2">Créatif</li>
+                                            <li class="mb-2">Organisé</li>
+                                            <li>Jovial</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/bootstrap.png" alt="bootstrap"
-                                        title="Bootstrap">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            50%</div>
+
+                            <!-- Langues parlées -->
+                            <div class="col-10 col-md-6 col-xl-3 my-5">
+                                <div class="MyCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Langues parlées</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <ul id="languageInfo">
+                                            <li class="mb-2">Français : langue maternelle</li>
+                                            <li>Anglais : CEF B1</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/javascript.png" alt="Javascript"
-                                        title="Javascript">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/nodejs.png" alt="Node JS"
-                                        title="Node JS">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/reactjs.png" alt="React JS"
-                                        title="React JS">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%
-                                        </div>
+
+                            <!-- Mes loisirs -->
+                            <div class="col-10 col-md-6 col-xl-3 my-5">
+                                <div class="MyCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Mes loisirs</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="mb-1">Guitare électrique (Metal)</li>
+                                            <li class="mb-1">Bricolage, rénovation</li>
+                                            <li class="mb-1">Jeux vidéos (MMORPG, Solo Aventure...)</li>
+                                            <li class="mb-1">Impression 3D (Ender 3 Pro) + Modélisation 3D</li>
+                                            <li class="mb-1">Cuisine, Pâtisserie</li>
+                                            <li>Zythologue</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </div>                
+                </article>
 
-                <!-- Logiciels de suivi/gestion -->
-                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card myCompCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Logiciels de suivi/Gestion</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/github.png" alt="Github" title="Github">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                            80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/trello.svg" alt="Trello" title="Trello">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                            80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <h5 class="card-title text-center my-3"><strong>Logiciels de modélisations</strong></h5>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/solidworks.png" alt="Solidworks"
-                                        title="Solidworks">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            30%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/creo.png" alt="PTC Creo"
-                                        title="PTC Creo">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                            40%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Compétences électrique/électronique -->
-                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card myCompCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Compétences électronique</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/langagec.png" alt="Langage C"
-                                        title="Langage C">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
-                                            30%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/langagecplusplus.png" alt="Langage C++"
-                                        title="Langage C++">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-                                            10%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/e3series.png" alt="E3.Series"
-                                        title="E3.Series">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                            80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/isis.jpg" alt="Proteus ISIS"
-                                        title="Proteus ISIS">
-                                </div>
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/ares.jpg" alt="Proteus ARES"
-                                        title="Proteus ARES">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
-                                            20%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Compétences électrique/électronique -->
-                <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
-                    <div class="card myCompCard">
-                        <div class="d-flex card-img-top text-center justify-content-center align-items-center">
-                            <h3 class="card-title text-dark fs-5"><strong>Autres compétences</strong></h3>
-                        </div> 
-                        <div class="card-body">
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/photoshop.png" alt="Adobe Photoshop"
-                                        title="Adobe Photoshop">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
-                                            40%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/xd.png" alt="Adobe XD" title="Adobe XD">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                            80%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/word.svg" alt="Microsoft Word"
-                                        title="Microsoft Word">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                            90%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/excel.svg" alt="Microsoft Excel"
-                                        title="Microsoft Excel">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                                            50%</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-2">
-                                <div class="col-2">
-                                    <img class="iconeCompt" src="assets/img/ico/powerpoint.svg"
-                                        alt="Microsoft Powerpoint" title="Microsoft Powerpoint">
-                                </div>
-                                <div class="col my-auto">
-                                    <div class="progress myprogbar">
-                                        <div class="progress-bar progress-bar-striped" role="progressbar"
-                                            style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                            90%</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Portfolio -->
-        <div class="container-fluid p-0" id="MyPortfolio">
-            <div class="d-flex flex-column BackofForm text-black justify-content-center align-items-center">
-                <div class="p-3">
-                    <h2 class="fs-1"><strong>PORTFOLIO</strong></h2>       
-                </div>
-                <div class="MyPortFolioContener">
+                <!-- Partie des cartes avec mes études et mon parcours professionnel -->
+                <article>
+                    <div id="SchoolJobs">
+                        <div class="row justify-content-center">
                     
-                    <!-- Projet des cards -->
-                    <div class="p-5">
-                        <div class="card MyPortfolioCard bg-dark align-items-center">
-                            <div class="">
-                                <a href="assets/projects/cards/index.html" target="_blank">
-                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectCards.jpg" alt="Les cards">
-                                </a>
+                            <!-- Historique de formation -->
+                            <div class="col-10 col-sm-10 col-md-10 col-xl-4 my-5">
+                                <div class="MyLgCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Historique de formation</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="m-3">Formation Développeur Web et Web Mobile (RNCP Niveau III) à partir de
+                                                mars 2022 à La MANU (AMIENS)</li>
+                                            <li class="m-3">Master Electronique Electrotechnique Automatique Informatique
+                                                Industrielle, parcours Vision Robotique en 2016 à l'Université de Picardie Jules
+                                                Verne (AMIENS)</li>
+                                            <li class="m-3">Licence Electronique Electrotechnique Automatique en 2014 à l'Université
+                                                de Picardie Jules Verne</li>
+                                            <li class="m-3">BTS Systèmes Electroniques en 2013 au Lycée Edouard Branly (AMIENS)</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet des CARDS</h4>
-                                <p> Dans ce projet, on a du utiliser simplement les cards en CSS avec des flexbox.</p>
+
+                            <!-- Parcours professionnel -->
+                            <div class="col-10 col-sm-10 col-md-10 col-xl-8 my-5">
+                                <div class="MyLgCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Parcours professionnel</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <ul>
+                                            <li class="m-3">
+                                                <h5>Chargé d'études chez Innovateam (92) de novembre à décembre 2020</h5>
+                                                <span>Client Massey Fergusson (60)</span>
+                                                <ul>
+                                                    <li><span>Etude électrique/électronique pour l'ajout d'une nouvelle
+                                                            fonctionnalité sur une nouvelle gamme de tracteur</span></li>
+                                                    <li><span>Vérification de schémas électriques</span></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m-3">
+                                                <h5>Technicien d'étude électrique chez CCAMY SYSTEMES (76) de décembre 2016 à
+                                                    juillet 2021</h5>
+                                                <span>Bureau d'études (76) - 5 mois</span>
+                                                <ul>
+                                                    <li><span>Etude de schéma électrique de type SPP</span></li>
+                                                </ul>
+                                                <span>Client Alstom (59) - 3 mois</span>
+                                                <ul>
+                                                    <li><span>Etude de schéma électrique de type Synoptique</span></li>
+                                                </ul>
+                                                <span>Client Massey Fergusson (60)</span>
+                                                <ul>
+                                                    <li><span>Architecture électrique avec des schémas de type SPC</span></li>
+                                                    <li><span>Modélisation 3D des faisceaux + intégration épure</span></li>
+                                                    <li><span>Création/Mise à jour de scripts VBS</span></li>
+                                                </ul>
+                                            </li>
+                                            <li class="m-3">
+                                                <h5>Stage de fin d'étude Master 2 chez Ineris (60) de 6 mois en 2016</h5>
+                                                <ul>
+                                                    <li><span>Prise en main d'un ensemble d'acquisitions (centrale, capteurs) pour
+                                                            l'hydrométrie</span></li>
+                                                    <li><span>Evaluation des performances énergétiques et des volumes de données
+                                                            (Routeur 3G,modem GPRS/3G, ADSL et WIFI)</span></li>
+                                                    <li><span>Programmation (type GRAFCET) d'une centrale pour une mise en fonction
+                                                            à la Réunion</span></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                
+                </article>
 
-                    <!-- Projet de la bourse HighTech -->
-                    <div class="p-5">
-                        <div class="card MyPortfolioCard bg-dark align-items-center">
-                            <div class="">
-                                <a href="assets/projects/site/index.html" target="_blank">
-                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Création d'un site">
-                                </a>
+                <!-- Partie avec mes compétences dans tous les domaines-->
+                <article>
+                    <div id="MySkills">
+                        <div class="row justify-content-center">
+
+                            <!-- Mes compétences WEB -->
+                            <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
+                                <div class="MyCompCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Compétences WEB</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/html-5.png" alt="HTML 5" title="HTML 5">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">50%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/css-3.png" alt="CSS 3" title="CSS 3">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">50%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/bootstrap.png" alt="bootstrap"
+                                                    title="Bootstrap">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">50%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/javascript.png" alt="Javascript"
+                                                    title="Javascript">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">En cours</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/nodejs.png" alt="Node JS"
+                                                    title="Node JS">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">En cours</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/reactjs.png" alt="React JS"
+                                                    title="React JS">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">En cours</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet d'un site de Bourse High Tech</h4>
-                                <p> Dans ce projet de trois personnes, on a conceptualisé un site permettant d'avoir les renseignements d'une bourse fictive sur Amiens avec un espace exposant.</p>
+
+                            <!-- Logiciels de suivi/gestion -->
+                            <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
+                                <div class="MyCompCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Logiciels de suivi/Gestion</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/github.png" alt="Github" title="Github">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">80%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/trello.svg" alt="Trello" title="Trello">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">80%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Logiciels de modélisations</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/solidworks.png" alt="Solidworks"
+                                                    title="Solidworks">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">80%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/creo.png" alt="PTC Creo"
+                                                    title="PTC Creo">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">40%</small>
+                                                </div>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Compétences électrique/électronique -->
+                            <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
+                                <div class="MyCompCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Compétences en électronique</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/langagec.png" alt="Langage C"
+                                                    title="Langage C">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 30%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">30%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/langagecplusplus.png" alt="Langage C++"
+                                                    title="Langage C++">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">10%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/e3series.png" alt="E3.Series"
+                                                    title="E3.Series">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">80%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/isis.jpg" alt="Proteus ISIS"
+                                                    title="Proteus ISIS">
+
+                                                <img class="iconeCompt" src="assets/img/ico/ares.jpg" alt="Proteus ARES"
+                                                    title="Proteus ARES">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 20%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">20%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Compétences électrique/électronique -->
+                            <div class="col-10 col-sm-10 col-md-5 col-xl-3 my-5">
+                                <div class="MyCompCard">
+                                    <div class="d-flex card-img-top text-center justify-content-center align-items-center bg-dark">
+                                        <h3 class="card-title text-white fs-5"><strong>Autres compétences</strong></h3>
+                                    </div> 
+                                    <div class="card-body">
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/photoshop.png" alt="Adobe Photoshop"
+                                                    title="Adobe Photoshop">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 40%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">40%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/xd.png" alt="Adobe XD" title="Adobe XD">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 80%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">80%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/word.svg" alt="Microsoft Word"
+                                                    title="Microsoft Word">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">90%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/excel.svg" alt="Microsoft Excel"
+                                                    title="Microsoft Excel">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 50%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">50%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row my-2">
+                                            <div class="col-2">
+                                                <img class="iconeCompt" src="assets/img/ico/powerpoint.svg"
+                                                    alt="Microsoft Powerpoint" title="Microsoft Powerpoint">
+                                            </div>
+                                            <div class="col my-auto">
+                                                <div class="progress position-relative">
+                                                    <div class="progress-bar bg-warning progress-bar-striped" role="progressbar" style="width: 90%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                    <small class="fontsizeProgressBar w-100">90%</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </div>                
+                </article>
+            </div>   
+        </section>
 
-                    <!-- Projet de la responsivité d'un site -->
-                    <div class="p-5">
-                        <div class="card MyPortfolioCard bg-dark align-items-center">
-                            <div class="">
-                                <a href="assets/projects/respons/index.html" target="_blank">
-                                    <img class="PortFolioPicture" src="assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Projet Responsivité">
-                                </a>
+        <!-- Portfolio version Carousel -->
+        <section>
+            <div class="container-fluid border-bottom border-white pb-5" id="MyPortfolio">
+                <div class="row">
+                    <div class="col-12 pb-2">
+                        <h3 class="text-white text-center fw-bold pb-2">Mon Portfolio</h3>
+                        <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false" data-bs-touch="false" data-bs-interval="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="card-body text-white">
-                                <h4 class="fs-5 border border-white">Projet sur la responsivité</h4>
-                                <p> Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
+                            <div class="carousel-inner carouselContent text-center">
+            
+                                <!-- Projet des cards -->
+                                <div class="carousel-item active">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-9">
+                                            <div class="carouselCard border border-dark rounded">
+                                                <div>
+                                                    <a href="assets/projects/cards/index.html" target="_blank">
+                                                        <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectCards.jpg" alt="Les cards">
+                                                    </a>
+                                                </div>
+                                                <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
+                                                    <h4 class="card-title pb-4 fw-bold">Projet 1 : Les CARDS</h4>
+                                                    <p class="card-text">Dans ce projet, on a dû utiliser simplement les cards en CSS avec des flexbox.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+            
+                                <!-- Projet du site Web -->
+                                <div class="carousel-item">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-9">
+                                            <div class="carouselCard border border-white rounded">
+                                                <a href="assets/projects/site/index.html" target="_blank">
+                                                    <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Création d'un site">
+                                                </a>
+                                                <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
+                                                    <h4 class="card-title pb-4 fw-bold">Projet 2 : Site de Bourse High Tech</h4>
+                                                    <p class="card-text">Dans ce projet de trois personnes, on a conceptualisé un site d'une bourse fictive avec un espace exposant.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+            
+                                <!-- Projet du site Web responsible -->
+                                <div class="carousel-item">
+                                    <div class="row d-flex justify-content-center">
+                                        <div class="col-9">
+                                            <div class="carouselCard border border-white rounded">
+                                                <a href="assets/projects/respons/index.html" target="_blank">
+                                                    <img class="PortFolioPicture rounded" src="assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Projet Responsivité">
+                                                </a>
+                                                <div class="card-body d-flex flex-column justify-content-center bg-white rounded">
+                                                    <h4 class="card-title pb-4 fw-bold">Projet 3 : La responsivité</h4>
+                                                    <p class="card-text">Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+            
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-
+        </section>
     </main>
 
     <!-- FOOTER -->
     <footer>
 
         <!-- Bannière avec les réseaux sociaux et signature-->
-        <div class="container-fluid bg-dark">
+        <div class="container-fluid containerFullSocial bg-dark border-bottom border-white p-2">
 
-            <!-- Réseaux sociaux -->
-            <div class="row justify-content-center border-bottom border-white p-3">
-
-                <!-- Instagram -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <a href="https://www.instagram.com/zokkyen/?hl=fr" target="_blank">
-                                <img class="socialNetworkLogo" src="assets/img/ico/instagram.png" alt="Instagram"
-                                    title="Mon Instagram">
-                            </a>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">Instagram</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Github -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
-                                <img class="socialNetworkLogo" src="assets/img/ico/linkedin.png" alt="LinkedIn"
-                                    title="Mon LinkedIn">
-                            </a>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">LinkedIn</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Github -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <a href="https://github.com/Zokkyen" target="_blank">
-                                <img class="socialNetworkLogo" src="assets/img/ico/github.png" alt="Github"
-                                    title="Mon Github">
-                            </a>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">Github</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Mail Google -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <a href="mailto:stephane.swaenepoel@gmail.com">
-                                <img class="socialNetworkLogo" src="assets/img/ico/google.png" alt="Mail"
-                                    title="Mon Mail Google">
-                            </a>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">Mail</span>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Imprimer le CV -->
-                <div class="col-2">
-                    <div class="row align-items-center">
-                        <div class="col-4">
-                            <i onclick="window.open('assets/files/cv.pdf')">
-                                <img class="socialNetworkLogo" src="assets/img/ico/printer.png" alt="Mon CV"
-                                    title="Télécharger mon CV">
-                            </i>
-                        </div>
-                        <div class="col-8">                            
-                            <span class="text-white socialNetworkText">Mon CV</span>
-                        </div>
-                    </div>
-                </div>
+            <!-- LinkedIn -->
+            <div>
+                <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
+                    <img class="socialNetworkLogo p-1" src="assets/img/ico/linkedin.png" alt="LinkedIn"
+                        title="Mon LinkedIn">
+                </a>
             </div>
+            <div>
+                <span class="text-white socialNetworkText">LinkedIn</span>
+            </div>
+
+        
+
+            <!-- Github -->
+            <div>
+                <a href="https://github.com/Zokkyen" target="_blank">
+                    <img class="socialNetworkLogo p-1" src="assets/img/ico/github.png" alt="Github"
+                        title="Mon Github">
+                </a>
+            </div>
+            <div>
+                <span class="text-white socialNetworkText">Github</span>
+            </div>
+
+
+            <!-- Mail Google -->
+            <div>
+                <a href="mailto:stephane.swaenepoel@gmail.com">
+                    <img class="socialNetworkLogo p-1" src="assets/img/ico/google.png" alt="Mail"
+                        title="Mon Mail Google">
+                </a>
+            </div>
+            <div>
+                <span class="text-white socialNetworkText">Mail</span>
+            </div>
+
+
+            <!-- Imprimer le CV -->
+            <div>
+                <i onclick="window.open('assets/files/cv.pdf')">
+                    <img class="socialNetworkLogo p-1" src="assets/img/ico/printer.png" alt="Mon CV"
+                        title="Télécharger mon CV">
+                </i>
+            </div>
+            <div>
+                <span class="text-white socialNetworkText">Mon CV</span>
+            </div>
+
         </div>
 
-        <div class="container-fluid bg-dark">
-            <div class="d-flex flex-row justify-content-center align-items-center">
-                <div class=""> 
-                    <a href="#MyTop">
-                        <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
-                    </a>  
-                </div> 
-                <div class="">
-                    <span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span>    
-                </div>                    
-            </div>
-        </div>
+        <!-- Signature Footer -->
+        <div class="container-fluid containerSign bg-dark">
+            <div>
+                <a href="#MyTop">
+                    <img class="myLogo" src="assets/img/logo/logo.png" alt="Logo Zokkyen">
+                </a>
+            </div> 
+            <div>
+                <span class="text-white myAlias">Stéphane Swaenepoel<br/>alias Zokkyen &copy;</span>
+            </div>                    
+        </div>                    
 
     </footer>
 
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
