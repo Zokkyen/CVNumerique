@@ -45,9 +45,6 @@
     font-size: 0.8rem;
 }
 
-/*@media (min-width: 576px) {
-}*/
-
 @media (min-width: 768px) {
     .titleProfile {
         font-size: 1.5rem;
@@ -89,44 +86,14 @@
 
 main {
     background-image: url("../img/wallpaper/mywalpaper.jpg"); 
-    /* background-size: 100% 100%; */
     background-size: cover;
 }
 
 ul {
-    list-style-type: none; 
+    list-style-type: square; 
 }
 
-/*content: '\1F4BB'; computer*/
-
-    /* Sous partie avec les émojis */
-    /* Mes informations */
-    ul#personnalInfo li:nth-child(1):before{ 
-        content: '\1F382';
-    } 
-
-    ul#personnalInfo li:nth-child(2):before{ 
-        content: '\1F3E0';
-    } 
-
-    ul#personnalInfo li:nth-child(3):before{ 
-        content: '\1F4F1';
-    } 
-
-    ul#personnalInfo li:nth-child(4):before{ 
-        content: '\1F697';
-    } 
-
-    /* Langues parlées */    
-    ul#languageInfo li:nth-child(1):before{ 
-        content: '\1F956';
-    } 
-    
-    ul#languageInfo li:nth-child(2):before{ 
-        content: '\1F375';
-    } 
-
-.MyCard {
+.MyCard, .MyLgCard, .MyCompCard {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -187,9 +154,33 @@ li#securedNumber:hover span#trueNumber {
     display: inline;
 }
 
+@media (min-width: 768px) {
+    .MyCard {
+        height: calc(20vh + 10vw);
+    }
+    .MyLgCard {
+        height: calc(40vh + 20vw);
+    }
+    .MyCompCard {
+        height: calc(30vh + 5vw);
+    }
+}
+
+@media (min-width: 1200px) {
+    main {
+        background-size: 100% 100%;
+    }
+}
+
 @media (min-width: 1400px) {
     main {
         background-size: 100% 100%;
+    }
+    .MyCard {
+        height: calc(15vh + 5vw);
+    }
+    .MyLgCard {
+        height: calc(35vh + 10vw);
     }
 } 
 
