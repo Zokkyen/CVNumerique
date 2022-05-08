@@ -170,6 +170,9 @@ li#securedNumber:hover span#trueNumber {
     main {
         background-size: 100% 100%;
     }
+    .MyLgCard {
+        height: calc(55vh + 15vw);
+    }
 }
 
 @media (min-width: 1400px) {
@@ -177,10 +180,13 @@ li#securedNumber:hover span#trueNumber {
         background-size: 100% 100%;
     }
     .MyCard {
-        height: calc(15vh + 5vw);
+        height: calc(10vh + 10vw);
     }
     .MyLgCard {
-        height: calc(35vh + 10vw);
+        height: calc(35vh + 15vw);
+    }
+    .MyCompCard {
+        height: calc(27vh + 5vw);
     }
 } 
 
