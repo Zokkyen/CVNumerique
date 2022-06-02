@@ -15,11 +15,16 @@ html {
 }
 
 body {
-    margin-top: 3.8rem;
+    width: 100vw;
+    height: 100vh;   
     font-family: 'Roboto', sans-serif !important;
 }
 
 /* Navbar of Header */
+
+main{
+    margin-top: 4.0rem;
+}
 
 .navbar {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -57,7 +62,7 @@ body {
 
 /* Resume */
 
-.myInfo {
+.allInformations {
     height: 300px;
 }
 
@@ -81,10 +86,29 @@ body {
 /* Personnal Info Container */
 
 .infoContainer {
-    height: 300px;
+    /*height: 300px;*/
     border-radius: 10px;
+    margin-bottom: 50px;
 
+}
 
+.myInfo {
+    width: fit-content;
+    /*white-space: nowrap;*/
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+	margin: 0;
+	padding: 5px 0 5px 25px;
+	list-style: none;
+	background-image: url("../img/ico/balise.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
 }
 
 
@@ -101,14 +125,6 @@ body {
 
 
 
-
-
-
-
-
-.test {
-    height: 100vh;
-}
 
 
 
@@ -123,12 +139,12 @@ body {
 /* Footer */
 
 .myFooter {
-    height: 50px;
+    height: 60px;
     font-size: 0.8rem;
     border-radius: 15px 15px 0 0;
 }
 
 .sociaLogo{
-    width: 90%;
-    height: 90%;
+    width: 120%;
+    height: 120%;
 }
