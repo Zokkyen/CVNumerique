@@ -114,6 +114,43 @@ ul {
     margin-bottom: 0rem !important;
 }
 
+li#numbMobile span#FalseNumb {
+    display:inline;
+}
+li#numbMobile:hover span#FalseNumb {
+    display:none;
+}
+li#numbMobile span#TrueNumb {
+    display:none;
+}
+li#numbMobile:hover span#TrueNumb {
+    display:inline;
+}
+
+@media (min-width: 768px) {
+    .MyCard {
+        height: 35vh;
+    }
+    .myCompCard {
+        height: 38vh;
+    }   
+}
+
+@media (min-width: 1200px) {
+    .myLgCard {
+        height: 77vh;
+    }    
+}
+
+@media (min-width: 1400px) {
+    .MyCard {
+        height: 32vh;
+    }
+    .myLgCard {
+        height: 72vh;
+    }    
+}
+
 a {
     text-decoration: none;
 }
