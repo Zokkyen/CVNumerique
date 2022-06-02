@@ -18,48 +18,146 @@
 
 <body>
 
-    <footer>
-
-        <a class="close-navbar-toggler collapsed" data-toggle="collapse" 
-            data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
-            aria-expanded="false" aria-label="Toggle navigation">
-        </a>
+    <header>
         <nav class="navbar navbar-expand-lg bg-warning fixed-top p-0">
             <div class="container-fluid p-0 pe-2">
-                <a class="navbar-brand p-0 d-flex align-items-center text-center" href="#">
+
+                <a class="navbar-brand d-flex align-items-center p-0" href="#">
                     <img src="public/assets/img/logo/logo.png" alt="" width="60" height="60"
                         class="d-inline-block align-text-top m-0">
-                    <span class="">Mon CV numérique V2</span>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link" href="#">Disabled</a>
+
+                <div class="offcanvas offcanvas-end bg-warning" data-bs-scroll="true" tabindex="-1"
+                    id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-body text-end fs-5 p-0 pe-3 mt-1 mb-1">
+                        <a class="nav-link m-2" href="#">&lt;--&nbsp;Informations&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#">&lt;--&nbsp;Compétences&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#">&lt;--&nbsp;Etudes&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#">&lt;--&nbsp;Jobs&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#">&lt;--&nbsp;Portfolio&nbsp;--&gt;</a>
                     </div>
+
+                    <button type="button" class="closeCanvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img class="closeButton" src="public/assets/img/ico/cancel.png" alt="Close button">
+                    </button>
                 </div>
             </div>
         </nav>
-
-    </footer>
+    </header>
 
     <main>
+        <!-- Information -->
+        <section>
+            <div class="container-fluid myInfo">
+                <div class="row align-items-center justify-content-center mt-2 mb-2 h-100">
+                    <div id="rotateAnimation" class="rhombus bg-warning rounded">
+                        <img id="pictureAnimation" class="profilePicture rounded-circle" src="public/assets/img/photo_cv.jpg"
+                            alt="Profile Picture">
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center text-center ps-2 pe-2 mb-5">
+                    <h1 class="fs-5">Je m'appelle
+                        <strong>Stéphane Swaenepoel</strong>, futur
+                        <span class="text-warning">développeur Web et Web Mobile</span>.<br/>
+                        Apprendre de nouvelles choses est mon <span class="border-bottom border-warning"><strong>Leitmotiv</strong></span> !
+                    </h1>
+                </div>
+                <div class="row align-items-center justify-content-center text-center ps-2 pe-2">
+                    <div class="col-12 col-md-2 col-lg-6">
+                        <div class="infoContainer bg-dark">
 
-        <div></div>
 
+
+                        </div>
+
+
+                    </div>
+                    <div class="col-12 col-md-2 col-lg-6">
+
+
+
+                    </div>
+                    <div class="col-12 col-md-2 col-lg-6">
+
+
+
+                    </div>
+                    <div class="col-12 col-md-2 col-lg-6">
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section>
+            <article>
+                <div class="test"></div>
+            </article>
+            <article></article>
+            <article></article>
+            <article></article>
+            <article></article>
+        </section>
+
+        <!-- Studies -->
+        <section>
+        </section>
+
+        <!-- Jobs -->
+        <section>
+        </section>
+
+        <!-- Portfolio -->
+        <section>
+        </section>
     </main>
 
-    <header>
+    <footer>
+        <div class="container-fluid myFooter bg-warning">
+            <div class="row align-items-center h-100">
 
-        <div></div>
+                <div class="col">
+                    <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
+                        <img class="sociaLogo" src="public/assets/img/ico/linkedin.png" alt="LinkedIn"
+                            title="Mon LinkedIn">
+                    </a>
+                </div>
 
-    </header>
+                <div class="col">
+                    <a href="https://github.com/Zokkyen" target="_blank">
+                        <img class="sociaLogo" src="public/assets/img/ico/github.png" alt="Github" title="Mon Github">
+                    </a>
+                </div>
+
+                <div class="col-5 text-center">
+                    <span><strong>Stéphane Swaenepoel</strong><br />&copy; 2022</span>
+                </div>
+
+                <div class="col">
+                    <a href="mailto:stephane.swaenepoel@gmail.com">
+                        <img class="sociaLogo" src="public/assets/img/ico/google.png" alt="Mail"
+                            title="Mon Mail Google">
+                    </a>
+                </div>
+
+                <div class="col">
+                    <i onclick="window.open('assets/files/cv.pdf')">
+                        <img class="sociaLogo" src="public/assets/img/ico/printer.png" alt="Mon CV"
+                            title="Télécharger mon CV">
+                    </i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     <script src="public/assets/js/bootstrap/bootstrap.min.js"></script>
     <script src="public/assets/js/script.js"></script>
 </body>

@@ -1,3 +1,8 @@
+/* Initialization of HTML */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -10,30 +15,120 @@ html {
 }
 
 body {
-    margin-top: calc(100vh - 4rem);
-    min-height:100vh;
-    position:relative;
+    margin-top: 3.8rem;
+    font-family: 'Roboto', sans-serif !important;
 }
 
-.navbar-collapse {
-    text-align: end;
-}
+/* Navbar of Header */
 
 .navbar {
-    z-index: 2;
-    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-radius: 0 0 15px 15px;
 }
 
-.close-navbar-toggler {
+.btn {
+    border: none !important;
+}
+
+.btn:hover {
+    border: none !important;
+}
+
+.offcanvas-end {
+    width: 250px !important;
+    height: 210px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.closeCanvas {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    cursor: pointer;
+    background: none;
+    top: 175px;
+    right: 215px;
+    border: 0;
 }
 
-.close-navbar-toggler.collapsed {
-    z-index: -1;
+.closeButton {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+/* Main Content */
+
+/* Resume */
+
+.myInfo {
+    height: 300px;
+}
+
+.rhombus {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.profilePicture {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 10px;
+    left: 10px;
+    transform: rotate(-45deg);
+}
+
+/* Personnal Info Container */
+
+.infoContainer {
+    height: 300px;
+    border-radius: 10px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.test {
+    height: 100vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+
+.myFooter {
+    height: 50px;
+    font-size: 0.8rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.sociaLogo{
+    width: 90%;
+    height: 90%;
 }
