@@ -16,7 +16,7 @@ html {
 
 body {
     width: 100vw;
-    height: 100vh;   
+    height: 100vh;
     font-family: 'Roboto', sans-serif !important;
 }
 
@@ -41,14 +41,14 @@ main{
 
 .offcanvas-end {
     width: 250px !important;
-    height: 210px;
+    height: 220px;
     border-radius: 0px 0px 0px 20px;
 }
 
 .closeCanvas {
     position: absolute;
     background: none;
-    top: 175px;
+    top: 185px;
     right: 215px;
     border: 0;
 }
@@ -56,6 +56,15 @@ main{
 .closeButton {
     width: 1.8rem;
     height: 1.8rem;
+}
+
+.nav-link {
+    display: none;
+}
+
+.nav-link:hover {
+    font-weight: bolder;
+    zoom: 1.2;
 }
 
 /* Main Content */
