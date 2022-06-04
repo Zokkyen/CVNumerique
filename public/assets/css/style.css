@@ -2,29 +2,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html {
-    /*width: 100vw*/
-    /*height: 100vh;*/
-}
-
 body {
-    /*width: 100vw;*/
-    /*height: 100vh;*/
     font-family: 'Roboto', sans-serif !important;
 }
 
 /* Navbar of Header */
-
-main{
-    margin-top: 4.0rem;
-}
 
 .navbar {
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -37,6 +25,10 @@ main{
 
 .btn:hover {
     border: none !important;
+}
+
+.offcanvas-body {
+    overflow-x: hidden !important;
 }
 
 .offcanvas-end {
@@ -71,7 +63,11 @@ main{
 
 /* Resume */
 
-.allInformations {
+main{
+    margin-top: 4.0rem;
+}
+
+.pictureContainer {
     height: 300px;
 }
 
@@ -92,18 +88,17 @@ main{
     transform: rotate(-45deg);
 }
 
-/* Personnal Info Container */
-
-.infoContainer {
-    /*height: 300px;*/
-    border-radius: 10px;
-    margin-bottom: 50px;
-
-}
+/* Personnal Information Section */
 
 .myInfo {
     width: fit-content;
-    /*white-space: nowrap;*/
+}
+
+.colWidth {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
 }
 
 ul {
@@ -119,6 +114,47 @@ li {
 	background-position: left center;
 	background-size: 20px;
 }
+
+.langFr {
+	background-image: url("../img/ico/fr.png") !important;
+}
+
+.langEng {
+	background-image: url("../img/ico/eng.png") !important;
+}
+
+/* Skills Section */
+
+.accordion-button {
+    color: #FFC107 !important;
+}
+
+.accordion-button::after {
+    filter: invert(75%) sepia(36%) saturate(1114%) hue-rotate(350deg) brightness(101%) contrast(106%);
+}
+
+.skillLogo {
+    height: 40px;
+    width: 40px;
+}
+
+span img {
+    height: 20px;
+    width: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -148,10 +184,6 @@ li {
 /* Footer */
 
 .myFooter {
-    /*position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;*/
     height: 60px;
     font-size: 0.8rem;
     border-radius: 15px 15px 0 0;

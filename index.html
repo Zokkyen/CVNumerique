@@ -36,7 +36,7 @@
                     id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                     <div class="offcanvas-body text-end fs-5 p-0 pe-3 mt-1 mb-1">
                         <a class="nav-link m-2" href="#navInformation">&lt;--&nbsp;Informations&nbsp;--&gt;</a>
-                        <a class="nav-link m-2" href="#">&lt;--&nbsp;Compétences&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#skills">&lt;--&nbsp;Compétences&nbsp;--&gt;</a>
                         <a class="nav-link m-2" href="#">&lt;--&nbsp;Etudes&nbsp;--&gt;</a>
                         <a class="nav-link m-2" href="#">&lt;--&nbsp;Jobs&nbsp;--&gt;</a>
                         <a class="nav-link m-2" href="#">&lt;--&nbsp;Portfolio&nbsp;--&gt;</a>
@@ -53,73 +53,338 @@
     <main>
         <!-- Information -->
         <section>
-            <div class="container-fluid allInformations">
-                <div class="row align-items-center justify-content-center mt-2 mb-2 h-100">
+            <div class="container-fluid">
+
+                <div class="row pictureContainer align-items-center justify-content-center mt-2 mb-2">
                     <div id="rotateAnimation" class="rhombus bg-warning rounded">
-                        <img id="pictureAnimation" class="profilePicture rounded-circle" src="public/assets/img/photo_cv.jpg"
-                            alt="Profile Picture">
+                        <img id="pictureAnimation" class="profilePicture rounded-circle"
+                            src="public/assets/img/photo_cv.jpg" alt="Profile Picture">
                     </div>
                 </div>
+
                 <div class="row align-items-center justify-content-center text-center ps-2 pe-2 mb-5">
                     <h1 class="fs-5">Je m'appelle
                         <strong>Stéphane Swaenepoel</strong>, futur
-                        <span class="text-warning">développeur Web et Web Mobile</span>.<br/>
-                        Apprendre de nouvelles choses est mon <span class="border-bottom border-warning"><strong>Leitmotiv</strong></span> !
+                        <span class="text-warning">développeur Web et Web Mobile</span>.<br />
+                        Apprendre de nouvelles choses est mon <span
+                            class="border-bottom border-warning"><strong>Leitmotiv</strong></span> !
                     </h1>
                 </div>
 
-            <!-- </div>
-            <div class="container-fluid"> -->
-
-                <div id="navInformation" class="row align-items-center ps-2 pe-2">
-                    <div class="col-12 col-md-2 col-lg-6">
-                        <div class="infoContainer">
-                            <h3 class="fs-5 bg-dark text-warning myInfo p-1">Mes informations_</h3>
-                            <ul>
-                                <li>30 ans d'années</li>
-                                <li>Habitant sur Amiens</li>
-                                <li>Permis B</li>
-                                <li>3ème dose</li>
-                            </ul>
-                        </div>
+                <div class="row ps-2 pe-2" id="navInformation">
+                    <div class="col-12 col-md-6 col-lg-4 colWidth">
+                        <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1">_Mes informations</h3>
+                        <ul>
+                            <li>30 ans d'années</li>
+                            <li>Habitant sur Amiens</li>
+                            <li>Permis B</li>
+                        </ul>
                     </div>
-                    <div class="col-12 col-md-2 col-lg-6">
-                        <div class="infoContainer">
-                            <h3 class="fs-5 bg-dark text-warning myInfo p-1">Mon profil_</h3>
-                            <ul>
-                                <li>Capacité d'adaptation</li>
-                                <li>Autonome</li>
-                                <li>Créatif</li>
-                                <li>Organisé</li>
-                                <li>Jovial</li>
-                            </ul>
-                        </div>
+                    <div class="col-12 col-md-6 col-lg-4 colWidth">
+                        <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1">_Mon profil</h3>
+                        <ul>
+                            <li>Capacité d'adaptation</li>
+                            <li>Autonome</li>
+                            <li>Créatif</li>
+                            <li>Organisé</li>
+                            <li>Jovial</li>
+                        </ul>
                     </div>
-                    <div class="col-12 col-md-2 col-lg-6 mb-5">
-                        <div class="infoContainer">
-                            <h3 class="fs-5 bg-dark text-warning myInfo p-1">Langues parlées_</h3>
-                            <ul>
-                                <li>Français : langue maternelle</li>
-                                <li>Anglais : CEF B1</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-2 col-lg-6">
-
+                    <div class="col-12 col-md-6 col-lg-4 colWidth">
+                        <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1">_Langues parlées</h3>
+                        <ul>
+                            <li class="langFr">Langue maternelle</li>
+                            <li class="langEng">CEF B1</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Skills -->
-        <section>
-            <article>
-                <div class="test"></div>
-            </article>
-            <article></article>
-            <article></article>
-            <article></article>
-            <article></article>
+        <section id="skills">
+            <div class="container-fluid mb-3">
+                <div class="accordion accordion-flush" id="accordionPanelsStayOpenExample">
+
+                    <!-- Web skills -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button collapsed bg-black rounded" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne">
+                                Compétences Web
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                            aria-labelledby="panelsStayOpen-headingOne" data-bs-parent="#accordionPanelsStayOpenExample">
+                            <div class="accordion-body">
+
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/html-5.png" alt="HTML 5">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_half.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>                                        
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/css-3.png" alt="CSS 3">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>   
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/bootstrap.png" alt="Bootstrap">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>                                        
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/javascript.png" alt="Javascript">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_half.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>   
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/php.svg" alt="PHP 7">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>                                        
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/PhpMyAdmin.svg" alt="PhpMyAdmin">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>   
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Design skills -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button bg-black collapsed rounded" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo">
+                                Web Design / Gestion de projet
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingTwo" data-bs-parent="#accordionPanelsStayOpenExample">
+                            <div class="accordion-body">
+
+                                    <div class="row align-items-center mb-3">
+                                        <div class="col-6">
+                                            <img class="skillLogo" src="public/assets/img/ico/github.png" alt="Github">
+                                            <span>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            </span>                                        
+                                        </div>
+                                        <div class="col-6">
+                                            <img class="skillLogo" src="public/assets/img/ico/trello.svg" alt="Trello">
+                                            <span>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_half.svg"></img>
+                                            </span>   
+                                        </div>
+                                    </div>
+
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <img class="skillLogo" src="public/assets/img/ico/photoshop.png" alt="Adobe Photoshop">
+                                            <span>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_half.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            </span>                                        
+                                        </div>
+                                        <div class="col-6">
+                                            <img class="skillLogo" src="public/assets/img/ico/xd.png" alt="Adobe XD">
+                                            <span>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            </span>   
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Electric / Electronic Skills -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button bg-black collapsed rounded" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseThree">
+                                Electrique / électronique
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree" data-bs-parent="#accordionPanelsStayOpenExample">
+                            <div class="accordion-body">
+
+                                    <div class="row align-items-center">
+                                        <div class="col-6">
+                                            <img class="skillLogo" src="public/assets/img/ico/langagec.png" alt="Language C">
+                                            <span>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            </span>                                        
+                                        </div>
+                                        <div class="col-6">
+                                            <img class="skillLogo" src="public/assets/img/ico/langagecplusplus.png" alt="Language C++">
+                                            <span>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            </span>   
+                                        </div>
+                                    </div>
+
+                                    <div class="row align-items-center mt-1">
+                                        <div class="col-6">
+                                            <img class="skillLogo" src="public/assets/img/ico/e3series.png" alt="E3.series">
+                                            <span>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            </span>                                        
+                                        </div>
+                                        <div class="col-6 d-flex align-items-center">
+                                            <div class="d-flex flex-column align-items-center me-1">
+                                                <div>
+                                                    <img class="skillLogo" src="public/assets/img/ico/isis.jpg" alt="Proteus ISIS">
+                                                </div>
+                                                <div>
+                                                    <img class="skillLogo" src="public/assets/img/ico/ares.jpg" alt="Proteus ARES">
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <span>
+                                                    <img src="public/assets/img/ico/star_solid.svg"></img>
+                                                    <img src="public/assets/img/ico/star_half.svg"></img>
+                                                    <img src="public/assets/img/ico/star_empty.svg"></img>
+                                                    <img src="public/assets/img/ico/star_empty.svg"></img>                                                
+                                                </span>
+                                            </div> 
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Other Skills -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button bg-black collapsed rounded" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseFour">
+                                Autres compétences
+                            </button>
+                        </h2>
+                        <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse"
+                            aria-labelledby="panelsStayOpen-headingThree" data-bs-parent="#accordionPanelsStayOpenExample">
+                            <div class="accordion-body">
+
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/solidworks.png" alt="Solidworks">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>                                        
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/creo.png" alt="PTC Creo">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>   
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center mb-3">
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/word.svg" alt="Microsoft Word">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_half.svg"></img>
+                                        </span>                                        
+                                    </div>
+                                    <div class="col-6">
+                                        <img class="skillLogo" src="public/assets/img/ico/excel.svg" alt="Microsoft Excel">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                            <img src="public/assets/img/ico/star_empty.svg"></img>
+                                        </span>   
+                                    </div>
+                                </div>
+
+                                <div class="row align-items-center">
+                                    <div class="col-12">
+                                        <img class="skillLogo" src="public/assets/img/ico/powerpoint.svg" alt="Microsoft Powerpoint">
+                                        <span>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_solid.svg"></img>
+                                            <img src="public/assets/img/ico/star_half.svg"></img>
+                                        </span>                                        
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
 
         <!-- Studies -->
@@ -136,7 +401,7 @@
     </main>
 
     <footer>
-        <div class="container-fluid myFooter bg-warning fixed-bottom">
+        <div class="container-fluid myFooter bg-warning">
             <div class="row align-items-center h-100">
 
                 <div class="col">
@@ -164,7 +429,7 @@
                 </div>
 
                 <div class="col">
-                    <i onclick="window.open('assets/files/cv.pdf')">
+                    <i onclick="window.open('public/assets/files/cv.pdf')">
                         <img class="sociaLogo" src="public/assets/img/ico/printer.png" alt="Mon CV"
                             title="Télécharger mon CV">
                     </i>

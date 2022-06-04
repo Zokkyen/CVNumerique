@@ -1,22 +1,40 @@
 /* Animation of my picture */
 
 let rotateImg = () => {
-    rotateAnimation.animate([
-        { transform: 'rotate(45deg)' },
-        { transform: 'rotate(135deg)' },
-        { transform: 'rotate(225deg)' },
-        { transform: 'rotate(315deg)' },
-        { transform: 'rotate(405deg)' },
+    rotateAnimation.animate([{
+            transform: 'rotate(45deg)'
+        },
+        {
+            transform: 'rotate(135deg)'
+        },
+        {
+            transform: 'rotate(225deg)'
+        },
+        {
+            transform: 'rotate(315deg)'
+        },
+        {
+            transform: 'rotate(405deg)'
+        },
     ], {
         duration: 2000
     });
 
-    pictureAnimation.animate([
-        { transform: 'rotate(315deg)' },
-        { transform: 'rotate(225deg)' },
-        { transform: 'rotate(135deg)' },
-        { transform: 'rotate(45deg)' },
-        { transform: 'rotate(-45deg)' }
+    pictureAnimation.animate([{
+            transform: 'rotate(315deg)'
+        },
+        {
+            transform: 'rotate(225deg)'
+        },
+        {
+            transform: 'rotate(135deg)'
+        },
+        {
+            transform: 'rotate(45deg)'
+        },
+        {
+            transform: 'rotate(-45deg)'
+        }
     ], {
         duration: 2000
     });
@@ -27,16 +45,33 @@ document.addEventListener("DOMContentLoaded", rotateImg);
 
 let menuAnimation = document.querySelector('.navbar-toggler-icon')
 menuAnimation.addEventListener('click', () => {
-    let counter = 300;
-    let navLinks = document.querySelectorAll('.nav-link')
+    let navLinks = document.querySelectorAll('.nav-link');
+    let delayVar = 0.3;
     navLinks.forEach(element => {
         element.style.display = "none";
-        setTimeout(() => {
-            gsap.from(element, {duration: 0.5, x: 800})
-            element.style.display = "block";
-            gsap.to(element, {duration: 0.5, x: 10});
-        }, counter);
-        counter += 200;
+        gsap.from(element, {
+            x: 800,
+            stagger: 0.1,
+            duration: 0.8,
+            delay: delayVar
+        })
+        element.style.display = "block";
+        gsap.to(element, {
+            x: 20,
+            stagger: 0.1,
+            duration: 0.8,
+            delay: delayVar
+        });
+        delayVar += 0.2;
     });
-    counter = 0;
+    delayVar = 0.3;
 })
+
+
+
+
+
+
+
+
+
