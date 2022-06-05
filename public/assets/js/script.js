@@ -57,7 +57,7 @@ menuAnimation.addEventListener('click', () => {
         })
         element.style.display = "block";
         gsap.to(element, {
-            x: 20,
+            x: 10,
             stagger: 0.1,
             duration: 0.8,
             delay: delayVar
@@ -66,12 +66,3 @@ menuAnimation.addEventListener('click', () => {
     });
     delayVar = 0.3;
 })
-
-
-
-
-
-
-
-
-
