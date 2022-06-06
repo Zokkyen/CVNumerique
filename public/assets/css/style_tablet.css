@@ -15,7 +15,7 @@ body {
 /* Navbar of Header */
 
 .navbar {
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     border-radius: 0 0 15px 15px;
 }
 
@@ -63,7 +63,7 @@ body {
 
 /* Resume */
 
-main {
+main{
     margin-top: 4.0rem;
 }
 
@@ -106,25 +106,24 @@ ul {
 }
 
 li {
-    margin: 0;
-    padding: 5px 0 5px 25px;
-    list-style: none;
-    background-image: url("../img/ico/terminal.png");
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 20px;
+	margin: 0;
+	padding: 5px 0 5px 25px;
+	list-style: none;
+	background-image: url("../img/ico/terminal.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
 }
 
 .langFr {
-    background-image: url("../img/ico/fr.png") !important;
+	background-image: url("../img/ico/fr.png") !important;
 }
 
 .langEng {
-    background-image: url("../img/ico/eng.png") !important;
+	background-image: url("../img/ico/eng.png") !important;
 }
 
 /* Skills Section */
-
 
 .accordionContainer {
     width: 80%;
@@ -156,9 +155,7 @@ span img {
 
 /* Studies and Jobs Sections */
 
-
-.cardStudies,
-.cardJobs {
+.cardStudies, .cardJobs {
     width: 80%;
     height: auto;
     margin-left: auto;
@@ -169,7 +166,7 @@ span img {
 }
 
 li li {
-    background-image: url("../img/ico/balise.png");
+	background-image: url("../img/ico/balise.png");
 }
 
 li li:last-of-type {
@@ -193,7 +190,7 @@ li h5~p {
     padding-left: 0;
 }
 
-#hobbies li img {
+#hobbies li img{
     width: 30px;
     height: 30px;
     margin-right: 20px;
@@ -201,8 +198,7 @@ li h5~p {
 
 /* Portfolio Section */
 
-.portfolioTitle,
-.portfolioContainer {
+.portfolioTitle, .portfolioContainer {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
@@ -239,69 +235,7 @@ li h5~p {
     border-radius: 15px 15px 0 0;
 }
 
-.sociaLogo {
+.sociaLogo{
     width: 120%;
     height: 120%;
 }
-
-
-/* Animation of Skills, Studies and Jobs */
-
-.js-scroll {
-    opacity: 0;
-    transition: opacity 500ms;
-}
-
-.js-scroll.scrolled {
-    opacity: 1;
-}
-
-.scrolled.fade-in {
-    animation: fade-in 1s ease-in-out both;
-}
-
-.scrolled.slide-left {
-    animation: slide-in-left 1s ease-in-out both;
-}
-
-.scrolled.slide-right {
-    animation: slide-in-right 1s ease-in-out both;
-}
-
-@keyframes slide-in-left {
-    0% {
-        -webkit-transform: translateX(-100px);
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(100px);
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Animation of Hobbies */
-
