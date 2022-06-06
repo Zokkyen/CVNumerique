@@ -112,3 +112,7 @@ window.addEventListener("scroll", () => {
 
 /* Animation of Hobbies */
 
+/*gsap.to("#hobbies", {
+    scrollTrigger: "#hobbies", // start the animation when ".box" enters the viewport (once)
+    x: 500
+});*/
