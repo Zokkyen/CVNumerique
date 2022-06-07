@@ -112,8 +112,21 @@ window.addEventListener("scroll", () => {
 
 /* Animation of Hobbies */
 
-/*gsap.to("#hobbies", {
-    scrollTrigger: "#hobbies", // start the animation when ".box" enters the viewport (once)
-    x: 800,
-    x: 0
-});*/
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to("#hobbies", {
+    scrollTrigger: {
+        trigger: "#hobbies",
+        start: "20px 90%",
+        markers: true,
+        toggleActions: "restart none none none"
+    }, 
+    keyframes: [
+        {x: 800},
+        {x: 100},
+        {x: 0},
+    ],
+    /*x: 800,*/
+    rotation: 360,
+    duration: 2
+});

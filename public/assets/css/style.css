@@ -12,6 +12,10 @@ body {
     font-family: 'Roboto', sans-serif !important;
 }
 
+.anchor {
+    scroll-margin-top: 80px;
+}
+
 /* Navbar of Header */
 
 .navbar {
@@ -156,15 +160,12 @@ span img {
 
 /* Studies and Jobs Sections */
 
-
 .cardStudies,
 .cardJobs {
     width: 80%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid #FFC107;
-    border-radius: 5px;
     padding: 10px;
 }
 
@@ -178,6 +179,12 @@ li li:last-of-type {
 
 li h5~p {
     margin: 0;
+}
+
+#studies li, #jobs li {
+    margin-bottom: 20px;
+    padding: 0px 0px 5px 25px;
+    background-position: left 0%;
 }
 
 /* Hobbies Section */
@@ -235,15 +242,14 @@ li h5~p {
 
 .myFooter {
     height: 60px;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     border-radius: 15px 15px 0 0;
 }
 
 .sociaLogo {
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
 }
-
 
 /* Animation of Skills, Studies and Jobs */
 
