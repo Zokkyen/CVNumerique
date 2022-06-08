@@ -117,16 +117,12 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to("#hobbies", {
     scrollTrigger: {
         trigger: "#hobbies",
-        start: "20px 90%",
+        start: "10px 90%",
         markers: true,
         toggleActions: "restart none none none"
-    }, 
+    },
     keyframes: [
-        {x: 800},
-        {x: 100},
-        {x: 0},
+        {x: 0}
     ],
-    /*x: 800,*/
-    rotation: 360,
-    duration: 2
+    duration: 0.5
 });
