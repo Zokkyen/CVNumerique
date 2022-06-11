@@ -207,9 +207,10 @@ li h5~p {
 }
 
 #hobbies {
-    transform: translateX(500px);
-    transform: translateZ(0);
+    /*transform: translateX(50px);*/
+    /*transform: translateZ(0);*/
     overflow-x: hidden;
+    opacity: 0;
 }
 
 /* Portfolio Section */

@@ -114,15 +114,108 @@ window.addEventListener("scroll", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
+// gsap.to("#hobbies", {
+//     scrollTrigger: {
+//         trigger: "#hobbies",
+//         start: "10px 100%",
+//         markers: true,
+//         toggleActions: "restart none none none"
+//     },
+//     keyframes: [
+//         {x: 100},
+//         {x: 0}      
+//     ],
+//     duration: 0.5
+// });
+
+//animation of id hobbies transition to the right
+/*let timeLineGSAP = gsap.timeline({repeat: 1, repeatDelay: 1});*/
+
 gsap.to("#hobbies", {
     scrollTrigger: {
         trigger: "#hobbies",
-        start: "10px 90%",
+        start: "10px 100%",
         markers: true,
         toggleActions: "restart none none none"
     },
     keyframes: [
+        {opacity: 0},
+        {x: -320},
+        {opacity: 1},
         {x: 0}
     ],
-    duration: 0.5
+    duration: 1
 });
+
+/*let timeLineGSAP = gsap.timeline({repeat: 1, repeatDelay: 1});*/
+let imgHobbies =  gsap.utils.toArray('.imgHobbies');
+imgHobbies.forEach(element => {
+    gsap.to(element, {
+        scrollTrigger: {
+            trigger: element,
+            /*start: "10px 100%",*/
+            toggleActions: "restart none none none"
+        },   
+        keyframes: [
+            {opacity: 0},
+            {x: -320},
+            {opacity: 1},
+            {x: 0}
+        ],
+        duration: 2
+    });
+});
+
+/*let imgHobbies = document.querySelectorAll('imgHobbies');
+imgHobbies.forEach(element => {
+    console.log(element)
+    timeLineGSAP.to(element, {
+        scrollTrigger: {
+            trigger: "#hobbies",
+            start: "10px 100%",
+            toggleActions: "restart none none none"
+        },   
+        keyframes: [
+            {opacity: 0},
+            {x: -320},
+            {opacity: 1},
+            {x: 0}
+        ],
+        duration: 2
+    });
+});*/
+
+
+/*gsap.to("#hobbies", {
+    scrollTrigger: {
+        trigger: "#hobbies",
+        start: "10px 100%",
+        markers: true,
+        toggleActions: "restart none none none"
+    },
+    keyframes: [
+        {opacity: 0},
+        {x: -320},
+        {opacity: 1},
+        {x: 0}
+    ],
+    duration: 1
+});*/
+
+/*gsap.to("#hobbies", {
+    scrollTrigger: {
+        trigger: "#hobbies",
+        start: "10px 100%",
+        markers: true,
+        toggleActions: "restart none none none"
+    },
+    keyframes: [
+        {opacity: 0},
+        {x: -320},
+        {opacity: 1},
+        {x: 0}
+    ],
+    duration: 1
+}
+);*/
+
