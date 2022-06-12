@@ -114,6 +114,23 @@ window.addEventListener("scroll", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
+let ctnSkills =  gsap.utils.toArray('.ctnSkills');
+ctnSkills.forEach(element => {
+    gsap.from(element, {
+        scrollTrigger: {
+            trigger: element,
+            markers: true,
+            toggleActions: "restart none none none"
+        }, 
+        duration: 0.5,
+        x: -400,
+        delay: 0.5,
+        stagger: 0.2,
+        ease: "linear",
+        force3D: true
+    });
+});
+
 let cntStudies =  gsap.utils.toArray('.cntStudies');
 cntStudies.forEach(element => {
     gsap.from(element, {
