@@ -126,7 +126,7 @@ ctnSkills.forEach(element => {
         x: -400,
         delay: 0.5,
         stagger: 0.2,
-        ease: "linear",
+        ease: "back",
         force3D: true
     });
 });
@@ -143,7 +143,7 @@ cntStudies.forEach(element => {
         x: 400,
         delay: 0.5,
         stagger: 0.2,
-        ease: "linear",
+        ease: "back",
         force3D: true
     });
 });
@@ -160,7 +160,7 @@ cntJobs.forEach(element => {
         x: -400,
         delay: 0.5,
         stagger: 0.2,
-        ease: "linear",
+        ease: "back",
         force3D: true
     });
 });
