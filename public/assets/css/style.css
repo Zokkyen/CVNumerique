@@ -206,13 +206,6 @@ li h5~p {
     margin-right: 20px;
 }
 
-#hobbies {
-    /*transform: translateX(50px);*/
-    /*transform: translateZ(0);*/
-    overflow-x: hidden;
-    opacity: 0;
-}
-
 /* Portfolio Section */
 
 .portfolioTitle,
@@ -258,63 +251,8 @@ li h5~p {
     height: 100%;
 }
 
-/* Animation of Skills, Studies and Jobs */
+/* Disable overflow x for JS animation */
 
-.js-scroll {
-    opacity: 0;
-    transition: opacity 500ms;
+#skills, #studies, #jobs, #hobbies {
+    overflow-x: hidden;
 }
-
-.js-scroll.scrolled {
-    opacity: 1;
-}
-
-.scrolled.fade-in {
-    animation: fade-in 1s ease-in-out both;
-}
-
-.scrolled.slide-left {
-    animation: slide-in-left 1s ease-in-out both;
-}
-
-.scrolled.slide-right {
-    animation: slide-in-right 1s ease-in-out both;
-}
-
-@keyframes slide-in-left {
-    0% {
-        -webkit-transform: translateX(-100px);
-        transform: translateX(-100px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-in-right {
-    0% {
-        -webkit-transform: translateX(100px);
-        transform: translateX(100px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateX(0);
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Animation of Hobbies */
-

@@ -110,112 +110,55 @@ window.addEventListener("scroll", () => {
     handleScrollAnimation();
 });
 
-/* Animation of Hobbies */
+/* Animation of skills, jobs, studies, hobbies */
 
 gsap.registerPlugin(ScrollTrigger);
 
-// gsap.to("#hobbies", {
-//     scrollTrigger: {
-//         trigger: "#hobbies",
-//         start: "10px 100%",
-//         markers: true,
-//         toggleActions: "restart none none none"
-//     },
-//     keyframes: [
-//         {x: 100},
-//         {x: 0}      
-//     ],
-//     duration: 0.5
-// });
-
-//animation of id hobbies transition to the right
-/*let timeLineGSAP = gsap.timeline({repeat: 1, repeatDelay: 1});*/
-
-gsap.to("#hobbies", {
-    scrollTrigger: {
-        trigger: "#hobbies",
-        start: "10px 100%",
-        markers: true,
-        toggleActions: "restart none none none"
-    },
-    keyframes: [
-        {opacity: 0},
-        {x: -320},
-        {opacity: 1},
-        {x: 0}
-    ],
-    duration: 1
-});
-
-/*let timeLineGSAP = gsap.timeline({repeat: 1, repeatDelay: 1});*/
-let imgHobbies =  gsap.utils.toArray('.imgHobbies');
-imgHobbies.forEach(element => {
-    gsap.to(element, {
+let cntStudies =  gsap.utils.toArray('.cntStudies');
+cntStudies.forEach(element => {
+    gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            /*start: "10px 100%",*/
+            markers: true,
             toggleActions: "restart none none none"
-        },   
-        keyframes: [
-            {opacity: 0},
-            {x: -320},
-            {opacity: 1},
-            {x: 0}
-        ],
-        duration: 2
+        }, 
+        duration: 0.5,
+        x: 400,
+        delay: 0.5,
+        stagger: 0.2,
+        ease: "linear",
+        force3D: true
     });
 });
 
-/*let imgHobbies = document.querySelectorAll('imgHobbies');
-imgHobbies.forEach(element => {
-    console.log(element)
-    timeLineGSAP.to(element, {
+let cntJobs =  gsap.utils.toArray('.cntJobs');
+cntJobs.forEach(element => {
+    gsap.from(element, {
         scrollTrigger: {
-            trigger: "#hobbies",
-            start: "10px 100%",
+            trigger: element,
+            markers: true,
             toggleActions: "restart none none none"
-        },   
-        keyframes: [
-            {opacity: 0},
-            {x: -320},
-            {opacity: 1},
-            {x: 0}
-        ],
-        duration: 2
+        }, 
+        duration: 0.5,
+        x: -400,
+        delay: 0.5,
+        stagger: 0.2,
+        ease: "linear",
+        force3D: true
     });
-});*/
+});
 
-
-/*gsap.to("#hobbies", {
+gsap.from(".cntHobbies", {
     scrollTrigger: {
         trigger: "#hobbies",
-        start: "10px 100%",
         markers: true,
         toggleActions: "restart none none none"
-    },
-    keyframes: [
-        {opacity: 0},
-        {x: -320},
-        {opacity: 1},
-        {x: 0}
-    ],
-    duration: 1
-});*/
-
-/*gsap.to("#hobbies", {
-    scrollTrigger: {
-        trigger: "#hobbies",
-        start: "10px 100%",
-        markers: true,
-        toggleActions: "restart none none none"
-    },
-    keyframes: [
-        {opacity: 0},
-        {x: -320},
-        {opacity: 1},
-        {x: 0}
-    ],
-    duration: 1
-}
-);*/
-
+    }, 
+    duration: 3,
+    scale: 0.5, 
+    opacity: 0, 
+    delay: 0.5, 
+    stagger: 0.2,
+    ease: "elastic", 
+    force3D: true
+});
