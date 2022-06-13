@@ -42,6 +42,7 @@ let rotateImg = () => {
 document.addEventListener("DOMContentLoaded", rotateImg);
 
 /* Animation of the menu */
+/* Using of GSAP Library */
 
 let menuAnimation = document.querySelector('.navbar-toggler-icon')
 menuAnimation.addEventListener('click', () => {
@@ -111,6 +112,7 @@ window.addEventListener("scroll", () => {
 });
 
 /* Animation of skills, jobs, studies, hobbies */
+/* Using of GSAP Library */
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -178,4 +180,25 @@ gsap.from(".cntHobbies", {
     stagger: 0.2,
     ease: "elastic", 
     force3D: true
+});
+
+/* Animation of portfolio */
+/* Using of GSAP Library */
+
+let ctnPortfolio =  gsap.utils.toArray('.ctnPortfolio');
+ctnPortfolio.forEach(element => {
+    gsap.from(element, {
+        scrollTrigger: {
+            trigger: element,
+            markers: true,
+            toggleActions: "restart none restart none"
+        }, 
+        duration: 1,
+        scale: 0.8, 
+        opacity: 0, 
+        delay: 0.5, 
+        stagger: 0.2,
+        ease: "elastic", 
+        force3D: true
+    });
 });
