@@ -46,25 +46,25 @@ document.addEventListener("DOMContentLoaded", rotateImg);
 let menuAnimation = document.querySelector('.navbar-toggler-icon')
 menuAnimation.addEventListener('click', () => {
     let navLinks = document.querySelectorAll('.nav-link');
-    let delayVar = 0.3;
+    let delayVar = 0.2;
     navLinks.forEach(element => {
         element.style.display = "none";
         gsap.from(element, {
             x: 800,
             stagger: 0.1,
-            duration: 0.8,
+            duration: 0.5,
             delay: delayVar
         })
         element.style.display = "block";
         gsap.to(element, {
             x: 10,
             stagger: 0.1,
-            duration: 0.8,
+            duration: 0.5,
             delay: delayVar
         });
         delayVar += 0.2;
     });
-    delayVar = 0.3;
+    delayVar = 0.2;
 })
 
 /* Animations of Skills, Studies and Jobs */
@@ -122,7 +122,7 @@ ctnSkills.forEach(element => {
             markers: true,
             toggleActions: "restart none none none"
         }, 
-        duration: 0.5,
+        duration: 0.3,
         x: -400,
         delay: 0.5,
         stagger: 0.2,
@@ -139,7 +139,7 @@ cntStudies.forEach(element => {
             markers: true,
             toggleActions: "restart none none none"
         }, 
-        duration: 0.5,
+        duration: 0.3,
         x: 400,
         delay: 0.5,
         stagger: 0.2,
@@ -156,7 +156,7 @@ cntJobs.forEach(element => {
             markers: true,
             toggleActions: "restart none none none"
         }, 
-        duration: 0.5,
+        duration: 0.3,
         x: -400,
         delay: 0.5,
         stagger: 0.2,
@@ -171,7 +171,7 @@ gsap.from(".cntHobbies", {
         markers: true,
         toggleActions: "restart none none none"
     }, 
-    duration: 3,
+    duration: 2,
     scale: 0.5, 
     opacity: 0, 
     delay: 0.5, 
