@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="public/assets/css/style.css">
+    <link rel="stylesheet" media="(min-width: 752px)" href="public/assets/css/style_tablet.css">
+    <link rel="stylesheet" media="(min-width: 1200px)" href="public/assets/css/style_desktop.css">
+    <title>CV Développeur Web de Stéphane Swaenepoel</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png" />
+    <meta name="description" content="Développeur débutant en Web et Web mobile à Amiens (Somme),
+        je suis à la recherche d'un stage pour Octobre 2022 et d'une alternance par la suite pour des études
+        en tant que Concepteur Développeur d'Applications" />
+    <meta name="robots" content="index, nofollow">
+    <link rel="canonical" href="https://stephaneswaenepoel.fr">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-warning fixed-top p-0">
+            <div class="container-fluid p-0 pe-2">
+
+                <a class="navbar-brand d-flex align-items-center p-0" href="index.html">
+                    <img src="public/assets/img/logo/logo.png" alt="" width="60" height="60"
+                        class="d-inline-block align-text-top m-0">
+                </a>
+
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                    aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end bg-warning" data-bs-scroll="true" tabindex="-1"
+                    id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-body text-end fs-5 p-0 pe-3 mt-1 mb-1">
+                        <a class="nav-link m-2" href="#navInformation">&lt;--&nbsp;Informations&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#skills">&lt;--&nbsp;Compétences&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#studies">&lt;--&nbsp;Etudes&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#jobs">&lt;--&nbsp;Jobs&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#hobbies">&lt;--&nbsp;Loisirs&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="portfolio.html">&lt;--&nbsp;Portfolio&nbsp;--&gt;</a>
+                    </div>
+
+                    <button type="button" class="closeCanvas" data-bs-dismiss="offcanvas" aria-label="Close">
+                        <img class="closeButton" src="public/assets/img/ico/cancel.png" alt="Close button">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Portfolio -->
+        <section id="portfolio">
+            <div class="portfolioTitle pt-5">
+                <div class="d-flex align-items-center">
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <img class="imgArrow" img src="public/assets/img/ico/arrow_sleft.svg" alt="Flêche gauche">
+                    </button>
+
+                    <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto mb-0 p-1">_Portfolio</h3>
+
+                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <img class="imgArrow" src="public/assets/img/ico/arrow_sright.svg" alt="Flêche droite">
+                    </button>
+                </div>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">  <!-- data-bs-touch="true" data-bs-interval="false"-->
+                <div class="carousel-inner mb-3">
+                    <div class="carousel-item active">
+                        <div class="portfolioContainer mb-3">
+                            <img src="public/assets/img/portfolio/ProjectCards.jpg" alt="Projet des cards">
+                            <h5><strong>Projet 1 : Les CARDS</strong></h5>
+                            <p>Dans ce projet, on a dû utiliser simplement les cards en CSS avec des flexbox.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="portfolioContainer mb-3">
+                            <img src="public/assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Site de bourse desktop">
+                            <h5><strong>Projet 2 : Site de Bourse High Tech</strong></h5>
+                            <p>Dans ce projet de trois personnes, on a conceptualisé un site d'une bourse fictive avec un espace exposant.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="portfolioContainer mb-3">
+                            <img src="public/assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Site de bourse responsive">
+                            <h5><strong>Projet 3 : La responsivité</strong></h5>
+                            <p>Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
+                        </div>
+                    </div>
+
+                </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container-fluid myFooter bg-black fixed-bottom">
+            <div class="row align-items-center h-100">
+
+                <div class="col">
+                    <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
+                        <img class="sociaLogo" src="public/assets/img/ico/linkedin.png" alt="LinkedIn"
+                            title="Mon LinkedIn">
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="https://github.com/Zokkyen" target="_blank">
+                        <img class="sociaLogo" src="public/assets/img/ico/github.png" alt="Github" title="Mon Github">
+                    </a>
+                </div>
+
+                <div class="col-5 fs-7 text-center text-warning">
+                    <p class="m-0">Stéphane Swaenepoel &copy; 2022</p>
+                    <p class="m-0">Tous droits réservés.</p>
+                </div>
+
+                <div class="col">
+                    <a href="mailto:stephane.swaenepoel@gmail.com">
+                        <img class="sociaLogo" src="public/assets/img/ico/google.png" alt="Mail"
+                            title="Mon Mail Google">
+                    </a>
+                </div>
+
+                <div class="col">
+                    <i onclick="window.open('public/assets/files/cv.pdf')">
+                        <img class="sociaLogo" src="public/assets/img/ico/printer.png" alt="Mon CV"
+                            title="Télécharger mon CV">
+                    </i>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <script src="public/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="public/assets/js/gsap/minified/gsap.min.js"></script>
+    <script src="public/assets/js/gsap/minified/ScrollTrigger.min.js"></script>
+    <script src="public/assets/js/script.js"></script>
+</body>
+
+</html>

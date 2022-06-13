@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-lg bg-warning fixed-top p-0">
             <div class="container-fluid p-0 pe-2">
 
-                <a class="navbar-brand d-flex align-items-center p-0" href="#">
+                <a class="navbar-brand d-flex align-items-center p-0" href="index.html">
                     <img src="public/assets/img/logo/logo.png" alt="" width="60" height="60"
                         class="d-inline-block align-text-top m-0">
                 </a>
@@ -42,7 +42,7 @@
                         <a class="nav-link m-2" href="#studies">&lt;--&nbsp;Etudes&nbsp;--&gt;</a>
                         <a class="nav-link m-2" href="#jobs">&lt;--&nbsp;Jobs&nbsp;--&gt;</a>
                         <a class="nav-link m-2" href="#hobbies">&lt;--&nbsp;Loisirs&nbsp;--&gt;</a>
-                        <a class="nav-link m-2" href="#portfolio">&lt;--&nbsp;Portfolio&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="portfolio.html">&lt;--&nbsp;Portfolio&nbsp;--&gt;</a>
                     </div>
 
                     <button type="button" class="closeCanvas" data-bs-dismiss="offcanvas" aria-label="Close">
@@ -74,7 +74,7 @@
                     </h1>
                 </div>
 
-                <div class="row ps-2 pe-2" id="navInformation">
+                <div class="row ps-2 pe-2 anchor" id="navInformation">
                     <div class="col-12 col-md-6 col-lg-4 colWidth">
                         <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1">_Mes informations</h3>
                         <ul>
@@ -109,7 +109,7 @@
             <div class="accordionContainer">
 
                 <!-- Web skills -->
-                <div class="card mb-5 ctnSkills">
+                <div class="card mb-5 ctnSkills anchor">
                     <div class="card-header bg-dark text-warning text-center">
                         <h3 class="fs-5 m-0">Compétences Web</h3>
                     </div>
@@ -134,7 +134,7 @@
                                 </span>
                             </div>
                         </div>
-    
+
                         <div class="row align-items-center mb-3">
                             <div class="col-6 text-center p-0">
                                 <img class="skillLogo" src="public/assets/img/ico/bootstrap.png"
@@ -157,7 +157,7 @@
                                 </span>
                             </div>
                         </div>
-    
+
                         <div class="row align-items-center">
                             <div class="col-6 text-center p-0">
                                 <img class="skillLogo" src="public/assets/img/ico/php.svg" alt="PHP 7">
@@ -180,7 +180,7 @@
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
 
                 <!-- Design skills -->
                 <div class="card mb-5 ctnSkills">
@@ -231,7 +231,7 @@
                             </div>
                         </div>
                     </div>
-                </div>               
+                </div>
 
                 <!-- Electric / Electronic Skills -->
                 <div class="card mb-5 ctnSkills">
@@ -294,7 +294,7 @@
                             </div>
                         </div>
                     </div>
-                </div>     
+                </div>
 
                 <!-- Other Skills -->
                 <div class="card mb-5 ctnSkills">
@@ -360,13 +360,13 @@
                             </div>
                         </div>
                     </div>
-                </div>     
+                </div>
             </div>
         </section>
 
         <!-- Studies -->
         <section id="studies">
-            <div class="cardStudies">
+            <div class="cardStudies anchor">
                 <h3 class="bg-dark text-warning text-center rounded border-2 mb-4">_Historiques de formations</h3>
                 <ul>
                     <li>
@@ -398,7 +398,7 @@
 
         <!-- Jobs -->
         <section id="jobs">
-            <div class="cardJobs">
+            <div class="cardJobs anchor">
                 <h3 class="bg-dark text-warning text-center rounded border-2 mb-4">_Parcours professionnel</h3>
                 <ul>
                     <li>
@@ -473,7 +473,7 @@
 
         <!-- Hobbies -->
         <section id="hobbies">
-            <div class="hobbiesContainer mb-5">
+            <div class="hobbiesContainer anchor mb-5">
                 <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1">_Mes loisirs</h3>
                 <ul>
                     <li>
@@ -514,51 +514,6 @@
                     </li>
                 </ul>
             </div>
-        </section>
-
-        <!-- Portfolio -->
-        <section id="portfolio" class="anchor">
-            <div class="portfolioTitle mb-3">
-                <div class="d-flex align-items-center">
-                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                        <img class="imgArrow" img src="public/assets/img/ico/arrow_sleft.svg" alt="Flêche gauche">
-                    </button>
-
-                    <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto mb-0 p-1">_Portfolio</h3>
-
-                    <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                        <img class="imgArrow" src="public/assets/img/ico/arrow_sright.svg" alt="Flêche droite">
-                    </button>
-                </div>
-            </div>
-
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">  <!-- data-bs-touch="true" data-bs-interval="false"-->
-                <div class="carousel-inner mb-3">
-                    <div class="carousel-item active">
-                        <div class="portfolioContainer mb-3">
-                            <img src="public/assets/img/portfolio/ProjectCards.jpg" alt="Projet des cards">
-                            <h5><strong>Projet 1 : Les CARDS</strong></h5>
-                            <p>Dans ce projet, on a dû utiliser simplement les cards en CSS avec des flexbox.</p>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="portfolioContainer mb-3">
-                            <img src="public/assets/img/portfolio/ProjectBourseDesktop.jpg" alt="Site de bourse desktop">
-                            <h5><strong>Projet 2 : Site de Bourse High Tech</strong></h5>
-                            <p>Dans ce projet de trois personnes, on a conceptualisé un site d'une bourse fictive avec un espace exposant.</p>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <div class="portfolioContainer mb-3">
-                            <img src="public/assets/img/portfolio/ProjectBrocanteResp.jpg" alt="Site de bourse responsive">
-                            <h5><strong>Projet 3 : La responsivité</strong></h5>
-                            <p>Dans ce projet de trois personnes, on a dù reprendre un site version Desktop pour le rendre responsible.</p>
-                        </div>
-                    </div>
-
-                </div>
         </section>
     </main>
 

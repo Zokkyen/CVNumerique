@@ -8,12 +8,22 @@
     margin: 0;
 }
 
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
 body {
     font-family: 'Roboto', sans-serif !important;
+    height: calc(100vh - 120px);
+    width: 100vw;
+    margin-bottom: 60px;
+    margin-top: 60px
 }
 
 .anchor {
     scroll-margin-top: 80px;
+    /* scroll-margin-top: 30px; */
 }
 
 /* Navbar of Header */
@@ -128,25 +138,6 @@ li {
 }
 
 /* Skills Section */
-
-
-.accordionContainer {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.accordion-body {
-    padding: 15px !important
-}
-
-.accordion-button {
-    color: #FFC107 !important;
-}
-
-.accordion-button::after {
-    filter: invert(75%) sepia(36%) saturate(1114%) hue-rotate(350deg) brightness(101%) contrast(106%);
-}
 
 .skillLogo {
     height: 40px;
