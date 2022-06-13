@@ -121,7 +121,7 @@ ctnSkills.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            markers: true,
+            // markers: true,
             toggleActions: "restart none none none"
         }, 
         duration: 0.3,
@@ -138,7 +138,7 @@ cntStudies.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            markers: true,
+            // markers: true,
             toggleActions: "restart none none none"
         }, 
         duration: 0.3,
@@ -155,7 +155,7 @@ cntJobs.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            markers: true,
+            // markers: true,
             toggleActions: "restart none none none"
         }, 
         duration: 0.3,
@@ -170,7 +170,7 @@ cntJobs.forEach(element => {
 gsap.from(".cntHobbies", {
     scrollTrigger: {
         trigger: "#hobbies",
-        markers: true,
+        // markers: true,
         toggleActions: "restart none none none"
     }, 
     duration: 2,
@@ -190,7 +190,7 @@ ctnPortfolio.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            markers: true,
+            // markers: true,
             toggleActions: "restart none restart none"
         }, 
         duration: 1,
@@ -198,7 +198,7 @@ ctnPortfolio.forEach(element => {
         opacity: 0, 
         delay: 0.5, 
         stagger: 0.2,
-        ease: "elastic", 
+        ease: "expo", 
         force3D: true
     });
 });
