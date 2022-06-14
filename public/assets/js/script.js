@@ -45,28 +45,55 @@ document.addEventListener("DOMContentLoaded", rotateImg);
 /* Using of GSAP Library */
 
 let menuAnimation = document.querySelector('.navbar-toggler-icon')
-menuAnimation.addEventListener('click', () => {
-    let navLinks = document.querySelectorAll('.nav-link');
-    let delayVar = 0.2;
-    navLinks.forEach(element => {
-        element.style.display = "none";
-        gsap.from(element, {
-            x: 800,
-            stagger: 0.1,
-            duration: 0.5,
-            delay: delayVar
-        })
-        element.style.display = "block";
-        gsap.to(element, {
-            x: 10,
-            stagger: 0.1,
-            duration: 0.5,
-            delay: delayVar
+
+if (window.matchMedia("(max-width: 776px)").matches) {
+    menuAnimation.addEventListener('click', () => {
+        let navLinks = document.querySelectorAll('.nav-link');
+        let delayVar = 0.2;
+        navLinks.forEach(element => {
+            element.style.display = "none";
+            gsap.from(element, {
+                x: 800,
+                stagger: 0.1,
+                duration: 0.5,
+                delay: delayVar
+            })
+            element.style.display = "block";
+            gsap.to(element, {
+                x: 10,
+                stagger: 0.1,
+                duration: 0.5,
+                delay: delayVar
+            });
+            delayVar += 0.2;
         });
-        delayVar += 0.2;
-    });
-    delayVar = 0.2;
-})
+        delayVar = 0.2;
+    })
+} 
+else {
+    document.addEventListener('DOMContentLoaded', () => {
+        let navLinks = document.querySelectorAll('.nav-link');
+        let delayVar = 0.2;
+        navLinks.forEach(element => {
+            element.style.display = "none";
+            gsap.from(element, {
+                x: 800,
+                stagger: 0.1,
+                duration: 0.5,
+                delay: delayVar
+            })
+            element.style.display = "block";
+            gsap.to(element, {
+                x: 10,
+                stagger: 0.1,
+                duration: 0.5,
+                delay: delayVar
+            });
+            delayVar += 0.2;
+        });
+        delayVar = 0.2;
+    })       
+}
 
 /* Animations of Skills, Studies and Jobs */
 

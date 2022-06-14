@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="public/assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="public/assets/css/style.css">
-    <link rel="stylesheet" media="(min-width: 752px)" href="public/assets/css/style_tablet.css">
-    <link rel="stylesheet" media="(min-width: 1200px)" href="public/assets/css/style_desktop.css">
+    <!-- <link rel="stylesheet" media="(min-width: 752px)" href="public/assets/css/style_tablet.css"> -->
+    <link rel="stylesheet" media="(min-width: 1000px)" href="public/assets/css/style_desktop.css">
     <title>CV Développeur Web de Stéphane Swaenepoel</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png" />
     <meta name="description" content="Développeur débutant en Web et Web mobile à Amiens (Somme),
@@ -58,33 +58,36 @@
         <section>
             <div class="container-fluid">
 
-                <div class="row pictureContainer align-items-center justify-content-center mt-2 mb-2">
-                    <div id="rotateAnimation" class="rhombus bg-warning rounded">
-                        <img id="pictureAnimation" class="profilePicture rounded-circle"
-                            src="public/assets/img/photo_cv.jpg" alt="Profile Picture">
+                <div class="row justify-content-center">    
+                    <div class="col-12 col-lg-6 pictureContainer">
+                        <div class="rhombus bg-warning rounded" id="rotateAnimation">
+                            <img id="pictureAnimation" class="profilePicture rounded-circle"
+                                src="public/assets/img/photo_cv.jpg" alt="Profile Picture">
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6 textFolder ps-2 pe-2">
+                        <h1 class="fs-5">Je m'appelle
+                            <strong>Stéphane Swaenepoel</strong>, futur
+                            <span class="text-warning">développeur Web et Web Mobile</span>.<br />
+                            Apprendre de nouvelles choses est mon <span
+                                class="border-bottom border-warning"><strong>Leitmotiv</strong></span> !
+                        </h1>
                     </div>
                 </div>
 
-                <div class="row align-items-center justify-content-center text-center ps-2 pe-2 mb-5">
-                    <h1 class="fs-5">Je m'appelle
-                        <strong>Stéphane Swaenepoel</strong>, futur
-                        <span class="text-warning">développeur Web et Web Mobile</span>.<br />
-                        Apprendre de nouvelles choses est mon <span
-                            class="border-bottom border-warning"><strong>Leitmotiv</strong></span> !
-                    </h1>
-                </div>
-
-                <div class="row ps-2 pe-2 anchor" id="navInformation">
-                    <div class="col-12 col-md-6 col-lg-4 colWidth">
-                        <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1">_Mes informations</h3>
+                <!-- Mobile information content -->
+                <div class="row ps-2 pe-2 anchor mobileInformation" id="navInformation">
+                    <div class="col-12 colWidth">
+                        <h3 class="fs-5 bg-dark text-warning myInfo mx-auto p-1">_Mes informations</h3>
                         <ul>
                             <li>30 ans d'années</li>
                             <li>Habitant sur Amiens</li>
                             <li>Permis B</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 colWidth">
-                        <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1">_Mon profil</h3>
+                    <div class="col-12 colWidth">
+                        <h3 class="fs-5 bg-dark text-warning myInfo mx-auto p-1">_Mon profil</h3>
                         <ul>
                             <li>Capacité d'adaptation</li>
                             <li>Autonome</li>
@@ -93,14 +96,18 @@
                             <li>Jovial</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-4 colWidth">
-                        <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1">_Langues parlées</h3>
+                    <div class="col-12 colWidth">
+                        <h3 class="fs-5 bg-dark text-warning myInfo mx-auto p-1">_Langues parlées</h3>
                         <ul>
                             <li class="langFr">Langue maternelle</li>
                             <li class="langEng">CEF B1</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- Desktop information content -->
+
+
             </div>
         </section>
 
