@@ -11,6 +11,7 @@
 html {
     height: 100vh;
     width: 100vw;
+    scroll-padding-top: 4rem;
 }
 
 body {
@@ -19,10 +20,6 @@ body {
     width: 100vw;
     margin-bottom: 60px;
     margin-top: 60px
-}
-
-.anchor {
-    /*scroll-margin-top: 80px;*/
 }
 
 /* Navbar of Header */
