@@ -90,25 +90,12 @@ main {
 }
 
 .introContainer {
-    height: calc(100vh + 10px);
+    height: calc(100vh - 60px);
     width: 100%;
     padding: 0;
-}
-
-.introContainer .row {
-    height: 100%;
-    position: relative;
-}
-
-.pictureContainer {
-    height: 300px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.textFolder {
-    height: 300px;
 }
 
 .rhombus {
@@ -132,7 +119,7 @@ main {
 
 .arrowToDown {
     position: absolute;
-    bottom: 20%;
+    bottom: 12%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -141,8 +128,8 @@ main {
 }
 
 .arrow {
-    width: 30px;
-    height: 30px;
+    width: calc(3vh + 2vw);
+    height: calc(3vh + 2vw);
     border: 2.5vw solid;
     border-color: black transparent transparent black;
     transform: rotate(225deg);
