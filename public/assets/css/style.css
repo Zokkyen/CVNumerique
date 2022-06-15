@@ -50,14 +50,14 @@ body {
 .closeCanvas {
     position: absolute;
     background: none;
-    top: 220px;
-    right: 215px;
+    top: 227px;
+    right: 226px;
     border: 0;
 }
 
 .closeButton {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 1.0rem;
+    height: 1.0rem;
 }
 
 .nav-link {
@@ -97,10 +97,6 @@ body {
     height: 300px;
 }
 
-h1 {
-    /*margin-bottom: 100px;*/
-}
-
 .rhombus {
     position: relative;
     width: 200px;
@@ -119,7 +115,7 @@ h1 {
 }
 
 .blank {
-    height: 50px;
+    height: 150px;
 }
 
 /* Arrow animation */
