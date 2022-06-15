@@ -22,7 +22,7 @@ body {
 }
 
 .anchor {
-    scroll-margin-top: 80px;
+    /*scroll-margin-top: 80px;*/
 }
 
 /* Navbar of Header */
@@ -72,12 +72,32 @@ body {
     zoom: 1.2;
 }
 
-/* Main Content */
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.8rem;
+    height: 1.8rem;
+    vertical-align: middle;
+    background-image: url("../img/ico/menu.svg");
+    background-size: cover;
+}
 
+
+/* Main Content */
 /* Resume */
 
 main {
-    margin-top: 4.0rem;
+    margin-top: 3.5rem;
+}
+
+.introContainer {
+    height: calc(100vh + 10px);
+    width: 100%;
+    padding: 0;
+}
+
+.introContainer .row {
+    height: 100%;
+    position: relative;
 }
 
 .pictureContainer {
@@ -85,14 +105,10 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .textFolder {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
+    height: 300px;
 }
 
 .rhombus {
@@ -112,18 +128,88 @@ main {
     transform: rotate(-45deg);
 }
 
+/* Arrow animation */
+
+.arrowToDown {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 30px;
+    height: 30px;
+    border: 2.5vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(225deg);
+}
+
+
+.arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 3s linear infinite;
+    animation: slide 3s linear infinite;
+}
+
+.delay1 {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.delay2 {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-15vw);
+    }
+    
+    20% {
+        opacity: 1;
+        transform: translateY(-9vw);
+    }
+    
+    80% {
+        opacity: 1;
+        transform: translateY(9vw);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translateY(15vw);
+    }
+}
+
+@keyframes slide {
+    0% {
+        opacity: 0;
+        transform: translateY(-15vw);
+    }
+    
+    20% {
+        opacity: 1;
+        transform: translateY(-9vw);
+    }
+    
+    80% {
+        opacity: 1;
+        transform: translateY(9vw);
+    }
+    
+    100% {
+        opacity: 0;
+        transform: translateY(15vw);
+    }
+}
+
 /* Personnal Information Section */
-
-.myInfo {
-    width: fit-content;
-}
-
-.colWidth {
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-}
 
 .colWidth h3 {
     text-align: center;
@@ -158,19 +244,18 @@ li {
 
 /* Skills Section */
 
-.card {
-    border: 0 !important;
+.skillContainer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
-.card-header, .card-body {
+.progress {
     width: 80% !important;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-header {
-    border-radius: 10px !important;
-    background-color: black !important;
+    height: 20px !important;
+    margin-left: 10px;
+    font-size: 1.0rem;
 }
 
 .skillLogo {
@@ -185,31 +270,23 @@ span img {
 
 /* Studies and Jobs Sections */
 
-.cardStudies,
-.cardJobs {
-    width: 80%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
+#studies li {
+    text-align: left;
+}
+
+#studies li,
+#jobs li {
+    text-align: left;
+    padding: 0px 0px 5px 25px;
+    background-position: left 0%;
 }
 
 li li {
     background-image: url("../img/ico/balise.png");
 }
 
-li li:last-of-type {
-    margin-bottom: 10px;
-}
-
-li h5~p {
-    margin: 0;
-}
-
-#studies li, #jobs li {
+.cntJobs li:last-of-type, .cntJobs li:last-of-type{
     margin-bottom: 20px;
-    padding: 0px 0px 5px 25px;
-    background-position: left 0%;
 }
 
 /* Hobbies Section */
@@ -240,7 +317,6 @@ article img {
 
 section .container-fluid {
     width: 80%;
-    /*padding-top: 50px;*/
     padding-bottom: 20px;
     padding-left: 0;
     padding-right: 0;
@@ -260,7 +336,7 @@ section .cf2 {
 
 .container-fluid article h5 {
     margin-top: 10px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 
 /* Footer */
@@ -278,6 +354,9 @@ section .cf2 {
 
 /* Disable overflow x for JS animation */
 
-#skills, #studies, #jobs, #hobbies {
+#skills,
+#studies,
+#jobs,
+#hobbies {
     overflow-x: hidden;
 }

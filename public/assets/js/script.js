@@ -49,7 +49,7 @@ let menuAnimation = document.querySelector('.navbar-toggler-icon')
 if (window.matchMedia("(max-width: 776px)").matches) {
     menuAnimation.addEventListener('click', () => {
         let navLinks = document.querySelectorAll('.nav-link');
-        let delayVar = 0.2;
+        let delayVar = 0.1;
         navLinks.forEach(element => {
             element.style.display = "none";
             gsap.from(element, {
@@ -65,9 +65,9 @@ if (window.matchMedia("(max-width: 776px)").matches) {
                 duration: 0.5,
                 delay: delayVar
             });
-            delayVar += 0.2;
+            delayVar += 0.1;
         });
-        delayVar = 0.2;
+        delayVar = 0.1;
     })
 } 
 else {
@@ -148,15 +148,12 @@ ctnSkills.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            // markers: true,
-            toggleActions: "restart none none none"
+            start: '-10px 100%',
+            toggleActions: "restart none restart none"
         }, 
-        duration: 0.3,
+        duration: 0.5,
         x: -400,
-        delay: 0.5,
-        stagger: 0.2,
-        ease: "back",
-        force3D: true
+        ease: "back"
     });
 });
 
@@ -165,15 +162,12 @@ cntStudies.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            // markers: true,
-            toggleActions: "restart none none none"
+            start: '-10px 100%',
+            toggleActions: "restart none restart none"
         }, 
-        duration: 0.3,
+        duration: 0.5,
         x: 400,
-        delay: 0.5,
-        stagger: 0.2,
-        ease: "back",
-        force3D: true
+        ease: "back"
     });
 });
 
@@ -182,31 +176,26 @@ cntJobs.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            // markers: true,
-            toggleActions: "restart none none none"
+            start: '-10px 100%',
+            toggleActions: "restart none restart none"
         }, 
-        duration: 0.3,
+        duration: 0.5,
         x: -400,
-        delay: 0.5,
-        stagger: 0.2,
-        ease: "back",
-        force3D: true
+        ease: "back"
     });
 });
 
 gsap.from(".cntHobbies", {
     scrollTrigger: {
         trigger: "#hobbies",
-        // markers: true,
-        toggleActions: "restart none none none"
+        start: '-10px 100%',
+        toggleActions: "restart none restart none"
     }, 
-    duration: 2,
+    duration: 1,
     scale: 0.5, 
     opacity: 0, 
-    delay: 0.5, 
     stagger: 0.2,
-    ease: "elastic", 
-    force3D: true
+    ease: "elastic" 
 });
 
 /* Animation of portfolio */
@@ -217,15 +206,13 @@ ctnPortfolio.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
-            // markers: true,
             toggleActions: "restart none restart none"
         }, 
         duration: 1,
         scale: 0.8, 
         opacity: 0, 
-        delay: 0.5, 
+        delay: 0.2, 
         stagger: 0.2,
-        ease: "expo", 
-        force3D: true
+        ease: "expo"
     });
 });

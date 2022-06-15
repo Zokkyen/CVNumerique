@@ -2,31 +2,29 @@
 <html lang="fr-FR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="public/assets/css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="public/assets/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="public/assets/css/style.css" />
     <!-- <link rel="stylesheet" media="(min-width: 752px)" href="public/assets/css/style_tablet.css"> -->
-    <link rel="stylesheet" media="(min-width: 1000px)" href="public/assets/css/style_desktop.css">
+    <link rel="stylesheet" media="(min-width: 1000px)" href="public/assets/css/style_desktop.css" />
     <title>CV Développeur Web de Stéphane Swaenepoel</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo/logo.png" />
     <meta name="description" content="Développeur débutant en Web et Web mobile à Amiens (Somme),
         je suis à la recherche d'un stage pour Octobre 2022 et d'une alternance par la suite pour des études
         en tant que Concepteur Développeur d'Applications" />
-    <meta name="robots" content="index, nofollow">
-    <link rel="canonical" href="https://stephaneswaenepoel.fr">
+    <meta name="robots" content="index, nofollow" />
+    <link rel="canonical" href="https://stephaneswaenepoel.fr" />
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg bg-warning fixed-top p-0">
             <div class="container-fluid p-0 pe-2">
-
-                <a class="navbar-brand d-flex align-items-center p-0" href="index.html">
+                <a class="navbar-brand d-flex align-items-center p-0" href="#">
                     <img src="public/assets/img/logo/logo.png" alt="" width="60" height="60"
-                        class="d-inline-block align-text-top m-0">
+                        class="d-inline-block align-text-top m-0" />
                 </a>
 
                 <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
@@ -37,7 +35,7 @@
                 <div class="offcanvas offcanvas-end bg-warning" data-bs-scroll="true" tabindex="-1"
                     id="offcanvasExample" aria-labelledby="offcanvasExample">
                     <div class="offcanvas-body text-end fs-5 p-0 pe-3 mt-1 mb-1">
-                        <a class="nav-link m-2" href="#navInformation">&lt;--&nbsp;Informations&nbsp;--&gt;</a>
+                        <a class="nav-link m-2" href="#information">&lt;--&nbsp;Informations&nbsp;--&gt;</a>
                         <a class="nav-link m-2" href="#skills">&lt;--&nbsp;Compétences&nbsp;--&gt;</a>
                         <a class="nav-link m-2" href="#studies">&lt;--&nbsp;Etudes&nbsp;--&gt;</a>
                         <a class="nav-link m-2" href="#jobs">&lt;--&nbsp;Jobs&nbsp;--&gt;</a>
@@ -46,7 +44,7 @@
                     </div>
 
                     <button type="button" class="closeCanvas" data-bs-dismiss="offcanvas" aria-label="Close">
-                        <img class="closeButton" src="public/assets/img/ico/cancel.png" alt="Close button">
+                        <img class="closeButton" src="public/assets/img/ico/cancel.png" alt="Close button" />
                     </button>
                 </div>
             </div>
@@ -56,38 +54,59 @@
     <main>
         <!-- Information -->
         <section>
-            <div class="container-fluid">
-
-                <div class="row justify-content-center">    
-                    <div class="col-12 col-lg-6 pictureContainer">
+            <div class="container-fluid introContainer">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6 pictureContainer align-items-end">
                         <div class="rhombus bg-warning rounded" id="rotateAnimation">
                             <img id="pictureAnimation" class="profilePicture rounded-circle"
-                                src="public/assets/img/photo_cv.jpg" alt="Profile Picture">
+                                src="public/assets/img/photo_cv.jpg" alt="Profile Picture" />
                         </div>
                     </div>
 
-                    <div class="col-12 col-lg-6 textFolder ps-2 pe-2">
-                        <h1 class="fs-5">Je m'appelle
-                            <strong>Stéphane Swaenepoel</strong>, futur
+                    <div class="col-12 col-lg-6 textFolder align-items-start">
+                        <h1 class="fs-5">
+                            Je m'appelle <strong>Stéphane Swaenepoel</strong>, futur
                             <span class="text-warning">développeur Web et Web Mobile</span>.<br />
-                            Apprendre de nouvelles choses est mon <span
-                                class="border-bottom border-warning"><strong>Leitmotiv</strong></span> !
+                            Apprendre de nouvelles choses est mon
+                            <span class="border-bottom border-warning"><strong>Leitmotiv</strong></span>
+                            !
                         </h1>
                     </div>
-                </div>
 
+                    <a href="#information">
+                        <div id="arrowAnim" class="arrowToDown">
+                            <div class="arrowSliding">
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="arrowSliding delay1">
+                                <div class="arrow"></div>
+                            </div>
+                            <div class="arrowSliding delay2">
+                                <div class="arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="information">
+            <div class="container-fluid anchor">
                 <!-- Mobile information content -->
-                <div class="row ps-2 pe-2 anchor mobileInformation" id="navInformation">
-                    <div class="col-12 colWidth">
-                        <h3 class="fs-5 bg-dark text-warning myInfo mx-auto p-1">_Mes informations</h3>
-                        <ul>
-                            <li>30 ans d'années</li>
-                            <li>Habitant sur Amiens</li>
-                            <li>Permis B</li>
-                        </ul>
+                <div class="row ps-2 pe-2">
+                    <div class="col-12 colWidth text-start mb-4">
+                        <h3 class="fs-4 p-2 text-start">
+                            <strong>Mes informations <span class="text-warning">_&gt;</span></strong>
+                        </h3>
+                        <p>
+                            Au-delà de mes trente années, je suis basé sur Amiens avec déplacement possible sur un rayon de 50 kilomètres.
+                            <br/>Passionné de tous les aspects du numérique, mon ambition est la conception/développement de sites et d'applications mobiles.
+                        </p>
                     </div>
-                    <div class="col-12 colWidth">
-                        <h3 class="fs-5 bg-dark text-warning myInfo mx-auto p-1">_Mon profil</h3>
+                    <div class="col-12 colWidth text-start mb-4">
+                        <h3 class="fs-4 p-2 text-start">
+                            <strong><span class="text-warning">&lt;_</span> Mon profil</strong>
+                        </h3>
                         <ul>
                             <li>Capacité d'adaptation</li>
                             <li>Autonome</li>
@@ -96,8 +115,10 @@
                             <li>Jovial</li>
                         </ul>
                     </div>
-                    <div class="col-12 colWidth">
-                        <h3 class="fs-5 bg-dark text-warning myInfo mx-auto p-1">_Langues parlées</h3>
+                    <div class="col-12 colWidth text-start mb-4">
+                        <h3 class="fs-4 p-2 text-start">
+                            <strong>Langues parlées <span class="text-warning">_&gt;</span></strong>
+                        </h3>
                         <ul>
                             <li class="langFr">Langue maternelle</li>
                             <li class="langEng">CEF B1</li>
@@ -106,8 +127,6 @@
                 </div>
 
                 <!-- Desktop information content -->
-
-
             </div>
         </section>
 
@@ -115,279 +134,172 @@
         <section id="skills">
 
             <!-- Web skills -->
-            <div class="card mb-5 ctnSkills anchor">
-                <div class="card-header bg-dark text-warning text-center">
-                    <h3 class="fs-5 m-0">Compétences Web</h3>
-                </div>
-                <div class="card-body">
-                    <div class="row align-items-center mb-3">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/html-5.png" alt="HTML 5">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_half.svg" alt="Half Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
-                        </div>
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/css-3.png" alt="CSS 3">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
+            <article>
+                <div class="container-fluid ctnSkills anchor mb-5">
+                    <h3 class="fs-4 p-2 pb-2 text-start">
+                        <strong><span class="text-warning">&lt;_</span> Compétences Web <span class="text-warning">_&gt;</span></strong>
+                    </h3>
+
+                    <!-- HTML 5 -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/html-5.png" alt="HTML 5" title="HTML 5" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
                         </div>
                     </div>
 
-                    <div class="row align-items-center mb-3">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/bootstrap.png"
-                                alt="Bootstrap">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
-                        </div>
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/javascript.png"
-                                alt="Javascript">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_half.svg" alt="Half Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
+                    <!-- CSS 3 -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/css-3.png" alt="CSS 3" title="CSS 3" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
                         </div>
                     </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/php.svg" alt="PHP 7">
-                            <span>
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
+                    <!-- Bootstrap -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/bootstrap.png" alt="Bootstrap" title="Bootstrap" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
                         </div>
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/PhpMyAdmin.svg"
-                                alt="PhpMyAdmin">
-                            <span>
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
+                    </div>
+
+                    <!-- Javascript -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/javascript.png" alt="Javascript" title="Javascript" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
+                        </div>
+                    </div>
+
+                    <!-- PHP -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/php.svg" alt="PHP 7" title="PHP 7" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">15%</div>
+                        </div>
+                    </div>
+
+                    <!-- PhpMyAdmin -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/PhpMyAdmin.svg" alt="PhpMyAdmin" title="PhpMyAdmin" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%">15%</div>
+                        </div>
+                    </div>
+                </div>                
+            </article>
+
+            <!-- Project skills -->
+            <article>
+                <div class="container-fluid ctnSkills anchor mb-5">
+                    <h3 class="fs-4 p-2 pb-2 text-start">
+                        <strong><span class="text-warning">&lt;_</span> Gestion de projet <span class="text-warning">_&gt;</span></strong>
+                    </h3>
+
+                    <!-- Github -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/github.svg" alt="Github" title="Github" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">100%</div>
+                        </div>
+                    </div>
+
+                    <!-- Trello -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/trello.svg" alt="Trello" title="Trello" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </article>
 
             <!-- Design skills -->
-            <div class="card mb-5 ctnSkills">
-                <div class="card-header bg-dark text-warning text-center">
-                    <h3 class="fs-5 m-0">Web Design / Gestion de projet</h3>
-                </div>
-                <div class="card-body">
-                    <div class="row align-items-center mb-3">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/github.png" alt="Github">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                            </span>
-                        </div>
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/trello.svg" alt="Trello">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_half.svg" alt="Half Star">
-                            </span>
+            <article>
+                <div class="container-fluid ctnSkills anchor mb-5">
+                    <h3 class="fs-4 p-2 pb-2 text-start">
+                        <strong><span class="text-warning">&lt;_</span> Web Design <span class="text-warning">_&gt;</span></strong>
+                    </h3>
+
+                    <!-- Adobe Photoshop -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/photoshop.png" alt="Adobe Photoshop" title="Adobe Photoshop" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">20%</div>
                         </div>
                     </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/photoshop.png"
-                                alt="Adobe Photoshop">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_half.svg" alt="Half Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
-                        </div>
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/xd.png" alt="Adobe XD">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Electric / Electronic Skills -->
-            <div class="card mb-5 ctnSkills">
-                <div class="card-header bg-dark text-warning text-center">
-                    <h3 class="fs-5 m-0">Electrique / électronique</h3>
-                </div>
-                <div class="card-body">
-                    <div class="row align-items-center">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/langagec.png"
-                                alt="Language C">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
-                        </div>
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/langagecplusplus.png"
-                                alt="Language C++">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
+                    <!-- Adobe XD -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/xd.png" alt="Adobe XD" title="Adobe XD" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">50%</div>
                         </div>
                     </div>
 
-                    <div class="row align-items-center mt-1">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/e3series.png" alt="E3.series">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
-                        </div>
-                        <div class="col-6 justify-content-center p-0 d-flex align-items-center">
-                            <div class="d-flex flex-column align-items-center me-1">
-                                <div>
-                                    <img class="skillLogo" src="public/assets/img/ico/isis.jpg"
-                                        alt="Proteus ISIS">
-                                </div>
-                                <div>
-                                    <img class="skillLogo" src="public/assets/img/ico/ares.jpg"
-                                        alt="Proteus ARES">
-                                </div>
-                            </div>
-                            <div>
-                                <span>
-                                    <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                    <img src="public/assets/img/ico/star_half.svg" alt="Half Star">
-                                    <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                    <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-            </div>
+            </article>
 
-            <!-- Other Skills -->
-            <div class="card mb-5 ctnSkills">
-                <div class="card-header bg-dark text-warning text-center">
-                    <h3 class="fs-5 m-0">Autres compétences</h3>
-                </div>
-                <div class="card-body">
-                    <div class="row align-items-center mb-3">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/solidworks.png"
-                                alt="Solidworks">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
-                        </div>
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/creo.png" alt="PTC Creo">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
+            <!-- Other skills -->
+            <article>
+                <div class="container-fluid ctnSkills anchor mb-5">
+                    <h3 class="fs-4 p-2 pb-2 text-start">
+                        <strong><span class="text-warning">&lt;_</span> Autres compétences <span class="text-warning">_&gt;</span></strong>
+                    </h3>
+
+                    <!-- E3.Series -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/e3series.png" alt="E3.Series" title="E3.Series" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
                         </div>
                     </div>
 
-                    <div class="row align-items-center mb-3">
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/word.svg"
-                                alt="Microsoft Word">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_half.svg" alt="Half Star">
-                            </span>
-                        </div>
-                        <div class="col-6 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/excel.svg"
-                                alt="Microsoft Excel">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                                <img src="public/assets/img/ico/star_empty.svg" alt="Empty Star">
-                            </span>
+                    <!-- Solidworks -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/solidworks.png" alt="Solidworks" title="Solidworks" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">30%</div>
                         </div>
                     </div>
 
-                    <div class="row align-items-center">
-                        <div class="col-12 text-center p-0">
-                            <img class="skillLogo" src="public/assets/img/ico/powerpoint.svg"
-                                alt="Microsoft Powerpoint">
-                            <span>
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_solid.svg" alt="Solid Star">
-                                <img src="public/assets/img/ico/star_half.svg" alt="Half Star">
-                            </span>
+                    <!-- PTC Creo -->
+                    <div class="skillContainer">
+                        <img class="skillLogo" src="public/assets/img/ico/creo.png" alt="PTC Creo" title="PTC Creo" />
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning text-black" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width: 30%">30%</div>
                         </div>
                     </div>
+
                 </div>
-            </div>
+            </article>
         </section>
 
         <!-- Studies -->
         <section id="studies">
-            <div class="cardStudies anchor">
-                <h3 class="bg-dark text-warning text-center rounded border-2 mb-4">_Historiques de formations</h3>
+            <div class="container-fluid anchor mb-5">
+                <h3 class="fs-4 p-2 pb-3 text-start">
+                    <strong><span class="text-warning">&lt;_</span> Historiques de formations</strong>
+                </h3>
+
                 <ul>
+                    <li class="cntStudies mb-3">
+                        Formation Développeur Web et Web Mobile (RNCP Niveau III) à partir
+                        de mars 2022 à La MANU (AMIENS)
+                    </li>
+                    <li class="cntStudies mb-3">
+                        Master Electronique Electrotechnique Automatique Informatique
+                        Industrielle, parcours Vision Robotique en 2016 à l'Université de
+                        Picardie Jules Verne (AMIENS)
+                    </li>
+                    <li class="cntStudies mb-3">
+                        Licence Electronique Electrotechnique Automatique en 2014 à
+                        l'Université de Picardie Jules Verne
+                    </li>
                     <li class="cntStudies">
-                        Formation Développeur Web et Web Mobile (RNCP Niveau III) à partir de mars 2022 à La MANU
+                        BTS Systèmes Electroniques en 2013 au Lycée Edouard Branly
                         (AMIENS)
-                    </li>
-                    <li class="cntStudies">
-                        Master Electronique Electrotechnique Automatique Informatique Industrielle, parcours Vision
-                        Robotique en 2016 à l'Université de Picardie Jules Verne (AMIENS)
-                    </li>
-                    <li class="cntStudies">
-                        Licence Electronique Electrotechnique Automatique en 2014 à l'Université de Picardie Jules
-                        Verne
-                    </li>
-                    <li class="cntStudies">
-                        BTS Systèmes Electroniques en 2013 au Lycée Edouard Branly (AMIENS)
                     </li>
                 </ul>
             </div>
@@ -395,66 +307,71 @@
 
         <!-- Jobs -->
         <section id="jobs">
-            <div class="cardJobs anchor">
-                <h3 class="bg-dark text-warning text-center rounded border-2 mb-4">_Parcours professionnel</h3>
+            <div class="container-fluid anchor mb-3">
+                <h3 class="fs-4 p-2 pb-2 text-start">
+                    <strong>Parcours professionnel <span class="text-warning">_&gt;</span></strong>
+                </h3>
+
                 <ul>
                     <li class="cntJobs">
-                        <h5 class="fs-5"><strong>Chargé d'études chez Innovateam (92) de novembre à décembre
-                                2020</strong></h5>
-                        <p class="text-warning mb-2"><strong>Massey Fergusson (60)</strong></p>
+                        <h5 class="fs-6">
+                            <strong>Chargé d'études chez Innovateam (92) de novembre à décembre
+                                2020</strong>
+                        </h5>
+                        <p class="text-warning mb-2">
+                            <strong>Massey Fergusson (60)</strong>
+                        </p>
                         <ul>
                             <li>
-                                Etude électrique/électronique pour l'ajout d'une nouvelle fonctionnalité sur une
-                                nouvelle gamme de tracteur
+                                Etude électrique/électronique pour l'ajout d'une nouvelle
+                                fonctionnalité sur une nouvelle gamme de tracteur
                             </li>
-                            <li>
-                                Vérification de schémas électriques
-                            </li>
+                            <li>Vérification de schémas électriques</li>
                         </ul>
                     </li>
                     <li class="cntJobs">
-                        <h5 class="fs-5"><strong>Technicien d'étude électrique chez CCAMY SYSTEMES (76) de décembre
-                                2016 à juillet 2021</strong></h5>
-                        <p class="text-warning mb-2"><strong>Bureau d'études (76) - 5 mois</strong></p>
+                        <h5 class="fs-6">
+                            <strong>Technicien d'étude électrique chez CCAMY SYSTEMES (76) de
+                                décembre 2016 à juillet 2021</strong>
+                        </h5>
+                        <p class="text-warning mb-2">
+                            <strong>Bureau d'études (76) - 5 mois</strong>
+                        </p>
                         <ul>
-                            <li>
-                                Etude de schéma électrique de type SPP
-                            </li>
+                            <li>Etude de schéma électrique de type SPP</li>
                         </ul>
-                        <p class="text-warning mb-2"><strong>Alstom (59) - 3 mois</strong></p>
+                        <p class="text-warning mb-2">
+                            <strong>Alstom (59) - 3 mois</strong>
+                        </p>
                         <ul>
-                            <li>
-                                Etude de schéma électrique de type Synoptique
-                            </li>
+                            <li>Etude de schéma électrique de type Synoptique</li>
                         </ul>
-                        <p class="text-warning mb-2"><strong>Client Massey Fergusson (60)</strong></p>
+                        <p class="text-warning mb-2">
+                            <strong>Client Massey Fergusson (60)</strong>
+                        </p>
                         <ul>
-                            <li>
-                                Architecture électrique avec des schémas de type SPC
-                            </li>
-                            <li>
-                                Modélisation 3D des faisceaux + intégration épure
-                            </li>
-                            <li>
-                                Création/Mise à jour de scripts VBS
-                            </li>
+                            <li class="mb-2">Architecture électrique avec des schémas de type SPC</li>
+                            <li class="mb-2">Modélisation 3D des faisceaux + intégration épure</li>
+                            <li>Création/Mise à jour de scripts VBS</li>
                         </ul>
                     </li>
                     <li class="cntJobs">
-                        <h5 class="fs-5"><strong>Stage de fin d'étude Master 2 chez Ineris (60) de 6 mois en
-                                2016</strong></h5>
+                        <h5 class="fs-6 mb-3">
+                            <strong>Stage de fin d'étude Master 2 chez Ineris (60) de 6 mois en
+                                2016</strong>
+                        </h5>
                         <ul>
-                            <li>
-                                Prise en main d'un ensemble d'acquisitions (centrale, capteurs) pour
-                                l'hydrométrie
+                            <li class="mb-2">
+                                Prise en main d'un ensemble d'acquisitions (centrale,
+                                capteurs) pour l'hydrométrie
+                            </li>
+                            <li class="mb-2">
+                                Evaluation des performances énergétiques et des volumes de
+                                données (Routeur 3G,modem GPRS/3G, ADSL et WIFI)
                             </li>
                             <li>
-                                Evaluation des performances énergétiques et des volumes de données (Routeur
-                                3G,modem GPRS/3G, ADSL et WIFI)
-                            </li>
-                            <li>
-                                Programmation (type GRAFCET) d'une centrale pour une mise en fonction à la
-                                Réunion
+                                Programmation (type GRAFCET) d'une centrale pour une mise en
+                                fonction à la Réunion
                             </li>
                         </ul>
                     </li>
@@ -465,30 +382,33 @@
         <!-- Hobbies -->
         <section id="hobbies">
             <div class="hobbiesContainer anchor mb-5">
-                <h3 class="fs-5 rounded bg-dark text-warning myInfo mx-auto p-1 mb-3">_Mes loisirs</h3>
+                <h3 class="fs-4 p-2 text-center">
+                    <strong> <span class="text-warning">&lt;_ &lt;_</span> Mes loisirs <span class="text-warning">_&gt; _&gt;</span></strong>
+                </h3>
+
                 <ul>
                     <li class="d-flex align-items-center cntHobbies m-2">
-                        <img src="public/assets/img/ico/guitar.svg" alt="Guitare électrique">
+                        <img src="public/assets/img/ico/guitar.svg" alt="Guitare électrique" />
                         <span>Guitare électrique</span>
                     </li>
                     <li class="d-flex align-items-center cntHobbies m-2">
-                        <img src="public/assets/img/ico/hammer.svg" alt="Bricolage Rénovation">
+                        <img src="public/assets/img/ico/hammer.svg" alt="Bricolage Rénovation" />
                         <span>Bricolage, rénovation</span>
                     </li>
                     <li class="d-flex align-items-center cntHobbies m-2">
-                        <img src="public/assets/img/ico/computer.svg" alt="Jeux Vidéos">
+                        <img src="public/assets/img/ico/computer.svg" alt="Jeux Vidéos" />
                         <span>Jeux vidéos (MMORPG, solo aventure ..)</span>
                     </li>
                     <li class="d-flex align-items-center cntHobbies m-2">
-                        <img src="public/assets/img/ico/3dprint.svg" alt="Impression 3D">
+                        <img src="public/assets/img/ico/3dprint.svg" alt="Impression 3D" />
                         <span>Impression 3D (Ender 3 Pro) + Modélisation 3D</span>
                     </li>
                     <li class="d-flex align-items-center cntHobbies m-2">
-                        <img src="public/assets/img/ico/cooking.svg" alt="Cuisine">
+                        <img src="public/assets/img/ico/cooking.svg" alt="Cuisine" />
                         <span>Cuisine, Pâtisserie</span>
                     </li>
                     <li class="d-flex align-items-center cntHobbies m-2">
-                        <img src="public/assets/img/ico/beer.svg" alt="Zythologue">
+                        <img src="public/assets/img/ico/beer.svg" alt="Zythologue" />
                         <span>Zythologue</span>
                     </li>
                 </ul>
@@ -499,45 +419,46 @@
     <footer>
         <div class="container-fluid myFooter bg-black">
             <div class="row align-items-center h-100">
-
                 <div class="col">
                     <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
                         <img class="sociaLogo" src="public/assets/img/ico/linkedin.png" alt="LinkedIn"
-                            title="Mon LinkedIn">
+                            title="Mon LinkedIn" />
                     </a>
                 </div>
 
                 <div class="col">
                     <a href="https://github.com/Zokkyen" target="_blank">
-                        <img class="sociaLogo" src="public/assets/img/ico/github.png" alt="Github" title="Mon Github">
+                        <img class="sociaLogo" src="public/assets/img/ico/github.svg" alt="Github" title="Mon Github" />
                     </a>
                 </div>
 
                 <div class="col-5 fs-7 text-center text-warning">
-                    <p class="m-0">Stéphane Swaenepoel &copy; 2022</p>
-                    <p class="m-0">Tous droits réservés.</p>
+                    <p class="m-0">
+                        Stéphane Swaenepoel
+                        <br/>&copy; 2022
+                        <br/>Tous droits réservés.
+                    </p>
                 </div>
 
                 <div class="col">
                     <a href="mailto:stephane.swaenepoel@gmail.com">
-                        <img class="sociaLogo" src="public/assets/img/ico/google.png" alt="Mail"
-                            title="Mon Mail Google">
+                        <img class="sociaLogo" src="public/assets/img/ico/gmail.png" alt="Mail"
+                            title="Mon Mail Google" />
                     </a>
                 </div>
 
                 <div class="col">
                     <i onclick="window.open('public/assets/files/cv.pdf')">
                         <img class="sociaLogo" src="public/assets/img/ico/printer.png" alt="Mon CV"
-                            title="Télécharger mon CV">
+                            title="Télécharger mon CV" />
                     </i>
                 </div>
             </div>
         </div>
-
     </footer>
+
     <script src="public/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="public/assets/js/gsap/minified/gsap.min.js"></script>
-    <script src="public/assets/js/gsap/minified/ScrollTrigger.min.js"></script>
     <script src="public/assets/js/script.js"></script>
 </body>
 
