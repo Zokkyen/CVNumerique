@@ -118,13 +118,17 @@ h1 {
     transform: rotate(-45deg);
 }
 
+.blank {
+    height: 20px;
+}
+
 /* Arrow animation */
 
 .arrowToDown {
     position: absolute;
     bottom: 12%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -12%);
     display: flex;
     justify-content: center;
     align-items: center;
