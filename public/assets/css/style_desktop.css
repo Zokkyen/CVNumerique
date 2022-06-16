@@ -22,13 +22,49 @@
 }
 
 /* Main Content */
-
 /* Resume */
 
-.textFolder {
-    width: 40%;
+.introContainer {
+    height: calc(100vh - 60px);
+    width: 100%;
+    padding: 0;
     display: flex;
-    margin-bottom: 10px;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.pictureContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+}
+
+.presentationContainer {
+    margin-left: 50px;
+    text-align: start;
+}
+
+/* Arrow animation */
+
+.arrowToDown {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -12%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    border: 2.5vw solid;
+    border-color: black transparent transparent black;
+    transform: rotate(225deg);
 }
 
 /* Personnal Information Section */
