@@ -153,7 +153,8 @@ ctnSkills.forEach(element => {
         }, 
         duration: 0.5,
         x: -400,
-        ease: "back"
+        ease: "back",
+        force3D: true
     });
 });
 
@@ -167,7 +168,8 @@ cntStudies.forEach(element => {
         }, 
         duration: 0.5,
         x: 400,
-        ease: "back"
+        ease: "back",
+        force3D: true
     });
 });
 
@@ -181,7 +183,8 @@ cntJobs.forEach(element => {
         }, 
         duration: 0.5,
         x: -400,
-        ease: "back"
+        ease: "back",
+        force3D: true
     });
 });
 
@@ -195,7 +198,8 @@ gsap.from(".cntHobbies", {
     scale: 0.5, 
     opacity: 0, 
     stagger: 0.2,
-    ease: "elastic" 
+    ease: "elastic" ,
+    force3D: true
 });
 
 /* Animation of portfolio */
@@ -213,6 +217,7 @@ ctnPortfolio.forEach(element => {
         opacity: 0, 
         delay: 0.2, 
         stagger: 0.2,
-        ease: "expo"
+        ease: "expo",
+        force3D: true
     });
 });
