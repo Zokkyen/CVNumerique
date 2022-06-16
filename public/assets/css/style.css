@@ -118,6 +118,10 @@ body {
     height: 150px;
 }
 
+.blank2 {
+    height: 50px;
+}
+
 /* Arrow animation */
 
 .arrowToDown {
@@ -160,17 +164,17 @@ body {
         opacity: 0;
         transform: translateY(-15vw);
     }
-    
+
     20% {
         opacity: 1;
         transform: translateY(-9vw);
     }
-    
+
     80% {
         opacity: 1;
         transform: translateY(9vw);
     }
-    
+
     100% {
         opacity: 0;
         transform: translateY(15vw);
@@ -182,17 +186,17 @@ body {
         opacity: 0;
         transform: translateY(-15vw);
     }
-    
+
     20% {
         opacity: 1;
         transform: translateY(-9vw);
     }
-    
+
     80% {
         opacity: 1;
         transform: translateY(9vw);
     }
-    
+
     100% {
         opacity: 0;
         transform: translateY(15vw);
