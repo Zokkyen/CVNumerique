@@ -26,7 +26,6 @@ body {
 
 .navbar {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0 0 15px 15px;
 }
 
 .btn {
@@ -44,20 +43,21 @@ body {
 .offcanvas-end {
     width: 250px !important;
     height: 255px;
-    border-radius: 0px 0px 0px 20px;
+    clip-path: polygon(50% 0%, 100% 0, 100% 43%, 100% 100%, 68% 100%, 20% 100%, 0 80%, 0% 43%, 0 0);
 }
 
 .closeCanvas {
     position: absolute;
     background: none;
-    top: 227px;
-    right: 226px;
+    top: 200px;
+    right: 195px;
     border: 0;
 }
 
 .closeButton {
-    width: 1.0rem;
-    height: 1.0rem;
+    width: 2.3rem;
+    /*height: 1.8rem;*/
+    transform: rotate(45deg);
 }
 
 .nav-link {
@@ -338,7 +338,6 @@ section .cf2 {
 .myFooter {
     height: 60px;
     font-size: 0.7rem;
-    border-radius: 15px 15px 0 0;
 }
 
 .sociaLogo {
