@@ -43,9 +43,32 @@ document.addEventListener("DOMContentLoaded", rotateImg);
 
 /* Animation of the menu */
 /* Using of GSAP Library */
+/* Zoom part for each element nav-link */
+let boldZoomAnimation = document.querySelectorAll('.nav-link')
 
-let menuAnimation = document.querySelector('.navbar-toggler-icon')
+boldZoomAnimation.forEach(element => {
+    element.addEventListener('mouseenter', () => {
+        element.style.fontWeight = "bold";
+        gsap.to(element, {
+            scaleX: 1.1,
+            scaleY: 1.1,
+            duration: 0.5
+        })
+    });
 
+    element.addEventListener('mouseleave', () => {
+        element.style.fontWeight = "normal";
+        gsap.to(element, {
+            scaleX: 1.0,
+            scaleY: 1.0,
+            duration: 0.5
+        })
+    });   
+});
+
+/* Animation of the menu */
+/* Using of GSAP Library */
+/* Animation of starting of the menu */
 if (window.matchMedia("(max-width: 776px)").matches) {
     menuAnimation.addEventListener('click', () => {
         let navLinks = document.querySelectorAll('.nav-link');
@@ -69,8 +92,7 @@ if (window.matchMedia("(max-width: 776px)").matches) {
         });
         delayVar = 0.1;
     })
-} 
-else {
+} else {
     document.addEventListener('DOMContentLoaded', () => {
         let navLinks = document.querySelectorAll('.nav-link');
         let delayVar = 0.2;
@@ -92,7 +114,7 @@ else {
             delayVar += 0.2;
         });
         delayVar = 0.2;
-    })       
+    })
 }
 
 /* Animations of Skills, Studies and Jobs */
@@ -143,14 +165,14 @@ window.addEventListener("scroll", () => {
 
 gsap.registerPlugin(ScrollTrigger);
 
-let ctnSkills =  gsap.utils.toArray('.ctnSkills');
+let ctnSkills = gsap.utils.toArray('.ctnSkills');
 ctnSkills.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
             start: '-10px 100%',
             toggleActions: "restart none restart none"
-        }, 
+        },
         duration: 0.5,
         x: -400,
         ease: "back",
@@ -158,14 +180,14 @@ ctnSkills.forEach(element => {
     });
 });
 
-let cntStudies =  gsap.utils.toArray('.cntStudies');
+let cntStudies = gsap.utils.toArray('.cntStudies');
 cntStudies.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
             start: '-10px 100%',
             toggleActions: "restart none restart none"
-        }, 
+        },
         duration: 0.5,
         x: 400,
         ease: "back",
@@ -173,14 +195,14 @@ cntStudies.forEach(element => {
     });
 });
 
-let cntJobs =  gsap.utils.toArray('.cntJobs');
+let cntJobs = gsap.utils.toArray('.cntJobs');
 cntJobs.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
             start: '-10px 100%',
             toggleActions: "restart none restart none"
-        }, 
+        },
         duration: 0.5,
         x: -400,
         ease: "back",
@@ -193,29 +215,30 @@ gsap.from(".cntHobbies", {
         trigger: "#hobbies",
         start: '-10px 100%',
         toggleActions: "restart none restart none"
-    }, 
+    },
     duration: 1,
-    scale: 0.5, 
-    opacity: 0, 
+    scale: 0.5,
+    opacity: 0,
     stagger: 0.2,
-    ease: "elastic" ,
+    ease: "elastic",
     force3D: true
 });
 
 /* Animation of portfolio */
 /* Using of GSAP Library */
 
-let ctnPortfolio =  gsap.utils.toArray('.ctnPortfolio');
+let ctnPortfolio = gsap.utils.toArray('.ctnPortfolio');
 ctnPortfolio.forEach(element => {
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
+            marker: true,
             toggleActions: "restart none restart none"
-        }, 
+        },
         duration: 1,
-        scale: 0.8, 
-        opacity: 0, 
-        delay: 0.2, 
+        scale: 0.8,
+        opacity: 0,
+        delay: 0.2,
         stagger: 0.2,
         ease: "expo",
         force3D: true

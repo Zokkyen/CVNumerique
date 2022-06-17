@@ -1,3 +1,9 @@
+/* Little hack for now */
+
+body {
+    overflow-x: hidden;
+}
+
 /* Navbar of Header */
 
 .btn {
@@ -14,11 +20,6 @@
 
 .nav-link {
     font-size: 1.0rem;
-}
-
-.nav-link:hover {
-    font-weight: bolder;
-    zoom: 1.1;
 }
 
 /* Main Content */
@@ -54,13 +55,12 @@
 
 .colWidth {
     padding: 20px !important;
-    width: fit-content !important;
-    margin-left: auto;
-    margin-right: auto;
+    width: 50%;
 }
 
 .colWidth:first-of-type {
-    
+    width: 100% !important;
+    padding: 20px !important;
 }
 
 /* Arrow animation */
@@ -121,7 +121,9 @@
 
 #skills {
     display: flex;
-    width: 100% !important;
+    width: 80% !important;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     flex-wrap: wrap;
 }
@@ -135,17 +137,27 @@
 }
 
 .ctnSkills h3 {
-    text-align: center !important;
+    text-align: start !important;
 }
 
-.skillContainer {
-    justify-content: center;
+/* Studies and Jobs Sections */
+
+#studies, #jobs {
+    padding: 20px;
 }
 
 /* Hobbies Section */
 
+#hobbies h3 {
+    text-align: start !important;
+}
+
 #hobbies ul {
     display: flex;
+}
+
+#hobbies li span{
+    font-size: 0.9rem;
 }
 
 .hobbiesContainer {
@@ -156,41 +168,59 @@
 
 /* Portfolio Section */
 
-.portfolioTitle, .portfolioContainer {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.portfolioTitle button {
-    border: 0 !important;
-}
-
-.portfolioContainer {
-    height: 300px;
-}
-
-.imgArrow {
-    width: 30px;
-    height: 30px;
-    filter: invert(75%) sepia(36%) saturate(1114%) hue-rotate(350deg) brightness(101%) contrast(106%);
-}
-
-.portfolioContainer img {
+section .cf2 {
     width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    object-fit: contain;
-    object-position: center center;
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    padding-bottom: 0px !important;
+}
+
+.ctnPortfolio {
+    width: 350px !important;
+    height: 400px !important;
+    padding: 10px;
+    margin-bottom: 0px !important;
+}
+
+.ctnPortfolio img {
+    width: 300px !important;
+    height: 200px !important;
+    object-fit: contain !important;
+    border-radius: 0 !important;
 }
 
 /* Footer */
 
+.mobileFooter {
+    display: none !important;
+}
+
+.desktopFooter {
+    display: block !important;
+}
+
+footer .row {
+    justify-content: center;
+}
+
+.myFooter {
+    height: 50px !important;
+    font-size: 0.8rem !important;
+}
+
 footer .col {
     text-align: center;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
 }
 
 .sociaLogo{
-    width: 50%;
+    width: 30px !important;
 }
