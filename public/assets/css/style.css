@@ -60,7 +60,9 @@ body {
 }
 
 .closeButton {
+    display: block;
     width: 2.3rem;
+    height: 2.3rem;
     transform: rotate(45deg);
 }
 
