@@ -1,9 +1,3 @@
-/* Little hack for now */
-
-body {
-    overflow-x: hidden;
-}
-
 /* Navbar of Header */
 
 .btn {
@@ -223,4 +217,10 @@ footer .col {
 
 .sociaLogo{
     width: 30px !important;
+}
+
+/* Little hack for now */
+
+body {
+    overflow-x: hidden;
 }
