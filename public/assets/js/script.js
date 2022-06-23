@@ -126,54 +126,14 @@ if (window.matchMedia("(max-width: 1000px)").matches) {
     })
 }
 
-/* Animations of Skills, Studies and Jobs */
-
-const scrollElements = document.querySelectorAll(".js-scroll");
-
-const elementInView = (element, dividend = 1) => {
-    const elementTop = element.getBoundingClientRect().top;
-
-    return (
-        elementTop <=
-        (window.innerHeight || document.documentElement.clientHeight) / dividend
-    );
-};
-
-const elementOutofView = (element) => {
-    const elementTop = element.getBoundingClientRect().top;
-
-    return (
-        elementTop > (window.innerHeight || document.documentElement.clientHeight)
-    );
-};
-
-const displayScrollElement = (element) => {
-    element.classList.add("scrolled");
-};
-
-const hideScrollElement = (element) => {
-    element.classList.remove("scrolled");
-};
-
-const handleScrollAnimation = () => {
-    scrollElements.forEach((element) => {
-        if (elementInView(element, 1.0)) {
-            displayScrollElement(element);
-        } else if (elementOutofView(element)) {
-            hideScrollElement(element)
-        }
-    })
-}
-
-window.addEventListener("scroll", () => {
-    handleScrollAnimation();
-});
-
-/* Animation of skills, jobs, studies, hobbies */
+/* Animation of skills */
 /* Using of GSAP Library */
 
+let indexSkills = 0;
+let typeFunction = document.querySelectorAll('.typeFunction');
 let ctnSkills = gsap.utils.toArray('.ctnSkills');
 ctnSkills.forEach(element => {
+    
     gsap.from(element, {
         scrollTrigger: {
             trigger: element,
@@ -183,9 +143,34 @@ ctnSkills.forEach(element => {
         duration: 0.5,
         x: -400,
         ease: "back",
-        force3D: true
+        force3D: true,
     });
 });
+
+let skillContainer = gsap.utils.toArray('.skillContainer');
+skillContainer.forEach(element => {
+    
+    let delaySkill = 1.0;
+    for (let index = 0; index < element.children.length; index++) {
+        delaySkill += 1.0;
+        gsap.from(element.children[index], {
+            scrollTrigger: {
+                trigger: element,
+                start: '-10px 100%',
+                toggleActions: "restart none restart none"
+            },
+            duration: delaySkill,
+            keyframes: {
+                scale: [0, 1],
+                ease: "back", 
+                force3D: true
+            }
+        }); 
+    }
+});
+
+/* Animation of jobs */
+/* Using of GSAP Library */
 
 let cntStudies = gsap.utils.toArray('.cntStudies');
 cntStudies.forEach(element => {
@@ -202,6 +187,9 @@ cntStudies.forEach(element => {
     });
 });
 
+/* Animation of studies */
+/* Using of GSAP Library */
+
 let cntJobs = gsap.utils.toArray('.cntJobs');
 cntJobs.forEach(element => {
     gsap.from(element, {
@@ -216,6 +204,9 @@ cntJobs.forEach(element => {
         force3D: true
     });
 });
+
+/* Animation of hobbies */
+/* Using of GSAP Library */
 
 gsap.from(".cntHobbies", {
     scrollTrigger: {

@@ -254,8 +254,11 @@ li {
 }
 
 .skillLogo {
-    height: 40px;
-    width: 40px;
+    height: 60px;
+    width: 60px;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 span img {
@@ -280,7 +283,8 @@ li li {
     background-image: url("../img/ico/balise.png");
 }
 
-.cntJobs li:last-of-type, .cntJobs li:last-of-type{
+.cntJobs li:last-of-type,
+.cntJobs li:last-of-type {
     margin-bottom: 20px;
 }
 
