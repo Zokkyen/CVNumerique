@@ -119,21 +119,18 @@
 
 /* Skills Section*/
 
-#skills {
+section .container-fluid {
+    width: 80%;
+    padding-bottom: 20px;
+    padding-left: 0;
+    padding-right: 0;
     display: flex;
-    width: 80% !important;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
 }
 
 .ctnSkills {
-    width: 40vw !important;
-
-    padding: 20px !important;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 10px !important;
 }
 
 .ctnSkills h3 {
