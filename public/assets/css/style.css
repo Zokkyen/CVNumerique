@@ -9,16 +9,17 @@
 }
 
 html {
-    height: 100vh;
-    width: 100vw;
     scroll-padding-top: 4rem;
 }
 
 body {
     font-family: 'Roboto', sans-serif !important;
-    height: 100vh;
+}
+
+main {
     width: 100vw;
-    margin-top: 30px;
+    min-height: calc(100vh - 50px);
+    max-height: fit-content;
 }
 
 /* Navbar of Header */
@@ -81,6 +82,7 @@ body {
 /* Resume */
 
 .introContainer {
+    margin-top: 50px;
     height: 100vh;
     width: 100%;
     padding: 0;
@@ -115,93 +117,26 @@ body {
     transform: rotate(-45deg);
 }
 
-.blank {
-    height: 150px;
-}
-
-.blank2 {
-    height: 50px;
-}
-
 /* Arrow animation */
 
 .arrowToDown {
     position: absolute;
-    bottom: 15%;
+    width: 100vw;
+    height: 10%;
+    object-fit: cover;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -15%);
+    transform: translate(-50%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.arrow {
-    width: 40px;
-    height: 40px;
-    border: 10px solid;
-    border-color: black transparent transparent black;
-    transform: rotate(225deg);
-}
-
-
-.arrowSliding {
+.arrowToDown .toDown{
     position: absolute;
-    -webkit-animation: slide 3s linear infinite;
-    animation: slide 3s linear infinite;
-}
-
-.delay1 {
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-}
-
-.delay2 {
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
-}
-
-@-webkit-keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(-15vw);
-    }
-
-    20% {
-        opacity: 1;
-        transform: translateY(-9vw);
-    }
-
-    80% {
-        opacity: 1;
-        transform: translateY(9vw);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(15vw);
-    }
-}
-
-@keyframes slide {
-    0% {
-        opacity: 0;
-        transform: translateY(-15vw);
-    }
-
-    20% {
-        opacity: 1;
-        transform: translateY(-9vw);
-    }
-
-    80% {
-        opacity: 1;
-        transform: translateY(9vw);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(15vw);
-    }
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
 }
 
 /* Personnal Information Section */
@@ -351,6 +286,10 @@ section .cf2 {
 .sociaLogo {
     width: 100%;
     height: 100%;
+}
+
+i {
+    cursor: pointer;
 }
 
 /* Disable overflow x for JS animation */

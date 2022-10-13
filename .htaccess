@@ -1,24 +1,11 @@
-RewriteEngine On
-RewriteCond %{SERVER_PORT} 80
-RewriteRule ^(.*)$ https://www.stephaneswaenepoel.fr/$1 [R,L]
+# Activation du module de réécriture d'URL :
+RewriteEngine on
 
- # BEGIN Cache-Control Headers
-<ifmodule mod_headers.c>
- <filesmatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf)$">
- Header set Cache-Control "max-age=7200, public"
- </filesmatch>
- <filesmatch "\\.(css)$">
- Header set Cache-Control "max-age=7200, public"
- </filesmatch>
- <filesmatch "\\.(js)$">
- Header set Cache-Control "max-age=7200, private"
- </filesmatch>
-<filesmatch "\\.(html|htm)$">
-Header set Cache-Control "max-age=7200, public"
-</filesmatch>
- # Disable caching for scripts and other dynamic files
-<filesmatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
-Header unset Cache-Control
-</filesmatch>
-</ifmodule>
- # END Cache-Control Headers                                                           
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# RewriteCond %{SERVER_PORT} 80
+# RewriteRule ^(.*)$ https://www.stephaneswaenepoel.fr/$1 [R,L]
+
+RewriteRule "accueil" "controllers/homeCtrl.php"
+RewriteRule "portfolio" "controllers/portfolioCtrl.php"
