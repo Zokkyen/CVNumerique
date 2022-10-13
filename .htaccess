@@ -4,8 +4,8 @@ RewriteEngine on
 # Le serveur doit suivre les liens symboliques :
 Options +FollowSymlinks
 
-# RewriteCond %{SERVER_PORT} 80
-# RewriteRule ^(.*)$ https://www.stephaneswaenepoel.fr/$1 [R,L]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.stephaneswaenepoel.fr/$1 [R,L]
 
 RewriteRule "accueil" "controllers/homeCtrl.php"
 RewriteRule "portfolio" "controllers/portfolioCtrl.php"
