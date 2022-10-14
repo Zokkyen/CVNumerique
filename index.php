@@ -1,4 +1,4 @@
 <?php
 
-    header('location: /accueil');
+    header('location: /bonjour');
     exit;

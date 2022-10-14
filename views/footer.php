@@ -1,6 +1,6 @@
     
     <footer>
-        <div class="container-fluid myFooter bg-black">
+        <div class="container-fluid myFooter bg-warning">
             <div class="row align-items-center h-100">
                 <div class="col col-lg-2">
                     <a href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/" target="_blank">
@@ -16,7 +16,7 @@
                 </div>
 
                 <!-- Mobile version -->
-                <div class="col-5 col-lg-6 fs-7 text-center text-warning mobileFooter">
+                <div class="col-5 col-lg-6 fs-7 text-center mobileFooter">
                     <p class="m-0">
                         Stéphane Swaenepoel
                         <br />&copy; 2022
@@ -25,7 +25,7 @@
                 </div>
 
                 <!-- Desktop version -->
-                <div class="col-5 col-lg-4 fs-7 text-center text-warning desktopFooter">
+                <div class="col-5 col-lg-4 fs-7 text-center desktopFooter">
                     <p class="m-0">
                         Stéphane Swaenepoel &copy; 2022 Tous droits réservés.
                     </p>

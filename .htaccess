@@ -7,5 +7,6 @@ Options +FollowSymlinks
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.stephaneswaenepoel.fr/$1 [R,L]
 
+RewriteRule "bonjour" "controllers/helloCtrl.php"
 RewriteRule "accueil" "controllers/homeCtrl.php"
 RewriteRule "portfolio" "controllers/portfolioCtrl.php"

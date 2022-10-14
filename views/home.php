@@ -2,7 +2,7 @@
     <main>
         <!-- Information -->
         <section>
-            <div class="container-fluid introContainer">
+            <div class="container-fluid introContainer mb-2">
 
                 <div class="pictureContainer">
                     <div class="rhombus bg-warning rounded" id="rotateAnimation">
@@ -11,7 +11,7 @@
                     </div>
                 </div>
 
-                <h1 class="fs-5 mt-2 presentationContainer">
+                <h1 class="fs-5 mt-2 presentationContainer text-secondary">
                     Je m'appelle <strong>Stéphane Swaenepoel</strong>, futur
                     <span class="text-warning">Concepteur Développeur d'Applications</span>.<br />
                     Apprendre de nouvelles choses est mon
@@ -31,7 +31,7 @@
         <section id="information">
             <div class="container-fluid">
                 <div class="row ps-2 pe-2">
-                    <div class="col-12 colWidth text-start mb-4">
+                    <div class="col-12 colWidth text-start mb-4 text-secondary">
                         <h3 class="fs-4 p-2 text-start">
                             <strong>Mes informations <span class="text-warning">_&gt;</span></strong>
                         </h3>
@@ -42,7 +42,7 @@
                             conception/développement de sites et d'applications mobiles.
                         </p>
                     </div>
-                    <div class="col-12 col-lg-6 colWidth text-start mb-4">
+                    <div class="col-12 col-lg-6 colWidth text-start mb-4 text-secondary">
                         <h3 class="fs-4 p-2 text-start">
                             <strong><span class="text-warning">&lt;_</span> Mon profil</strong>
                         </h3>
@@ -54,7 +54,7 @@
                             <li>Jovial</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-lg-6 colWidth text-start mb-4">
+                    <div class="col-12 col-lg-6 colWidth text-start mb-4 text-secondary">
                         <h3 class="fs-4 p-2 text-start">
                             <strong>Langues parlées <span class="text-warning">_&gt;</span></strong>
                         </h3>
@@ -72,7 +72,7 @@
 
             <!-- Web skills -->
             <article>
-                <div class="container-fluid ctnSkills mb-5">
+                <div class="container-fluid ctnSkills mb-5 text-secondary">
                     <h3 class="fs-4 p-2 pb-2 text-start">
                         <strong><span class="text-warning">&lt;_</span> Compétences Web <span
                                 class="text-warning">_&gt;</span></strong>
@@ -145,7 +145,7 @@
 
             <!-- Project skills -->
             <article>
-                <div class="container-fluid ctnSkills mb-5">
+                <div class="container-fluid ctnSkills mb-5 text-secondary">
                     <h3 class="fs-4 p-2 pb-2 text-start">
                         <strong><span class="text-warning">&lt;_</span> Gestion de projet <span
                                 class="text-warning">_&gt;</span></strong>
@@ -175,7 +175,7 @@
 
             <!-- Design skills -->
             <article>
-                <div class="container-fluid ctnSkills mb-5">
+                <div class="container-fluid ctnSkills mb-5 text-secondary">
                     <h3 class="fs-4 p-2 pb-2 text-start">
                         <strong><span class="text-warning">&lt;_</span> Web Design <span
                                 class="text-warning">_&gt;</span></strong>
@@ -217,7 +217,7 @@
 
             <!-- Other skills -->
             <article>
-                <div class="container-fluid ctnSkills mb-5">
+                <div class="container-fluid ctnSkills mb-5 text-secondary">
                     <h3 class="fs-4 p-2 pb-2 text-start">
                         <strong><span class="text-warning">&lt;_</span> Autres compétences <span
                                 class="text-warning">_&gt;</span></strong>
@@ -261,7 +261,7 @@
 
         <!-- Studies -->
         <section id="studies">
-            <div class="container-fluid mb-5">
+            <div class="container-fluid mb-5 text-secondary">
                 <h3 class="fs-4 p-2 pb-3 text-start">
                     <strong><span class="text-warning">&lt;_</span> Historiques de formations</strong>
                 </h3>
@@ -294,7 +294,7 @@
 
         <!-- Jobs -->
         <section id="jobs">
-            <div class="container-fluid mb-3">
+            <div class="container-fluid mb-3 text-secondary">
                 <h3 class="fs-4 p-2 pb-2 text-start">
                     <strong>Parcours professionnel <span class="text-warning">_&gt;</span></strong>
                 </h3>
@@ -377,7 +377,7 @@
 
         <!-- Hobbies -->
         <section id="hobbies">
-            <div class="hobbiesContainer mb-5">
+            <div class="hobbiesContainer mb-5 text-secondary">
                 <h3 class="fs-4 p-2 text-center">
                     <strong> <span class="text-warning">&lt;_ &lt;_</span> Mes loisirs <span class="text-warning">_&gt;
                             _&gt;</span></strong>

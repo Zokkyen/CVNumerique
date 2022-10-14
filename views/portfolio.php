@@ -5,7 +5,7 @@
             <div class="container-fluid cf2"> 
                 
                 <!-- Shi Fu Mi Game -->
-                <article class="ctnPortfolio">
+                <article class="ctnPortfolio text-secondary">
                     <a href="https://zokkyen.github.io/shifumi/" target="_blank">
                         <img src="../public/assets/img/projects/shifumi.webp" alt="Jeu du Shi Fu Mi">
                     </a>
@@ -14,7 +14,7 @@
                 </article>               
 
                 <!-- The Manu Movie DataBase -->
-                <article class="ctnPortfolio">
+                <article class="ctnPortfolio text-secondary">
                     <a href="https://zokkyen.github.io/tmmdb/" target="_blank">
                         <img src="../public/assets/img/projects/tmmdb.webp" alt="The Manu Movie DataBase">
                     </a>
@@ -23,7 +23,7 @@
                 </article>  
 
                 <!-- E-Commerce -->
-                <article class="ctnPortfolio">
+                <article class="ctnPortfolio text-secondary">
                     <a href="https://zokkyen.github.io/ecommerce/" target="_blank">
                         <img src="../public/assets/img/projects/ecommerce.webp" alt="Site E-Commerce">
                     </a>
