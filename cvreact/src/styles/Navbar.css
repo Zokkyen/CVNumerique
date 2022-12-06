@@ -7,9 +7,13 @@
     .logo {
         margin-right: 20px;
     }
+
+    button:hover  {
+        text-decoration: underline white !important;
+        text-underline-offset: 6px;
+    }    
 }
 
-button:hover  {
-    text-decoration: underline white !important;
-    text-underline-offset: 6px;
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper {
+    height: fit-content !important;
 }

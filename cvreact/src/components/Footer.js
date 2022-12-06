@@ -48,6 +48,9 @@ function Footer() {
                     Stéphane Swaenepoel © 2022 Tous droits réservés.
                 </Typography>
                 <Box sx={{ width: '30%', display: 'flex', justifyContent: 'space-around' }}>
+                    <Typography sx={{ my: 'auto', pl: '8px' }}>
+                        LindekIn
+                    </Typography>
                     <Button
                         variant="link"
                         startIcon={<LinkedInIcon sx={{ width: '35px', height: '35px' }}/>}
@@ -55,6 +58,9 @@ function Footer() {
                         target="_blank"
                         sx={{ p: '0', minWidth: '0', m: '0' }}
                     />
+                    <Typography sx={{ my: 'auto', pl: '8px' }}>
+                        Github
+                    </Typography>
                     <Button
                         variant="link"
                         startIcon={<GitHubIcon sx={{ width: '35px', height: '35px' }}/>}
@@ -62,6 +68,9 @@ function Footer() {
                         target="_blank"
                         sx={{ p: '0', minWidth: '0', }}
                     />
+                    <Typography sx={{ my: 'auto', pl: '8px' }}>
+                        Mail
+                    </Typography>
                     <Button
                         variant="link"
                         startIcon={<EmailIcon sx={{ width: '35px', height: '35px' }}/>}
@@ -69,12 +78,15 @@ function Footer() {
                         target="_blank"
                         sx={{ p: '0', minWidth: '0' }}
                     />
+                    <Typography sx={{ my: 'auto', pl: '8px' }}>
+                        Mon CV
+                    </Typography>
                     <Button
                         variant="link"
                         startIcon={<PrintIcon sx={{ width: '35px', height: '35px' }}/>}
                         href={Pdf}
                         target="_blank"
-                        sx={{ p: '0', minWidth: '0', display: "flex", justifyContent: "center", alignItems: "center" }}
+                        sx={{ p: '0', minWidth: '0', display: "flex", justifyContent: "center", alignItems: "center", mr: '10px' }}
                     />
                 </Box>
             </Box>
