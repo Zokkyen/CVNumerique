@@ -8,7 +8,7 @@ function Home() {
     <div className="App">
         <Navbar />
 
-        <Box sx={{ height: 'calc(100vh - 56px)' }} >
+        <Box sx={{ height: 'calc(100vh + 56px)' }} >
 
         </Box>
         <Footer />

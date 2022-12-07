@@ -44,50 +44,58 @@ function Footer() {
                 />
             </Box>
             <Box className="footerDesktop" sx={{ display: { xs: 'none', md: 'flex' } }}>
-                <Typography sx={{ width: '70%', display: 'flex', my: 'auto', pl: '15px' }}>
+                <Typography sx={{ width: '45%', display: 'flex', my: 'auto', pl: '15px' }}>
                     Stéphane Swaenepoel © 2022 Tous droits réservés.
                 </Typography>
-                <Box sx={{ width: '30%', display: 'flex', justifyContent: 'space-around' }}>
-                    <Typography sx={{ my: 'auto', pl: '8px' }}>
-                        LindekIn
-                    </Typography>
-                    <Button
-                        variant="link"
-                        startIcon={<LinkedInIcon sx={{ width: '35px', height: '35px' }}/>}
-                        href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/"
-                        target="_blank"
-                        sx={{ p: '0', minWidth: '0', m: '0' }}
-                    />
-                    <Typography sx={{ my: 'auto', pl: '8px' }}>
-                        Github
-                    </Typography>
-                    <Button
-                        variant="link"
-                        startIcon={<GitHubIcon sx={{ width: '35px', height: '35px' }}/>}
-                        href="https://github.com/Zokkyen"
-                        target="_blank"
-                        sx={{ p: '0', minWidth: '0', }}
-                    />
-                    <Typography sx={{ my: 'auto', pl: '8px' }}>
-                        Mail
-                    </Typography>
-                    <Button
-                        variant="link"
-                        startIcon={<EmailIcon sx={{ width: '35px', height: '35px' }}/>}
-                        href="mailto::stephane.swaenepoel@gmail.com"
-                        target="_blank"
-                        sx={{ p: '0', minWidth: '0' }}
-                    />
-                    <Typography sx={{ my: 'auto', pl: '8px' }}>
-                        Mon CV
-                    </Typography>
-                    <Button
-                        variant="link"
-                        startIcon={<PrintIcon sx={{ width: '35px', height: '35px' }}/>}
-                        href={Pdf}
-                        target="_blank"
-                        sx={{ p: '0', minWidth: '0', display: "flex", justifyContent: "center", alignItems: "center", mr: '10px' }}
-                    />
+                <Box sx={{ width: 'fit-content', display: 'flex', marginLeft: 'auto' }}>
+                    <Box sx={{ display: 'flex' }}>
+                        <Typography sx={{ my: 'auto', pl: '20px', pr: '5px' }}>
+                            LindekIn
+                        </Typography>
+                        <Button
+                            variant="link"
+                            startIcon={<LinkedInIcon sx={{ width: '35px', height: '35px' }}/>}
+                            href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/"
+                            target="_blank"
+                            sx={{ p: '0', minWidth: '0', m: '0' }}
+                        />                        
+                    </Box>
+                    <Box sx={{ display: 'flex' }}>
+                        <Typography sx={{ my: 'auto', pl: '20px', pr: '5px' }}>
+                            Github
+                        </Typography>
+                        <Button
+                            variant="link"
+                            startIcon={<GitHubIcon sx={{ width: '35px', height: '35px' }}/>}
+                            href="https://github.com/Zokkyen"
+                            target="_blank"
+                            sx={{ p: '0', minWidth: '0', }}
+                        />
+                    </Box>
+                    <Box sx={{ display: 'flex' }}>
+                        <Typography sx={{ my: 'auto', pl: '20px', pr: '5px' }}>
+                            Mail
+                        </Typography>
+                        <Button
+                            variant="link"
+                            startIcon={<EmailIcon sx={{ width: '35px', height: '35px' }}/>}
+                            href="mailto::stephane.swaenepoel@gmail.com"
+                            target="_blank"
+                            sx={{ p: '0', minWidth: '0' }}
+                        />
+                    </Box>
+                    <Box sx={{ display: 'flex' }}>
+                        <Typography sx={{ my: 'auto', pl: '20px', pr: '5px' }}>
+                            Mon CV
+                        </Typography>
+                        <Button
+                            variant="link"
+                            startIcon={<PrintIcon sx={{ width: '35px', height: '35px' }}/>}
+                            href={Pdf}
+                            target="_blank"
+                            sx={{ p: '0', minWidth: '0', display: "flex", justifyContent: "center", alignItems: "center", mr: '10px' }}
+                        />
+                    </Box>
                 </Box>
             </Box>
         </footer>

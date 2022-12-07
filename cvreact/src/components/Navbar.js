@@ -35,7 +35,7 @@ function Navbar() {
 
   return (
     <header>
-      <AppBar position="static">
+      <AppBar position="fixed" sx={{ margin: '0' }}>
         <Container maxWidth="xl" >
           <Toolbar disableGutters>
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
