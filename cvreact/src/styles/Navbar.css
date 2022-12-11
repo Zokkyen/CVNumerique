@@ -1,16 +1,25 @@
-.logo {
-    width: 40px;
-    height: 40px;
+@media (max-width: 900px) {
+    .logo {
+        position: absolute;
+        top: 5px;
+        left: 50%;
+        transform: translate(-50%);
+        width: 70px;
+        height: 70px;
+    }
 }
 
 @media (min-width: 900px) {
     .logo {
+        width: 40px;
+        height: 40px;
         margin-right: 20px;
     }
 
     button:hover  {
-        text-decoration: underline white !important;
+        text-decoration: underline #f50057 !important;
         text-underline-offset: 6px;
+        color: #f50057;
     }    
 }
 

@@ -3,11 +3,12 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider, createTheme } from "@mui/material";
 import "./index.css";
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import reportWebVitals from "./reportWebVitals";
 
 const theme = createTheme({
   palette: {
+    type: 'light',
     primary: {
       main: '#3d3d3d',
     },

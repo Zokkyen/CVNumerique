@@ -38,7 +38,7 @@ function Navbar() {
       <AppBar position="fixed" sx={{ margin: '0' }}>
         <Container maxWidth="xl" >
           <Toolbar disableGutters>
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <Box sx={{  display: { xs: 'flex', md: 'none' } }}>
               {['left'].map((anchor) => (
                 <React.Fragment key={anchor} >
                   <IconButton
@@ -60,7 +60,7 @@ function Navbar() {
                       sx={{ width: '50vw' }}
                     >
                       <PermDeviceInformationIcon sx={{ mr: '15px' }} />
-                      <Link href="#" underline="hover"  >
+                      <Link href="#" underline="none"  >
                         {pages[0]}
                       </Link>
                     </MenuItem>
@@ -68,7 +68,7 @@ function Navbar() {
                       sx={{ width: '50vw' }}
                     >
                       <SettingsSuggestIcon sx={{ mr: '15px' }} />
-                      <Link href="#" underline="hover"  >
+                      <Link href="#" underline="none"  >
                         {pages[1]}
                       </Link>
                     </MenuItem>
@@ -76,7 +76,7 @@ function Navbar() {
                       sx={{ width: '50vw' }}
                     >
                       <SchoolIcon sx={{ mr: '15px' }} />
-                      <Link href="#" underline="hover"  >
+                      <Link href="#" underline="none"  >
                         {pages[2]}
                       </Link>
                     </MenuItem>
@@ -84,7 +84,7 @@ function Navbar() {
                       sx={{ width: '50vw' }}
                     >
                       <WorkIcon sx={{ mr: '15px' }} />
-                      <Link href="#" underline="hover"  >
+                      <Link href="#" underline="none"  >
                         {pages[3]}
                       </Link>
                     </MenuItem>
@@ -92,7 +92,7 @@ function Navbar() {
                       sx={{ width: '50vw' }}
                     >
                       <MusicNoteIcon sx={{ mr: '15px' }} />
-                      <Link href="#" underline="hover"  >
+                      <Link href="#" underline="none"  >
                         {pages[4]}
                       </Link>
                     </MenuItem>
@@ -100,7 +100,7 @@ function Navbar() {
                       sx={{ width: '50vw' }}
                     >
                       <WalletIcon sx={{ mr: '15px' }} />
-                      <Link href="#" underline="hover"  >
+                      <Link href="#" underline="none"  >
                         {pages[5]}
                       </Link>
                     </MenuItem>

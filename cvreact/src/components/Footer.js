@@ -16,28 +16,28 @@ function Footer() {
                 </Typography>
                 <Button
                     variant="link"
-                    startIcon={<LinkedInIcon sx={{ width: '35px', height: '35px' }}/>}
+                    startIcon={<LinkedInIcon aria-label="Mon LinkedIn" sx={{ width: '35px', height: '35px' }}/>}
                     href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/"
                     target="_blank"
                     sx={{ p: '0', minWidth: '0', m: '0' }}
                 />
                 <Button
                     variant="link"
-                    startIcon={<GitHubIcon sx={{ width: '35px', height: '35px' }}/>}
+                    startIcon={<GitHubIcon aria-label="Mon Github" sx={{ width: '35px', height: '35px' }}/>}
                     href="https://github.com/Zokkyen"
                     target="_blank"
                     sx={{ p: '0', minWidth: '0', }}
                 />
                 <Button
                     variant="link"
-                    startIcon={<EmailIcon sx={{ width: '35px', height: '35px' }}/>}
+                    startIcon={<EmailIcon aria-label="Envoyer un mail" sx={{ width: '35px', height: '35px' }}/>}
                     href="mailto::stephane.swaenepoel@gmail.com"
                     target="_blank"
                     sx={{ p: '0', minWidth: '0' }}
                 />
                 <Button
                     variant="link"
-                    startIcon={<PrintIcon sx={{ width: '35px', height: '35px' }}/>}
+                    startIcon={<PrintIcon aria-label="Télécharger le CV" sx={{ width: '35px', height: '35px' }}/>}
                     href={Pdf}
                     target="_blank"
                     sx={{ p: '0', minWidth: '0', display: "flex", justifyContent: "center", alignItems: "center" }}
@@ -54,7 +54,7 @@ function Footer() {
                         </Typography>
                         <Button
                             variant="link"
-                            startIcon={<LinkedInIcon sx={{ width: '35px', height: '35px' }}/>}
+                            startIcon={<LinkedInIcon aria-label="Mon LinkedIn" sx={{ width: '35px', height: '35px' }}/>}
                             href="https://www.linkedin.com/in/st%C3%A9phane-swaenepoel-6a730197/"
                             target="_blank"
                             sx={{ p: '0', minWidth: '0', m: '0' }}
@@ -66,7 +66,7 @@ function Footer() {
                         </Typography>
                         <Button
                             variant="link"
-                            startIcon={<GitHubIcon sx={{ width: '35px', height: '35px' }}/>}
+                            startIcon={<GitHubIcon aria-label="Mon Github" sx={{ width: '35px', height: '35px' }}/>}
                             href="https://github.com/Zokkyen"
                             target="_blank"
                             sx={{ p: '0', minWidth: '0', }}
@@ -78,7 +78,7 @@ function Footer() {
                         </Typography>
                         <Button
                             variant="link"
-                            startIcon={<EmailIcon sx={{ width: '35px', height: '35px' }}/>}
+                            startIcon={<EmailIcon aria-label="Envoyer un mail" sx={{ width: '35px', height: '35px' }}/>}
                             href="mailto::stephane.swaenepoel@gmail.com"
                             target="_blank"
                             sx={{ p: '0', minWidth: '0' }}
@@ -90,7 +90,7 @@ function Footer() {
                         </Typography>
                         <Button
                             variant="link"
-                            startIcon={<PrintIcon sx={{ width: '35px', height: '35px' }}/>}
+                            startIcon={<PrintIcon aria-label="Télécharger le CV" sx={{ width: '35px', height: '35px' }}/>}
                             href={Pdf}
                             target="_blank"
                             sx={{ p: '0', minWidth: '0', display: "flex", justifyContent: "center", alignItems: "center", mr: '10px' }}
